@@ -2,6 +2,9 @@
 Changelog for package ant_maps
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.9.1 (2014-11-18)
 ------------------
 * adds Benito Sports map

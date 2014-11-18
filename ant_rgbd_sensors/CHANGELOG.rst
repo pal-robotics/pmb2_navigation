@@ -2,6 +2,9 @@
 Changelog for package ant_rgbd_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.9.1 (2014-11-18)
 ------------------
 * adds openni2_launch dependency

@@ -2,6 +2,9 @@
 Changelog for package ant_navigation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.9.1 (2014-11-18)
 ------------------
 * disables ant_nav_cont_test

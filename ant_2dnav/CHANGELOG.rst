@@ -2,6 +2,12 @@
 Changelog for package ant_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* disables saving initial_ params
+  NOTE this generates 1 socket every time a param is set
+* Contributors: Enrique Fernandez
+
 0.9.1 (2014-11-18)
 ------------------
 * adds floor filtered PC
