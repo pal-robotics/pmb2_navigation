@@ -2,8 +2,8 @@
 Changelog for package ant_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.9.2 (2014-11-18)
+------------------
 * disables saving initial_ params
   NOTE this generates 1 socket every time a param is set
 * Contributors: Enrique Fernandez
