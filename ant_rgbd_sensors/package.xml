@@ -9,5 +9,5 @@
 
   <buildtool_depend>catkin</buildtool_depend>
 
-  <run_depend>softkinetic_camera</run_depend>
+  <!--run_depend>softkinetic_camera</run_depend--> <!-- not used for now -->
 </package>
