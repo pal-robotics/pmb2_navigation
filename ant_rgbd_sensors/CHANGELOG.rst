@@ -1,0 +1,19 @@
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Changelog for package ant_rgbd_sensors
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Forthcoming
+-----------
+* adds openni2_launch dependency
+* removes softkinetic dependency
+* adds range_max params
+* sets valid modes and document config
+* uses xtion_pro_live
+* sets camera name to rgb_PS1080_PrimeSense
+* adds xtion_pro_live yaml and launch files
+* adds range_max param
+* adds frustum culling params
+* updates params
+* fixes launch files
+* adds ant_rgbd_sensors pkg
+* Contributors: Enrique Fernandez
