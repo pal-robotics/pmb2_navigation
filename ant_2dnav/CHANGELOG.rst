@@ -2,8 +2,8 @@
 Changelog for package ant_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.9.1 (2014-11-18)
+------------------
 * adds floor filtered PC
 * adds blanking_range = 0.5m to costmap config
 * adds floor_filter option arg to move_base

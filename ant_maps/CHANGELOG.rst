@@ -2,8 +2,8 @@
 Changelog for package ant_maps
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.9.1 (2014-11-18)
+------------------
 * adds Benito Sports map
   recorded with SICK TiM511 laser
 * uses new transformation yaml format

@@ -2,8 +2,8 @@
 Changelog for package ant_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.9.1 (2014-11-18)
+------------------
 * adds missed rplidar_ros run depend
 * fixes rgbd cloud and depth to laser scan nodelets
 * fixes node name
