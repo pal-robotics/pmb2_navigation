@@ -4,7 +4,7 @@ PalLocalPlanner:
   acc_lim_x    : 0.8
   acc_lim_theta: !degrees 96.0
 
-  max_vel_x : 0.5
+  max_vel_x : &max_vel_x 0.5
   max_vel_th: !degrees 36.0
 
   xy_goal_tolerance : 0.2
@@ -12,7 +12,7 @@ PalLocalPlanner:
 
   oscillation_reset_dist: 0.1
 
-  travel_speed_sfl   : 0.5
+  travel_speed_sfl   : *max_vel_x
   point_b_sfl        : 0.26
   decay              : 0.85
   max_dist_plan_ahead: 4.0
