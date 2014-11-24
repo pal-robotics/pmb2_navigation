@@ -2,6 +2,12 @@
 Changelog for package ant_rgbd_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Use depth processing only
+  Disable rgb and depth registered processing
+* Contributors: Enrique Fernandez
+
 0.9.2 (2014-11-18)
 ------------------
 

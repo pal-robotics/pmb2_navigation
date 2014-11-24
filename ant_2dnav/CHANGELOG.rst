@@ -2,6 +2,15 @@
 Changelog for package ant_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Add missed dependency (pal_local_planner)
+* Make pal local planner speed depend on max vel x
+* Enable rgbd layer on local costmap
+* Reduce raytrace/obstacle range in rgbd layer
+* Add missed ant_laser_sensors dependency
+* Contributors: Enrique Fernandez
+
 0.9.2 (2014-11-18)
 ------------------
 * disables saving initial_ params
