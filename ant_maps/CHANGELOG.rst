@@ -2,8 +2,8 @@
 Changelog for package ant_maps
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.9.3 (2014-11-24)
+------------------
 * Add workshop test map
 * Contributors: Enrique Fernandez
 

@@ -2,8 +2,8 @@
 Changelog for package ant_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.9.3 (2014-11-24)
+------------------
 * Add missed dependency (pal_local_planner)
 * Make pal local planner speed depend on max vel x
 * Enable rgbd layer on local costmap
