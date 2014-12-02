@@ -27,11 +27,13 @@ driver:
     # 30Hz / (1 + 4) = 30Hz / 5 = 6Hz
     data_skip : 4
 
-    depth_ir_offset_x: 0.0
-    depth_ir_offset_y: 0.0
+    # @todo test
+    #depth_ir_offset_x: 0.0
+    #depth_ir_offset_y: 0.0
 
-    z_offset_mm: -200
-    z_scaling  : 1.07
+    # @todo recalibrate (note that the camera is not parallel to the ground)
+    #z_offset_mm: -200
+    #z_scaling  : 1.07
 
 depth_points:
     range_max: &depth_range_max 10.0
