@@ -3,7 +3,7 @@ max_height: 1.8
 
 angle_min      : !degrees -25.0
 angle_max      : !degrees  25.0
-angle_increment: !degrees   1.0
+angle_increment: !degrees   0.5
 
 scan_time: 0.166 # 6Hz (0.033 -> 30Hz)
 
