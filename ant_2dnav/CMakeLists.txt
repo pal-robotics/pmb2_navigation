@@ -9,7 +9,8 @@ install(
     PROGRAMS
         scripts/record_mapping.sh
         scripts/record_move_base.sh
-        scripts/record_2dnav.sh
+        scripts/record_odom.sh
+        scripts/record_rgbd.sh
     DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
 
 foreach(dir launch config)
