@@ -1,4 +1,4 @@
-min_height: 0.03
+min_height: 0.0
 max_height: 1.8
 
 angle_min      : !degrees -25.0
