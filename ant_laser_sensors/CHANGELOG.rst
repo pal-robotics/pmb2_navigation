@@ -2,6 +2,13 @@
 Changelog for package ant_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Increase resolution from 1 to 0.5 deg
+* Reduce min height to 0.0 since we filter the ground
+* Add laser filter (for SICK TiM551)
+* Contributors: Enrique Fernandez
+
 0.9.3 (2014-11-24)
 ------------------
 

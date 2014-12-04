@@ -2,6 +2,9 @@
 Changelog for package ant_navigation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.9.3 (2014-11-24)
 ------------------
 

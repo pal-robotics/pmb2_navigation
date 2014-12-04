@@ -2,6 +2,11 @@
 Changelog for package ant_maps
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Add electronics room map
+* Contributors: Enrique Fernandez
+
 0.9.3 (2014-11-24)
 ------------------
 * Add workshop test map

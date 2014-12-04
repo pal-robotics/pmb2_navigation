@@ -2,6 +2,12 @@
 Changelog for package ant_rgbd_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Disable z scaling params
+* Configures z scaling
+* Contributors: Enrique Fernandez
+
 0.9.3 (2014-11-24)
 ------------------
 * Use depth processing only

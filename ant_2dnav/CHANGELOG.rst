@@ -2,6 +2,16 @@
 Changelog for package ant_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Add debug param to RGBD source
+* Update record scripts
+* Set combination method to max for RGBD
+* Reduces linear speed from 0.5 to 0.3m/s
+* Increase rgbd range on costmap
+* Adds scan arg
+* Contributors: Enrique Fernandez
+
 0.9.3 (2014-11-24)
 ------------------
 * Add missed dependency (pal_local_planner)
