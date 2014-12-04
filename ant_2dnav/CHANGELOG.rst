@@ -2,8 +2,8 @@
 Changelog for package ant_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.9.4 (2014-12-04)
+------------------
 * Add debug param to RGBD source
 * Update record scripts
 * Set combination method to max for RGBD

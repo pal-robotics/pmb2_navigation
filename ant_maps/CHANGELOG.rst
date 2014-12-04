@@ -2,8 +2,8 @@
 Changelog for package ant_maps
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.9.4 (2014-12-04)
+------------------
 * Add electronics room map
 * Contributors: Enrique Fernandez
 
