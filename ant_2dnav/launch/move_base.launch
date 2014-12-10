@@ -7,10 +7,14 @@
   <arg name="cmd_vel" default="nav_vel"/>
 
   <arg name="debug_rgbd" default="false"/>
+  <arg name="debug"      default="false"/>
+
+  <arg name="launch_prefix" value="gdb -ex run --args"     if="$(arg debug)"/>
+  <arg name="launch_prefix" value=""                   unless="$(arg debug)"/>
 
   <arg name="floor_filter" default="true"/>
 
-  <node pkg="move_base" type="move_base" name="move_base" clear_params="true" output="screen">
+  <node pkg="move_base" type="move_base" name="move_base" clear_params="true" output="screen" launch-prefix="$(arg launch_prefix)">
     <remap from="odom"    to="$(arg odom)"/>
     <remap from="cmd_vel" to="$(arg cmd_vel)"/>
 
