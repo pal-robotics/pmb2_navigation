@@ -10,6 +10,7 @@ install(
         scripts/record_mapping.sh
         scripts/record_move_base.sh
         scripts/record_odom.sh
+        scripts/record_patrol.sh
         scripts/record_rgbd.sh
     DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
 
