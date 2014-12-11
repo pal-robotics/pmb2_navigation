@@ -58,6 +58,46 @@ Visualization Manager:
             Expand Link Details: false
             Expand Tree: false
             Link Tree Style: Links in Alphabetic Order
+            antenna_left_1_frame:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            antenna_left_2_frame:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            antenna_left_3_frame:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            antenna_left_4_frame:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            antenna_right_1_frame:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            antenna_right_2_frame:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            antenna_right_3_frame:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            antenna_right_4_frame:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
             base_footprint:
               Alpha: 1
               Show Axes: false
@@ -169,7 +209,7 @@ Visualization Manager:
           Marker Topic: twist_marker
           Name: Twist
           Namespaces:
-            {}
+            "": true
           Queue Size: 100
           Value: true
         - Class: rviz/Marker
@@ -766,6 +806,15 @@ Visualization Manager:
           Queue Size: 2
           Transport Hint: compressed
           Value: true
+        - Class: octomap_rviz_plugin/OccupancyGrid
+          Enabled: true
+          Max. Octree Depth: 16
+          Name: Octomap
+          Octomap Topic: octomap_binary
+          Queue Size: 5
+          Value: true
+          Voxel Coloring: Z-Axis
+          Voxel Rendering: Occupied Voxels
       Enabled: true
       Name: Mapping
     - Class: rviz/Group
@@ -935,6 +984,8 @@ Visualization Manager:
       Yaw: 0.0203984
     Saved: ~
 Window Geometry:
+  Compressed Map:
+    collapsed: false
   Displays:
     collapsed: false
   Height: 1026
