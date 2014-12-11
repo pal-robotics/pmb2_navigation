@@ -11,8 +11,8 @@ sensor_model:
   min      : 0.12
   max      : 0.97
 
-# @todo set to false if building a new map from scratch!!!
-latch: true
+# latch is recommended to be false while building a map
+latch: false
 
 filter_ground: false
 
