@@ -7,10 +7,14 @@
 
   <arg name="mapping" default=""/>
 
+  <arg name="octomap" default="false"/>
+
   <!-- Map -->
   <include file="$(find pal_navigation_sm)/launch/map.launch">
     <arg name="map"     value="$(arg map)"/>
     <arg name="symlink" value="$(arg symlink)"/>
+
+    <arg name="octomap" value="$(arg octomap)"/>
   </include>
 
   <!-- Localization -->

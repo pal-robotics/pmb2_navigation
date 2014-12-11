@@ -7,12 +7,13 @@
   <arg name="local_planner"  default="pal"/>
   <arg name="localization"   default="amcl"/>
   <arg name="mapping"        default="karto"/>
+  <arg name="octomap"        default="false"/>
 
   <arg name="map" default="$(env HOME)/.pal/ant_maps/config"/>
 
   <!-- Localization or Mapping state -->
   <node pkg="pal_navigation_sm" type="navigation.sh" name="navigation"
-        args="ant $(arg state) $(arg localization) $(arg mapping) $(arg map)"/>
+        args="ant $(arg state) $(arg localization) $(arg mapping) $(arg map) $(arg octomap)"/>
 
   <!-- Navigation State Machine -->
   <include file="$(find ant_2dnav)/launch/state_machine.launch">
