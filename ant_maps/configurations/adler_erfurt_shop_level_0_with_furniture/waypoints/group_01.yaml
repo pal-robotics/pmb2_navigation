@@ -1,0 +1,92 @@
+group_01:
+- delay: 0.0
+  pose: !!python/object/new:geometry_msgs.msg._Pose.Pose
+    state:
+    - !!python/object/new:geometry_msgs.msg._Point.Point
+      state: [2.9375569820404053, -3.4306280612945557, 0.0]
+    - !!python/object/new:geometry_msgs.msg._Quaternion.Quaternion
+      state: [0.0, 0.0, 0.999997792240538, 0.0021013124588748987]
+- delay: 0.0
+  pose: !!python/object/new:geometry_msgs.msg._Pose.Pose
+    state:
+    - !!python/object/new:geometry_msgs.msg._Point.Point
+      state: [1.0084717273712158, -3.475367546081543, 0.0]
+    - !!python/object/new:geometry_msgs.msg._Quaternion.Quaternion
+      state: [0.0, 0.0, -0.7085911057283251, 0.705619334260839]
+- delay: 0.0
+  pose: !!python/object/new:geometry_msgs.msg._Pose.Pose
+    state:
+    - !!python/object/new:geometry_msgs.msg._Point.Point
+      state: [1.0495460033416748, -6.276403903961182, 0.0]
+    - !!python/object/new:geometry_msgs.msg._Quaternion.Quaternion
+      state: [0.0, 0.0, -0.7085910689717965, 0.7056193711721687]
+- delay: 0.0
+  pose: !!python/object/new:geometry_msgs.msg._Pose.Pose
+    state:
+    - !!python/object/new:geometry_msgs.msg._Point.Point
+      state: [1.088178038597107, -9.65874195098877, 0.0]
+    - !!python/object/new:geometry_msgs.msg._Quaternion.Quaternion
+      state: [0.0, 0.0, 0.9990658214996632, -0.04321439935025429]
+- delay: 0.0
+  pose: !!python/object/new:geometry_msgs.msg._Pose.Pose
+    state:
+    - !!python/object/new:geometry_msgs.msg._Point.Point
+      state: [-0.8406851291656494, -9.650634765625, 0.0]
+    - !!python/object/new:geometry_msgs.msg._Quaternion.Quaternion
+      state: [0.0, 0.0, 0.7211801166125246, 0.6927476015135278]
+- delay: 0.0
+  pose: !!python/object/new:geometry_msgs.msg._Pose.Pose
+    state:
+    - !!python/object/new:geometry_msgs.msg._Point.Point
+      state: [-0.9060725569725037, -6.34745454788208, 0.0]
+    - !!python/object/new:geometry_msgs.msg._Quaternion.Quaternion
+      state: [0.0, 0.0, 0.7156668530233571, 0.6984418053665206]
+- delay: 0.0
+  pose: !!python/object/new:geometry_msgs.msg._Pose.Pose
+    state:
+    - !!python/object/new:geometry_msgs.msg._Point.Point
+      state: [-0.946813702583313, -3.4671499729156494, 0.0]
+    - !!python/object/new:geometry_msgs.msg._Quaternion.Quaternion
+      state: [0.0, 0.0, 0.9999977919340809, 0.0021014582942712966]
+- delay: 0.0
+  pose: !!python/object/new:geometry_msgs.msg._Pose.Pose
+    state:
+    - !!python/object/new:geometry_msgs.msg._Point.Point
+      state: [-2.6646270751953125, -3.5391998291015625, 0.0]
+    - !!python/object/new:geometry_msgs.msg._Quaternion.Quaternion
+      state: [0.0, 0.0, -0.7085910658203546, 0.7056193743368827]
+- delay: 0.0
+  pose: !!python/object/new:geometry_msgs.msg._Pose.Pose
+    state:
+    - !!python/object/new:geometry_msgs.msg._Point.Point
+      state: [-2.7024879455566406, -6.260634899139404, 0.0]
+    - !!python/object/new:geometry_msgs.msg._Quaternion.Quaternion
+      state: [0.0, 0.0, -0.7085911752584229, 0.7056192644379029]
+- delay: 0.0
+  pose: !!python/object/new:geometry_msgs.msg._Pose.Pose
+    state:
+    - !!python/object/new:geometry_msgs.msg._Point.Point
+      state: [-2.557943105697632, -9.590570449829102, 0.0]
+    - !!python/object/new:geometry_msgs.msg._Quaternion.Quaternion
+      state: [0.0, 0.0, 0.9999977917970121, 0.002101523518674591]
+- delay: 0.0
+  pose: !!python/object/new:geometry_msgs.msg._Pose.Pose
+    state:
+    - !!python/object/new:geometry_msgs.msg._Point.Point
+      state: [-4.540096282958984, -9.687933921813965, 0.0]
+    - !!python/object/new:geometry_msgs.msg._Quaternion.Quaternion
+      state: [0.0, 0.0, 0.7056193987588576, 0.7085910415007999]
+- delay: 0.0
+  pose: !!python/object/new:geometry_msgs.msg._Pose.Pose
+    state:
+    - !!python/object/new:geometry_msgs.msg._Point.Point
+      state: [-4.47392463684082, -6.517422676086426, 0.0]
+    - !!python/object/new:geometry_msgs.msg._Quaternion.Quaternion
+      state: [0.0, 0.0, 0.7208462669686876, 0.6930949858405466]
+- delay: 0.0
+  pose: !!python/object/new:geometry_msgs.msg._Pose.Pose
+    state:
+    - !!python/object/new:geometry_msgs.msg._Point.Point
+      state: [-4.463708400726318, -4.086527347564697, 0.0]
+    - !!python/object/new:geometry_msgs.msg._Quaternion.Quaternion
+      state: [0.0, 0.0, -0.7085908335904049, 0.7056196075447841]
