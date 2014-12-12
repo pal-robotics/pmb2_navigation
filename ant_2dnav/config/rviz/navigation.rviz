@@ -935,6 +935,14 @@ Visualization Manager:
         - Class: rviz/MarkerArray
           Enabled: true
           Marker Topic: /inventory/detection_markers
+          Name: Detected Tags
+          Namespaces:
+            {}
+          Queue Size: 100
+          Value: true
+        - Class: rviz/MarkerArray
+          Enabled: true
+          Marker Topic: inventory/markers
           Name: Tags
           Namespaces:
             {}
