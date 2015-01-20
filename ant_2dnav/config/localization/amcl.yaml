@@ -1,5 +1,5 @@
 # Odometry model:
-odom_model_type: diff
+odom_model_type: diff-corrected
 odom_alpha1    : 0.2
 odom_alpha2    : 0.2
 odom_alpha3    : 0.8
