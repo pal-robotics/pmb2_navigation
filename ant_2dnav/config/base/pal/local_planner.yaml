@@ -19,6 +19,7 @@ PalLocalPlanner:
   dist_to_avoid      : 0.25
   allow_backwards    : false
 
+  obstacle_avoider: 0 # VFH
   robotWidth      : 0.5
   robotLength     : 0.5
   robotFrontLength: 0.25
