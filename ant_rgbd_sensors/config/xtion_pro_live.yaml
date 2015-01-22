@@ -31,9 +31,9 @@ driver:
     #depth_ir_offset_x: 0.0
     #depth_ir_offset_y: 0.0
 
-    # @todo recalibrate (note that the camera is not parallel to the ground)
-    #z_offset_mm: -200
-    #z_scaling  : 1.07
+    # 
+    z_offset_mm: -50
+    z_scaling  : 1.07
 
 depth_points:
     range_max: &depth_range_max 10.0
