@@ -17,5 +17,6 @@
     <arg name="respawn"     value="true"/>
 
     <arg name="rgb_camera_info_url" value="package://ant_rgbd_sensors/config/xtion_pro_live_calibration.yaml"/>
+    <arg name="depth_camera_info_url" value="package://ant_rgbd_sensors/config/depth_PS1080_PrimeSense.yaml"/>
   </include>
 </launch>
