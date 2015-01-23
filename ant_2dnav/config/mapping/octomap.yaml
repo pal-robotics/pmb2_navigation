@@ -14,7 +14,7 @@ sensor_model:
 # latch is recommended to be false while building a map
 latch: false
 
-filter_ground: false
+filter_ground: true
 
 ground_filter:
   distance      : 0.04
