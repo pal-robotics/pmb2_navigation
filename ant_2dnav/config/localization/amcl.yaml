@@ -11,7 +11,7 @@ max_particles    : 5000
 kld_err          : 0.05
 kld_z            : 0.99
 update_min_d     : 0.2
-update_min_a     : 0.5
+update_min_a     : !degrees 3.0
 resample_interval: 1
 
 # Measurement (laser) model:
