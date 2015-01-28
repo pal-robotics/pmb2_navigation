@@ -2,8 +2,8 @@
 Changelog for package ant_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.9.5 (2015-01-28)
+------------------
 * Reduce min rotation to update filter
 * Enable ground filter for octomap
 * Set/Enable recovery alphas
