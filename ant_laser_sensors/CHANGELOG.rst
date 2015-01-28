@@ -2,6 +2,9 @@
 Changelog for package ant_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.9.4 (2014-12-04)
 ------------------
 * Increase resolution from 1 to 0.5 deg

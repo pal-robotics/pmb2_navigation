@@ -2,6 +2,31 @@
 Changelog for package ant_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Reduce min rotation to update filter
+* Enable ground filter for octomap
+* Set/Enable recovery alphas
+* Use lf-corrected model for laser
+  Add beam skip params
+* Use diff-corrected model for odom
+* Select VFH obstacle avoider
+* Use costmap for potencial (global_planner)
+* Default global_planner (navfn -> global_planner)
+* Add Control group (with Move and Path)
+* Add marker teleop interactive marker
+* Add script for filtering odom -> map TF
+* Add detected tags and world tag (simulated)
+* Add octomap support
+* Add octomap_server run depend
+* Set latch to false (for octomap building)
+* Add octomap server and saver
+* Fix output name
+* Add debug option for move_base
+* Add record patrol script
+* Set default_tolerance for goals to r=0.5m
+* Contributors: Enrique Fernandez
+
 0.9.4 (2014-12-04)
 ------------------
 * Add debug param to RGBD source

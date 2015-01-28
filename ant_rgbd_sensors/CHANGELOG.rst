@@ -2,6 +2,11 @@
 Changelog for package ant_rgbd_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Added calibration for IR camera, new RGB calibration (that matches the resolution we used, it was different before) and updated parameters of launching the xtion to add the z_mm offset and the z_scaling
+* Contributors: Sammy Pfeiffer
+
 0.9.4 (2014-12-04)
 ------------------
 * Disable z scaling params
