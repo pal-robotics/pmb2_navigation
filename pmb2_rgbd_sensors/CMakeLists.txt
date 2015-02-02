@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(ant_rgbd_sensors)
+project(pmb2_rgbd_sensors)
 
 find_package(catkin REQUIRED)
 

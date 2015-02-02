@@ -1,5 +1,5 @@
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Changelog for package ant_maps
+Changelog for package pmb2_maps
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 0.9.6 (2015-02-02)
@@ -45,8 +45,8 @@ Changelog for package ant_maps
 * translate t_y = -5.4m pois, vos and map
 * adds small_office map
 * adds test POIs
-* adds pal_office created with gmapping by ant robot
+* adds pal_office created with gmapping by pmb2 robot
 * refs #8173 : removes install rules for scripts and launch
 * refs #8173 : removes map_server dependency
-* refs #8173 : ant_maps done
+* refs #8173 : pmb2_maps done
 * Contributors: Enrique Fernandez

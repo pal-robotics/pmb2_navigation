@@ -9,19 +9,19 @@
   <arg name="mapping"        default="karto"/>
   <arg name="octomap"        default="false"/>
 
-  <arg name="map" default="$(env HOME)/.pal/ant_maps/config"/>
+  <arg name="map" default="$(env HOME)/.pal/pmb2_maps/config"/>
 
   <!-- Localization or Mapping state -->
   <node pkg="pal_navigation_sm" type="navigation.sh" name="navigation"
-        args="ant $(arg state) $(arg localization) $(arg mapping) $(arg map) $(arg octomap)"/>
+        args="pmb2 $(arg state) $(arg localization) $(arg mapping) $(arg map) $(arg octomap)"/>
 
   <!-- Navigation State Machine -->
-  <include file="$(find ant_2dnav)/launch/state_machine.launch">
+  <include file="$(find pmb2_2dnav)/launch/state_machine.launch">
     <arg name="state" value="$(arg state)"/>
   </include>
 
   <!-- Planning -->
-  <include file="$(find ant_2dnav)/launch/move_$(arg planner).launch">
+  <include file="$(find pmb2_2dnav)/launch/move_$(arg planner).launch">
     <arg name="global_planner" value="$(arg global_planner)"/>
     <arg name="local_planner"  value="$(arg local_planner)"/>
   </include>

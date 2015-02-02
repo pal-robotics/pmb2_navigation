@@ -1,4 +1,4 @@
-robot: ant
+robot: pmb2
 
 odometry: controller
 

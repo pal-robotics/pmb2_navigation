@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(ant_2dnav)
+project(pmb2_2dnav)
 
 find_package(catkin REQUIRED)
 

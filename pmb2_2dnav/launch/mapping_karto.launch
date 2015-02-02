@@ -3,7 +3,7 @@
 
   <arg name="trajectory_file" default="$(env HOME)/.pal/trajectory.yaml"/>
 
-  <rosparam file="$(find ant_2dnav)/config/mapping/karto.yaml" command="load"/>
+  <rosparam file="$(find pmb2_2dnav)/config/mapping/karto.yaml" command="load"/>
 
   <include file="$(find pal_karto)/launch/karto.launch">
     <arg name="scan" value="$(arg scan)"/>

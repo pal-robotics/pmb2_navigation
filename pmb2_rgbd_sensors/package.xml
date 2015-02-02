@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package>
-  <name>ant_rgbd_sensors</name>
+  <name>pmb2_rgbd_sensors</name>
   <version>0.9.6</version>
-  <description>ANT-specific RGBD sensors launch and config files.</description>
+  <description>PMB2-specific RGBD sensors launch and config files.</description>
   <maintainer email="enrique.fernandez@pal-robotics.com">Enrique Fernandez</maintainer>
   <license>Modified BSD</license>
   <author email="enrique.fernandez@pal-robotics.com">Enrique Fernandez</author>

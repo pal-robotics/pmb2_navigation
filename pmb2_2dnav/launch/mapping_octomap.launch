@@ -5,6 +5,6 @@
   <node pkg="octomap_server" type="octomap_server_node" name="octomap_server">
     <remap from="cloud_in" to="$(arg cloud)"/>
 
-    <rosparam file="$(find ant_2dnav)/config/mapping/octomap.yaml" command="load"/>
+    <rosparam file="$(find pmb2_2dnav)/config/mapping/octomap.yaml" command="load"/>
   </node>
 </launch>

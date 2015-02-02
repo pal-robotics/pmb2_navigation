@@ -2,8 +2,8 @@
 
   <arg name="localization"  default="amcl"/>
 
-  <arg name="map"     default="$(env HOME)/.pal/ant_maps/config"/>
-  <arg name="symlink" default="$(env HOME)/.pal/ant_maps/config"/>
+  <arg name="map"     default="$(env HOME)/.pal/pmb2_maps/config"/>
+  <arg name="symlink" default="$(env HOME)/.pal/pmb2_maps/config"/>
 
   <arg name="mapping" default=""/>
 
@@ -18,6 +18,6 @@
   </include>
 
   <!-- Localization -->
-  <include file="$(find ant_2dnav)/launch/localization_$(arg localization).launch"/>
+  <include file="$(find pmb2_2dnav)/launch/localization_$(arg localization).launch"/>
 
 </launch>

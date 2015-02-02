@@ -3,6 +3,6 @@
 
   <node pkg="gmapping" type="slam_gmapping" name="slam_gmapping" output="screen">
     <arg name="scan" value="$(arg scan)"/>
-    <rosparam file="$(find ant_2dnav)/config/mapping/gmapping.yaml" command="load"/>
+    <rosparam file="$(find pmb2_2dnav)/config/mapping/gmapping.yaml" command="load"/>
   </node>
 </launch>

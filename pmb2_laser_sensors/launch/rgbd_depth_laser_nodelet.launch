@@ -15,7 +15,7 @@
       <remap from="image" to="$(arg image)"/>
       <remap from="scan"  to="$(arg scan)"/>
 
-      <rosparam file="$(find ant_laser_sensors)/config/rgbd_depth_laser.yaml" command="load"/>
+      <rosparam file="$(find pmb2_laser_sensors)/config/rgbd_depth_laser.yaml" command="load"/>
     </node>
   </group>
 </launch>

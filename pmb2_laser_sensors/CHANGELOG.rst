@@ -1,5 +1,5 @@
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Changelog for package ant_laser_sensors
+Changelog for package pmb2_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 0.9.6 (2015-02-02)
@@ -46,5 +46,5 @@ Changelog for package ant_laser_sensors
 * reduces laser beamwidth to +-90deg
 * refs #8302 : adds sick laser launch and yaml
 * refs #8173, #8092 : uses config for hokuyo laser (validates sensor)
-* refs #8173 : ant_laser_sensors done
+* refs #8173 : pmb2_laser_sensors done
 * Contributors: Enrique Fernandez

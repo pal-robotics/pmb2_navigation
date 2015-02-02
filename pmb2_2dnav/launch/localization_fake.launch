@@ -12,6 +12,6 @@
     <remap from="base_pose_ground_truth" to="$(arg ground_truth)"/>
     <remap from="initialpose"            to="$(arg initialpose)"/>
 
-    <rosparam file="$(find ant_2dnav)/config/localization/fake.yaml" command="load"/>
+    <rosparam file="$(find pmb2_2dnav)/config/localization/fake.yaml" command="load"/>
   </node>
 </launch>

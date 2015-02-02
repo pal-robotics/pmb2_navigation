@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <package>
-  <name>ant_2dnav</name>
+  <name>pmb2_2dnav</name>
   <version>0.9.6</version>
-  <description>ANT-specific launch files needed to run
-    navigation on the ANT robot.</description>
+  <description>PMB2-specific launch files needed to run
+    navigation on the PMB2 robot.</description>
   <maintainer email="enrique.fernandez@pal-robotics.com">Enrique Fernandez</maintainer>
   <license>Modified BSD</license>
   <author email="enrique.fernandez@pal-robotics.com">Enrique Fernandez</author>
@@ -24,5 +24,5 @@
   <run_depend>pal_vo_server</run_depend>
   <run_depend>pal_navigation_sm</run_depend>
   <run_depend>pal_pcl</run_depend>
-  <run_depend>ant_laser_sensors</run_depend>
+  <run_depend>pmb2_laser_sensors</run_depend>
 </package>

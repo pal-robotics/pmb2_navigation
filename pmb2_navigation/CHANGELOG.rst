@@ -1,5 +1,5 @@
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Changelog for package ant_navigation
+Changelog for package pmb2_navigation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 0.9.6 (2015-02-02)
@@ -19,6 +19,6 @@ Changelog for package ant_navigation
 
 0.9.1 (2014-11-18)
 ------------------
-* disables ant_nav_cont_test
-* refs #8173 : ant_navigation (metapackage) done
+* disables pmb2_nav_cont_test
+* refs #8173 : pmb2_navigation (metapackage) done
 * Contributors: Enrique Fernandez

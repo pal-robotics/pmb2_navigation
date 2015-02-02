@@ -8,14 +8,14 @@
   <arg name="octomap" default="false"/>
 
   <!-- SLAM -->
-  <include file="$(find ant_2dnav)/launch/mapping_$(arg mapping).launch"/>
+  <include file="$(find pmb2_2dnav)/launch/mapping_$(arg mapping).launch"/>
 
   <!-- Exploration -->
   <include file="$(find pal_exploration)/launch/exploration.launch"/>
 
   <!-- Octomap -->
   <group if="$(arg octomap)">
-    <include file="$(find ant_2dnav)/launch/mapping_octomap.launch"/>
+    <include file="$(find pmb2_2dnav)/launch/mapping_octomap.launch"/>
   </group>
 
 </launch>

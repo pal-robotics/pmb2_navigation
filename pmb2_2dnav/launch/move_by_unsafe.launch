@@ -10,16 +10,16 @@
     <remap from="odom"    to="$(arg odom)"/>
     <remap from="cmd_vel" to="$(arg cmd_vel)"/>
 
-    <rosparam command="load" file="$(find ant_2dnav)/config/base/common/move_base.yaml"/>
-    <rosparam command="load" file="$(find ant_2dnav)/config/base/common/recovery_behaviors.yaml"/>
+    <rosparam command="load" file="$(find pmb2_2dnav)/config/base/common/move_base.yaml"/>
+    <rosparam command="load" file="$(find pmb2_2dnav)/config/base/common/recovery_behaviors.yaml"/>
 
-    <rosparam command="load" file="$(find ant_2dnav)/config/by_unsafe/common/global_costmap.yaml"/>
-    <rosparam command="load" file="$(find ant_2dnav)/config/by_unsafe/common/local_costmap.yaml"/>
+    <rosparam command="load" file="$(find pmb2_2dnav)/config/by_unsafe/common/global_costmap.yaml"/>
+    <rosparam command="load" file="$(find pmb2_2dnav)/config/by_unsafe/common/local_costmap.yaml"/>
 
-    <rosparam command="load" file="$(find ant_2dnav)/config/base/global_planner/$(arg global_planner).yaml"/>
+    <rosparam command="load" file="$(find pmb2_2dnav)/config/base/global_planner/$(arg global_planner).yaml"/>
 
-    <rosparam command="load" file="$(find ant_2dnav)/config/base/$(arg local_planner)/move_base.yaml"/>
-    <rosparam command="load" file="$(find ant_2dnav)/config/base/$(arg local_planner)/local_planner.yaml"/>
+    <rosparam command="load" file="$(find pmb2_2dnav)/config/base/$(arg local_planner)/move_base.yaml"/>
+    <rosparam command="load" file="$(find pmb2_2dnav)/config/base/$(arg local_planner)/local_planner.yaml"/>
   </node>
 
 </launch>

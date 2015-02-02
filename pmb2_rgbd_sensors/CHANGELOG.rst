@@ -1,5 +1,5 @@
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Changelog for package ant_rgbd_sensors
+Changelog for package pmb2_rgbd_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 0.9.6 (2015-02-02)
@@ -38,5 +38,5 @@ Changelog for package ant_rgbd_sensors
 * adds frustum culling params
 * updates params
 * fixes launch files
-* adds ant_rgbd_sensors pkg
+* adds pmb2_rgbd_sensors pkg
 * Contributors: Enrique Fernandez

@@ -1,18 +1,17 @@
 <?xml version="1.0"?>
 <package>
-  <name>ant_navigation</name>
+  <name>pmb2_navigation</name>
   <version>0.9.6</version>
-  <description>ANT navigation metapackage</description>
+  <description>PMB2 navigation metapackage</description>
   <maintainer email="enrique.fernandez@pal-robotics.com">Enrique Fernandez</maintainer>
   <license>BSD</license>
   <author email="enrique.fernandez@pal-robotics.com">Enrique Fernandez</author>
 
   <buildtool_depend>catkin</buildtool_depend>
 
-  <run_depend>ant_2dnav</run_depend>
-  <run_depend>ant_maps</run_depend>
-  <run_depend>ant_laser_sensors</run_depend>
-  <!--run_depend>ant_nav_cont_test</run_depend--> <!-- disabled temporary -->
+  <run_depend>pmb2_2dnav</run_depend>
+  <run_depend>pmb2_maps</run_depend>
+  <run_depend>pmb2_laser_sensors</run_depend>
 
   <export>
     <metapackage/>

@@ -1,5 +1,5 @@
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Changelog for package ant_2dnav
+Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 0.9.6 (2015-02-02)
@@ -48,7 +48,7 @@ Changelog for package ant_2dnav
 * Make pal local planner speed depend on max vel x
 * Enable rgbd layer on local costmap
 * Reduce raytrace/obstacle range in rgbd layer
-* Add missed ant_laser_sensors dependency
+* Add missed pmb2_laser_sensors dependency
 * Contributors: Enrique Fernandez
 
 0.9.2 (2014-11-18)
@@ -78,8 +78,8 @@ Changelog for package ant_2dnav
 * refs #10175 : uses navigation.sh
 * updates marking/clearing ranges for xtion pro live
 * takes pose.yaml from $HOME
-* sets robot = ant for the state machine
-* takes maps from $HOME/.pal/ant_maps/config
+* sets robot = pmb2 for the state machine
+* takes maps from $HOME/.pal/pmb2_maps/config
 * saves trajectory.yaml in $HOME/.pal folder
 * sets SICK TiM511 range for mapping
 * uses ObstacleLayer for rgbd (as in global costmap)
@@ -204,5 +204,5 @@ Changelog for package ant_2dnav
 * refs #8173 : uses scan (instead of scan_filtered)
 * refs #8173 : removes footprint and uses robot radius
 * refs #8173 : uses reem_maps for the map.launch file
-* refs #8173 : ant_2dnav done
+* refs #8173 : pmb2_2dnav done
 * Contributors: Enrique Fernandez, artivis

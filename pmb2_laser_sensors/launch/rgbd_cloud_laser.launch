@@ -6,6 +6,6 @@
     <remap from="cloud_in" to="$(arg cloud)"/>
     <remap from="scan"     to="$(arg scan)"/>
 
-    <rosparam file="$(find ant_laser_sensors)/config/rgbd_cloud_laser.yaml" command="load"/>
+    <rosparam file="$(find pmb2_laser_sensors)/config/rgbd_cloud_laser.yaml" command="load"/>
   </node>
 </launch>
