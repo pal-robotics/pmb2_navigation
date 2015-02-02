@@ -2,6 +2,9 @@
 Changelog for package ant_maps
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.9.5 (2015-01-28)
 ------------------
 * Add octomaps without ground for adler shop up

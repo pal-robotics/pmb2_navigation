@@ -2,6 +2,9 @@
 Changelog for package ant_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.9.5 (2015-01-28)
 ------------------
 
