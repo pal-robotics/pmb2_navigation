@@ -2,8 +2,8 @@
 Changelog for package ant_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.9.6 (2015-02-02)
+------------------
 * Add more dependencies
 * Contributors: Enrique Fernandez
 
