@@ -295,12 +295,12 @@ Visualization Manager:
               Use rainbow: true
               Value: true
             - Alpha: 0.5
-              Buffer Length: 3
+              Buffer Length: 5
               Class: rviz/Range
               Color: 255; 255; 255
               Enabled: true
               Name: Sonars
-              Queue Size: 3
+              Queue Size: 5
               Topic: sonar_base
               Value: true
             - Alpha: 1
