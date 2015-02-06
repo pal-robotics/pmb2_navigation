@@ -63,6 +63,11 @@ Visualization Manager:
               Show Axes: false
               Show Trail: false
               Value: true
+            base_bumper_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
             base_charger_link:
               Alpha: 1
               Show Axes: false
@@ -91,7 +96,48 @@ Visualization Manager:
               Show Axes: false
               Show Trail: false
               Value: true
+            base_mic_back_left_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+            base_mic_back_right_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+            base_mic_front_left_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+            base_mic_front_right_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
             base_rear_cover_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            base_rear_cover_sonar_01_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            base_rear_cover_sonar_02_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            base_rear_cover_sonar_03_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            base_rear_cover_sonar_04_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            base_rear_cover_sonar_05_link:
               Alpha: 1
               Show Axes: false
               Show Trail: false
@@ -121,31 +167,6 @@ Visualization Manager:
               Alpha: 1
               Show Axes: false
               Show Trail: false
-            base_sonar_01_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-              Value: true
-            base_sonar_02_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-              Value: true
-            base_sonar_03_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-              Value: true
-            base_sonar_04_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-              Value: true
-            base_sonar_05_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-              Value: true
             caster_back_left_1_link:
               Alpha: 1
               Show Axes: false
@@ -216,6 +237,14 @@ Visualization Manager:
             {}
           Update Interval: 0
           Value: false
+        - Class: rviz/MarkerArray
+          Enabled: true
+          Marker Topic: inertial_mass_markers
+          Name: Dynamics
+          Namespaces:
+            {}
+          Queue Size: 100
+          Value: true
         - Alpha: 1
           Class: rviz/Polygon
           Color: 25; 255; 0
