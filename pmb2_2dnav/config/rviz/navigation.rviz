@@ -58,42 +58,17 @@ Visualization Manager:
             Expand Link Details: false
             Expand Tree: false
             Link Tree Style: Links in Alphabetic Order
-            antenna_left_1_frame:
+            base_battery_link:
               Alpha: 1
               Show Axes: false
               Show Trail: false
               Value: true
-            antenna_left_2_frame:
+            base_charger_link:
               Alpha: 1
               Show Axes: false
               Show Trail: false
               Value: true
-            antenna_left_3_frame:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-              Value: true
-            antenna_left_4_frame:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-              Value: true
-            antenna_right_1_frame:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-              Value: true
-            antenna_right_2_frame:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-              Value: true
-            antenna_right_3_frame:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-              Value: true
-            antenna_right_4_frame:
+            base_cover_link:
               Alpha: 1
               Show Axes: false
               Show Trail: false
@@ -112,6 +87,11 @@ Visualization Manager:
               Show Trail: false
               Value: true
             base_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            base_rear_cover_link:
               Alpha: 1
               Show Axes: false
               Show Trail: false
@@ -141,6 +121,31 @@ Visualization Manager:
               Alpha: 1
               Show Axes: false
               Show Trail: false
+            base_sonar_01_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            base_sonar_02_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            base_sonar_03_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            base_sonar_04_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            base_sonar_05_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
             caster_back_left_1_link:
               Alpha: 1
               Show Axes: false
