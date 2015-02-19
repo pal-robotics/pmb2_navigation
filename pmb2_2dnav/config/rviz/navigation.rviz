@@ -237,6 +237,16 @@ Visualization Manager:
             {}
           Update Interval: 0
           Value: false
+        - 6DOF: false
+          Alpha: 1
+          Axis: true
+          Class: rviz_plugin_covariance/Odometry
+          Color: 0; 0; 255
+          Enabled: false
+          Name: Odometry
+          Scale: 1
+          Topic: mobile_base_controller/odom
+          Value: true
         - Class: rviz/MarkerArray
           Enabled: true
           Marker Topic: inertial_mass_markers
@@ -789,6 +799,16 @@ Visualization Manager:
           Enabled: true
           Name: Pose
           Topic: particlecloud
+          Value: true
+        - 6DOF: false
+          Alpha: 1
+          Axis: true
+          Class: rviz_plugin_covariance/Pose
+          Color: 255; 0; 0
+          Enabled: false
+          Name: Pose
+          Scale: 1
+          Topic: amcl_pose
           Value: true
         - Arrow Length: 0.3
           Class: rviz/PoseArray
