@@ -1000,6 +1000,32 @@ Visualization Manager:
           Value: true
       Enabled: true
       Name: Inventory
+    - Class: rviz/Group
+      Displays:
+        - Alpha: 1
+          Class: rviz/Map
+          Color Scheme: costmap
+          Draw Behind: false
+          Enabled: true
+          Name: Map
+          Topic: class_map
+          Value: true
+      Enabled: true
+      Name: Classification
+    - Alpha: 1
+      Axes Length: 1
+      Axes Radius: 0.1
+      Class: rviz/Pose
+      Color: 255; 25; 0
+      Enabled: true
+      Head Length: 0.3
+      Head Radius: 0.1
+      Name: Pose
+      Shaft Length: 1
+      Shaft Radius: 0.05
+      Shape: Axes
+      Topic: /closest_point
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
