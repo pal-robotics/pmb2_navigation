@@ -167,5 +167,5 @@ global_costmap:
 
   inflation_layer:
     enabled            : true
-    inflation_radius   : 0.6
+    inflation_radius   : 0.45
     cost_scaling_factor: 2.0
