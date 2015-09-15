@@ -12,7 +12,7 @@
   <arg name="launch_prefix" value="gdb -ex run --args"     if="$(arg debug)"/>
   <arg name="launch_prefix" value=""                   unless="$(arg debug)"/>
 
-  <arg name="floor_filter" default="true"/>
+  <arg name="floor_filter" default="false"/>
 
   <node pkg="move_base" type="move_base" name="move_base" clear_params="true" output="screen" launch-prefix="$(arg launch_prefix)">
     <remap from="odom"    to="$(arg odom)"/>
@@ -37,9 +37,9 @@
       <arg name="cloud" default="floor_filter_xtion/filtered_cloud"/>
     </include>
   </group>
-  <group unless="$(arg floor_filter)">
+  <!--group unless="$(arg floor_filter)">
     <include file="$(find pmb2_laser_sensors)/launch/rgbd_cloud_laser.launch"/>
-  </group>
+  </group-->
 
   <group if="$(arg debug_rgbd)">
     <node pkg="costmap_2d" type="costmap_2d_markers" name="costmap_2d_markers_global">
