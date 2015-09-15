@@ -128,7 +128,7 @@ global_costmap:
       max_obstacle_height: 2.0
 
   obstacle_rgbd_layer:
-    enabled: true
+    enabled: false
     observation_sources: rgbd_scan
     combination_method: 1
 
