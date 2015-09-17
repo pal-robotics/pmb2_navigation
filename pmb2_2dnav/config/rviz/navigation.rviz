@@ -806,6 +806,22 @@ Visualization Manager:
           Value: true
           Voxel Coloring: Z-Axis
           Voxel Rendering: Occupied Voxels
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /slam_graph_edges
+          Name: SLAM Graph Edges
+          Namespaces:
+            karto: true
+          Queue Size: 100
+          Value: true
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /slam_graph_vertices
+          Name: SLAM Graph Vertices
+          Namespaces:
+            karto: true
+          Queue Size: 100
+          Value: true
       Enabled: true
       Name: Mapping
     - Class: rviz/Group
