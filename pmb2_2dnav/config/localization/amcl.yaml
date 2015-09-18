@@ -45,9 +45,9 @@ recovery_alpha_slow: 0.001
 recovery_alpha_fast: 0.1
 
 # Frames:
-base_frame_id  : base_footprint
-odom_frame_id  : odom
-lobal_frame_id : map
+base_frame_id   : base_footprint
+odom_frame_id   : odom
+global_frame_id : map
 
 # Initial pose:
 save_pose_rate: -1.0 # disabled (< 0.0)
