@@ -8,7 +8,7 @@
   <license>Modified BSD</license>
   <author email="enrique.fernandez@pal-robotics.com">Enrique Fernandez</author>
 
-  <replace>pmb2_5_2dnav</replace>
+  <replace>pmb2_2dnav</replace>
 
   <buildtool_depend>catkin</buildtool_depend>
 
