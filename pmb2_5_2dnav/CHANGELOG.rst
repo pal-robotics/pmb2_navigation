@@ -2,8 +2,8 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.9.8 (2015-10-01)
+------------------
 * fix pkg typo
 * pmb2_5_2dnav overload
 * Contributors: Jeremie Deray
