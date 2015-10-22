@@ -5,7 +5,7 @@ Panels:
     Property Tree Widget:
       Expanded: ~
       Splitter Ratio: 0.598726
-    Tree Height: 745
+    Tree Height: 775
   - Class: rviz/Selection
     Name: Selection
   - Class: rviz/Tool Properties
@@ -91,21 +91,6 @@ Visualization Manager:
               Show Axes: false
               Show Trail: false
               Value: true
-            base_sonar_1_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-              Value: true
-            base_sonar_2_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-              Value: true
-            base_sonar_3_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-              Value: true
             caster_back_left_1_link:
               Alpha: 1
               Show Axes: false
@@ -176,18 +161,9 @@ Visualization Manager:
             {}
           Update Interval: 0
           Value: false
-        - 6DOF: false
-          Alpha: 1
-          Axis: false
-          Class: rviz_plugin_covariance/Odometry
-          Color: 204; 51; 204
+        - Class: rviz_plugin_covariance/Odometry
           Enabled: false
           Name: Odometry
-          Orientation: true
-          Position: true
-          Scale: 1
-          Topic: ""
-          Value: false
         - Class: rviz/MarkerArray
           Enabled: true
           Marker Topic: inertial_mass_markers
@@ -208,7 +184,7 @@ Visualization Manager:
           Marker Topic: twist_marker
           Name: Twist
           Namespaces:
-            "": true
+            {}
           Queue Size: 100
           Value: true
         - Class: rviz/Marker
@@ -258,44 +234,6 @@ Visualization Manager:
                 Value: true
               Axis: Z
               Channel Name: intensity
-              Class: rviz/LaserScan
-              Color: 255; 0; 0
-              Color Transformer: FlatColor
-              Decay Time: 0
-              Enabled: false
-              Invert Rainbow: false
-              Max Color: 255; 255; 255
-              Max Intensity: 4096
-              Min Color: 0; 0; 0
-              Min Intensity: 0
-              Name: RGBD Laser
-              Position Transformer: XYZ
-              Queue Size: 10
-              Selectable: true
-              Size (Pixels): 3
-              Size (m): 0.01
-              Style: Points
-              Topic: rgbd_scan
-              Use Fixed Frame: true
-              Use rainbow: true
-              Value: false
-            - Alpha: 0.5
-              Buffer Length: 5
-              Class: rviz/Range
-              Color: 255; 255; 255
-              Enabled: false
-              Name: Sonars
-              Queue Size: 5
-              Topic: sonar_base
-              Value: false
-            - Alpha: 1
-              Autocompute Intensity Bounds: true
-              Autocompute Value Bounds:
-                Max Value: 10
-                Min Value: -10
-                Value: true
-              Axis: Z
-              Channel Name: intensity
               Class: rviz/PointCloud
               Color: 85; 0; 127
               Color Transformer: FlatColor
@@ -317,35 +255,6 @@ Visualization Manager:
               Use Fixed Frame: true
               Use rainbow: true
               Value: true
-            - Alpha: 1
-              Autocompute Intensity Bounds: true
-              Autocompute Value Bounds:
-                Max Value: 10
-                Min Value: -10
-                Value: true
-              Axis: Z
-              Channel Name: intensity
-              Class: rviz/PointCloud2
-              Color: 255; 255; 255
-              Color Transformer: RGB8
-              Decay Time: 0
-              Enabled: false
-              Invert Rainbow: false
-              Max Color: 255; 255; 255
-              Max Intensity: 4096
-              Min Color: 0; 0; 0
-              Min Intensity: 0
-              Name: RGBD
-              Position Transformer: XYZ
-              Queue Size: 10
-              Selectable: true
-              Size (Pixels): 1
-              Size (m): 0.01
-              Style: Points
-              Topic: base_rgbd_camera/depth/points
-              Use Fixed Frame: true
-              Use rainbow: true
-              Value: false
           Enabled: true
           Name: Sensors
       Enabled: true
@@ -701,35 +610,6 @@ Visualization Manager:
               Value: false
           Enabled: false
           Name: By Unsafe
-        - Alpha: 1
-          Autocompute Intensity Bounds: true
-          Autocompute Value Bounds:
-            Max Value: 10
-            Min Value: -10
-            Value: true
-          Axis: Z
-          Channel Name: intensity
-          Class: rviz/PointCloud2
-          Color: 255; 0; 0
-          Color Transformer: FlatColor
-          Decay Time: 0
-          Enabled: false
-          Invert Rainbow: false
-          Max Color: 255; 255; 255
-          Max Intensity: 4096
-          Min Color: 0; 0; 0
-          Min Intensity: 0
-          Name: Floor filtered cloud
-          Position Transformer: XYZ
-          Queue Size: 10
-          Selectable: true
-          Size (Pixels): 3
-          Size (m): 0.01
-          Style: Points
-          Topic: floor_filter_xtion/filtered_cloud
-          Use Fixed Frame: true
-          Use rainbow: true
-          Value: false
       Enabled: true
       Name: Planning
     - Class: rviz/Group
@@ -741,18 +621,9 @@ Visualization Manager:
           Name: Pose
           Topic: particlecloud
           Value: true
-        - 6DOF: false
-          Alpha: 1
-          Axis: false
-          Class: rviz_plugin_covariance/Pose
-          Color: 204; 51; 204
+        - Class: rviz_plugin_covariance/Pose
           Enabled: false
           Name: Pose
-          Orientation: true
-          Position: true
-          Scale: 1
-          Topic: ""
-          Value: false
         - Class: rviz/MarkerArray
           Enabled: true
           Marker Topic: slam_graph_marker_array
@@ -792,9 +663,6 @@ Visualization Manager:
           Queue Size: 2
           Transport Hint: compressed
           Value: false
-        - Class: octomap_rviz_plugin/OccupancyGrid
-          Enabled: false
-          Name: Octomap
         - Class: rviz/Marker
           Enabled: true
           Marker Topic: /slam_graph_edges
@@ -858,32 +726,32 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 22.2969
+      Distance: 28.7146
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.06
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.762655
-        Y: 0.760008
-        Z: -7.25431
+        X: 2.93091
+        Y: 7.83399
+        Z: -7.00644
       Name: Current View
       Near Clip Distance: 0.01
-      Pitch: 1.4354
+      Pitch: 1.4154
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 4.20857
+      Yaw: 5.50858
     Saved: ~
 Window Geometry:
   Compressed Map:
     collapsed: false
   Displays:
     collapsed: false
-  Height: 1026
+  Height: 1056
   Hide Left Dock: false
   Hide Right Dock: true
-  QMainWindow State: 000000ff00000000fd00000004000000000000013c00000378fc0200000008fb0000001200530065006c0065006300740069006f006e00000001e10000009b0000006400fffffffb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073010000002800000378000000dd00fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261fb0000001c0043006f006d00700072006500730073006500640020004d0061007000000002d7000000c90000001600ffffff000000010000010f00000378fc0200000004fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730000000028000000a30000006400fffffffb0000001e0054006f006f006c002000500072006f00700065007200740069006500730000000028000000a30000000000000000fb0000000a0056006900650077007300000000d1000002cf000000b000fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e100000197000000030000064f0000003efc0100000002fb0000000800540069006d006501000000000000064f000002f600fffffffb0000000800540069006d006501000000000000045000000000000000000000050d0000037800000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd00000004000000000000013c00000396fc0200000008fb0000001200530065006c0065006300740069006f006e00000001e10000009b0000006400fffffffb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073010000002800000396000000dd00fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261fb0000001c0043006f006d00700072006500730073006500640020004d0061007000000002d7000000c90000001600ffffff000000010000010f00000378fc0200000004fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730000000028000000a30000006400fffffffb0000001e0054006f006f006c002000500072006f00700065007200740069006500730000000028000000a30000000000000000fb0000000a0056006900650077007300000000d1000002cf000000b000fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e10000019700000003000007800000003efc0100000002fb0000000800540069006d0065010000000000000780000002f600fffffffb0000000800540069006d006501000000000000045000000000000000000000063e0000039600000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Selection:
     collapsed: false
   Time:
@@ -892,6 +760,6 @@ Window Geometry:
     collapsed: true
   Views:
     collapsed: true
-  Width: 1615
-  X: 58
+  Width: 1920
+  X: 0
   Y: 24
