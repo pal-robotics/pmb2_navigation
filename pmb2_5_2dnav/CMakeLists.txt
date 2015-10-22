@@ -8,3 +8,8 @@ catkin_package()
 install(DIRECTORY 
 config
 DESTINATION ${CATKIN_GLOBAL_SHARE_DESTINATION}/pmb2_2dnav)
+
+install(DIRECTORY 
+launch
+DESTINATION ${CATKIN_GLOBAL_SHARE_DESTINATION}/pmb2_2dnav)
+
