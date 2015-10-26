@@ -2,8 +2,8 @@
 Changelog for package pmb2_maps
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.9.9 (2015-10-26)
+------------------
 * delete maps
 * Contributors: Jeremie Deray
 

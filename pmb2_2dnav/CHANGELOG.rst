@@ -2,8 +2,8 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.9.9 (2015-10-26)
+------------------
 * disable free space mapping for pmb2 & add warning abt it
 * Fixing localization amcl jumps
 * update rviz conf
