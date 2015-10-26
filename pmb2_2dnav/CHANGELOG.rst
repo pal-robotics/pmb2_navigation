@@ -2,6 +2,14 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* disable free space mapping for pmb2 & add warning abt it
+* Fixing localization amcl jumps
+* update rviz conf
+* Custom launch file for pmb2-5
+* Contributors: Jeremie Deray, Luca Marchionni
+
 0.9.8 (2015-10-01)
 ------------------
 * typo
