@@ -41,7 +41,7 @@ transform_tolerance: 0.2
 gui_publish_rate   : 5.0
 
 # Recovery:
-recovery_alpha_slow: 0.001
+recovery_alpha_slow: 0.0
 recovery_alpha_fast: 0.1
 
 # Frames:

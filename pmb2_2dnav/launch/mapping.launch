@@ -10,12 +10,12 @@
   <!-- SLAM -->
   <include file="$(find pmb2_2dnav)/launch/mapping_$(arg mapping).launch"/>
 
-  <!-- Exploration -->
-  <include file="$(find pal_exploration)/launch/exploration.launch"/>
+  <!-- Exploration 
+  <include file="$(find pal_exploration)/launch/exploration.launch"/> -->
 
-  <!-- Octomap -->
+  <!-- Octomap 
   <group if="$(arg octomap)">
     <include file="$(find pmb2_2dnav)/launch/mapping_octomap.launch"/>
-  </group>
+  </group>-->
 
 </launch>
