@@ -21,7 +21,7 @@ local_costmap:
   plugins:
     - name: obstacle_laser_layer
       type: 'costmap_2d::ObstacleLayer'
-<    - name: obstacle_sonar_layer
+    - name: obstacle_sonar_layer
       type: 'costmap_2d::ObstacleLayer'
     - name: obstacle_vo_layer
       type: 'costmap_2d::ObstacleLayer'
