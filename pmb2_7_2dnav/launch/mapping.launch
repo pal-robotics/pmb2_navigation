@@ -2,11 +2,6 @@
 
   <arg name="mapping" default="karto"/>
 
-  <arg name="localization" default=""/>
-  <arg name="map"          default=""/>
-
-  <arg name="octomap" default="false"/>
-
   <!-- SLAM -->
   <include file="$(find pmb2_2dnav)/launch/mapping_$(arg mapping).launch"/>
 

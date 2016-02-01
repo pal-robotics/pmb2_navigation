@@ -19,7 +19,7 @@ converge_dist_threshold: 0.5
 
 # Measurement (laser) model:
 laser_model_type         : likelihood_field
-laser_max_range          : 5.0
+laser_max_range          : 9.5
 laser_min_range          : 0.2
 laser_max_beams          : 30
 laser_z_hit              : 0.5
