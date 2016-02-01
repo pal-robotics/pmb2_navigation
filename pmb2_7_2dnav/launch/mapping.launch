@@ -1,8 +1,0 @@
-<launch>
-
-  <arg name="mapping" default="karto"/>
-
-  <!-- SLAM -->
-  <include file="$(find pmb2_2dnav)/launch/mapping_$(arg mapping).launch"/>
-
-</launch>
