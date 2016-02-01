@@ -19,8 +19,8 @@ converge_dist_threshold: 0.5
 
 # Measurement (laser) model:
 laser_model_type         : likelihood_field
-laser_max_range          : 5.0
-laser_min_range          : 0.2
+laser_max_range          : -1.0 #use reported max range
+laser_min_range          : -1.0 #use reported min range
 laser_max_beams          : 30
 laser_z_hit              : 0.5
 laser_z_short            : 0.05
@@ -41,7 +41,7 @@ transform_tolerance: 0.2
 gui_publish_rate   : 5.0
 
 # Recovery:
-recovery_alpha_slow: 0.001
+recovery_alpha_slow: 0.0
 recovery_alpha_fast: 0.1
 
 # Frames:

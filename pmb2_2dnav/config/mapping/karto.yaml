@@ -8,4 +8,4 @@ slam_karto:
   use_scan_barycenter    : true
 
   # ! As for now this feature works only with SICK lasers
-  map_free_space         : true
+  map_free_space         : false
