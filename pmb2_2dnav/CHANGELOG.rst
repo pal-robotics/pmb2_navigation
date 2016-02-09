@@ -2,6 +2,16 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* final review of parameters with jeremie
+* restoring plugins in costmaps (but commented)
+* correcting errors in pm2_2dnav
+  restored amcl laser range to default values, corrected typo in local costmap, removed plugins example
+* minor cleaning in pmb2 navigation files
+* cleaned generic pmb2_2dnav and improved specific pmb2_5_2dnav
+* Contributors: Procopio Stein, procopiostein
+
 0.9.9 (2015-10-26)
 ------------------
 * disable free space mapping for pmb2 & add warning abt it

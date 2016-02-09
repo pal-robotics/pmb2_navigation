@@ -2,6 +2,13 @@
 Changelog for package pmb2_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* update pmb2 laser pkg.xml
+* uses sick_tim pkg rather than old version
+* added support for sick tim561
+* Contributors: Jeremie Deray
+
 0.9.9 (2015-10-26)
 ------------------
 

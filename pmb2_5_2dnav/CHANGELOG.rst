@@ -2,6 +2,16 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* fix install pmb2\_*_2dnav
+* rm conf file octomap & gmapping
+* rm launch pmb2_5
+* restoring plugins in costmaps (but commented)
+* minor cleaning in pmb2 navigation files
+* cleaned generic pmb2_2dnav and improved specific pmb2_5_2dnav
+* Contributors: Jeremie Deray, Procopio Stein, procopiostein
+
 0.9.9 (2015-10-26)
 ------------------
 * disable free space mapping for pmb2 & add warning abt it
