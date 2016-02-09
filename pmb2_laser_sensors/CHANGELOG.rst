@@ -2,6 +2,12 @@
 Changelog for package pmb2_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* launch the laser based on argument "laser"
+* added launch of tim571 and modified 551 for driver sick_tim
+* Contributors: Sergio Ramos
+
 0.9.10 (2016-02-09)
 -------------------
 * update pmb2 laser pkg.xml
