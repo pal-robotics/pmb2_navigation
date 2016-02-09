@@ -1,10 +1,5 @@
 <launch>
-  <arg name="laser_sick" default="false"/>
+  <arg name="laser" default="hokuyo_urg_04lx_ug01"/>
 
-  <group unless="$(arg laser_sick)">
-    <include file="$(find pmb2_laser_sensors)/launch/hokuyo_urg_04lx_ug01_laser.launch"/>
-  </group>
-  <group if="$(arg laser_sick)">
-    <include file="$(find pmb2_laser_sensors)/launch/sick_tim551_laser.launch"/>
-  </group>
+  <include file="$(find pmb2_laser_sensors)/launch/$(arg laser)_laser.launch"/>
 </launch>
