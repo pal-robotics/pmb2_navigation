@@ -2,8 +2,8 @@
 Changelog for package pmb2_7_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.9.10 (2016-02-09)
+-------------------
 * pmb2-7 overload palplanner speed
 * fix install pmb2\_*_2dnav
 * rm pmb2-7 localization conf file

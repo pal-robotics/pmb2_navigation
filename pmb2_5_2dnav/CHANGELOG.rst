@@ -2,8 +2,8 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.9.10 (2016-02-09)
+-------------------
 * fix install pmb2\_*_2dnav
 * rm conf file octomap & gmapping
 * rm launch pmb2_5
