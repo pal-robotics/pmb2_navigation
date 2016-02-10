@@ -2,8 +2,8 @@
 Changelog for package pmb2_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.9.12 (2016-02-10)
+-------------------
 * fixed time_offset for tim 561
 * Contributors: Procopio Stein
 
