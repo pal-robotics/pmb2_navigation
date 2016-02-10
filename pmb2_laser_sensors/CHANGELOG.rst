@@ -2,6 +2,11 @@
 Changelog for package pmb2_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* fixed time_offset for tim 561
+* Contributors: Procopio Stein
+
 0.9.11 (2016-02-09)
 -------------------
 * launch the laser based on argument "laser"
