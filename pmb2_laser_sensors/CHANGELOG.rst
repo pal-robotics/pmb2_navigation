@@ -2,6 +2,11 @@
 Changelog for package pmb2_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* rm usuless deps rplidar
+* Contributors: Jeremie Deray
+
 0.9.13 (2016-02-10)
 -------------------
 * revert sick tim561 time offset
