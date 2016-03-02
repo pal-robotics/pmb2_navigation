@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package format="2">
   <name>pmb2_7_2dnav</name>
-  <version>0.9.13</version>
+  <version>0.9.14</version>
   <description>PMB2-specific launch files needed to run
     navigation on the PMB2 robot (overload).</description>
   <maintainer email="jeremie.deray@pal-robotics.com">Jeremie Deray</maintainer>
