@@ -2,6 +2,11 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* missing deps maps
+* Contributors: Jeremie Deray
+
 0.9.14 (2016-03-02)
 -------------------
 

@@ -2,6 +2,9 @@
 Changelog for package pmb2_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.9.14 (2016-03-02)
 -------------------
 * rm usuless deps rplidar
