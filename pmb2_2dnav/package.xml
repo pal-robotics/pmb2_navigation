@@ -4,7 +4,7 @@
   <version>0.9.14</version>
   <description>PMB2-specific launch files needed to run
     navigation on the PMB2 robot.</description>
-  <maintainer email="enrique.fernandez@pal-robotics.com">Enrique Fernandez</maintainer>
+  <maintainer email="jeremie.deray@pal-robotics.com">Jeremie Deray</maintainer>
   <license>Modified BSD</license>
   <author email="enrique.fernandez@pal-robotics.com">Enrique Fernandez</author>
 
@@ -25,5 +25,6 @@
   <run_depend>pal_navigation_sm</run_depend>
   <run_depend>pal_pcl</run_depend>
   <run_depend>pmb2_laser_sensors</run_depend>
+  <run_depend>pmb2_maps</run_depend>
   <run_depend>rviz_plugin_covariance</run_depend>
 </package>
