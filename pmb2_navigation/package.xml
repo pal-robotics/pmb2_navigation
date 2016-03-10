@@ -3,7 +3,7 @@
   <name>pmb2_navigation</name>
   <version>0.9.15</version>
   <description>PMB2 navigation metapackage</description>
-  <maintainer email="enrique.fernandez@pal-robotics.com">Enrique Fernandez</maintainer>
+  <maintainer email="jeremie.deray@pal-robotics.com">Jeremie Deray</maintainer>
   <license>BSD</license>
   <author email="enrique.fernandez@pal-robotics.com">Enrique Fernandez</author>
 
