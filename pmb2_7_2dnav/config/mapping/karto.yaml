@@ -1,9 +1,0 @@
-slam_karto:
-  base_frame: base_footprint
-
-  # Scans:
-  minimum_travel_distance: 0.3
-  minimum_travel_heading : 0.2
-  range_threshold        : 9.5  # laser max range: 10.
-  use_scan_barycenter    : true
-  map_free_space         : false
