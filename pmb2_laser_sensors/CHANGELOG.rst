@@ -2,6 +2,11 @@
 Changelog for package pmb2_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* load laser model on param srv
+* Contributors: Jeremie Deray
+
 0.9.15 (2016-03-10)
 -------------------
 

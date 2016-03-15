@@ -2,6 +2,11 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* use degree
+* Contributors: Jeremie Deray
+
 0.9.15 (2016-03-10)
 -------------------
 * missing deps maps
