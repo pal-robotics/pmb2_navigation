@@ -2,8 +2,8 @@
 Changelog for package pmb2_maps
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.10.0 (2016-03-15)
+-------------------
 * update maintainer
 * Contributors: Jeremie Deray
 
