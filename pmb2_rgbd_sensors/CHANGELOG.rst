@@ -2,8 +2,8 @@
 Changelog for package pmb2_rgbd_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.9.16 (2016-03-15)
+-------------------
 * update maintainer
 * Contributors: Jeremie Deray
 
