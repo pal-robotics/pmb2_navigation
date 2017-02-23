@@ -10,5 +10,6 @@
   <buildtool_depend>catkin</buildtool_depend>
 
   <run_depend>openni2_launch</run_depend>
-  <!--run_depend>softkinetic_camera</run_depend--> <!-- not used for now -->
+  <run_depend>pal-orbbec-openni2</run_depend>
+  
 </package>

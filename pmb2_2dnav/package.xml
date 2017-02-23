@@ -23,8 +23,8 @@
   <run_depend>octomap_server</run_depend>
   <run_depend>pal_vo_server</run_depend>
   <run_depend>pal_navigation_sm</run_depend>
-  <run_depend>pal_pcl</run_depend>
   <run_depend>pmb2_laser_sensors</run_depend>
+  <run_depend>pmb2_rgbd_sensors</run_depend>
   <run_depend>pmb2_maps</run_depend>
   <run_depend>rviz_plugin_covariance</run_depend>
 </package>
