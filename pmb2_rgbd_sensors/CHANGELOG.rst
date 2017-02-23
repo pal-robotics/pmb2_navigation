@@ -2,6 +2,12 @@
 Changelog for package pmb2_rgbd_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* removed rgbd launches and config, fixed dependencies
+* removed legacy rgbd and added orbbec astra
+* Contributors: Procópio Stein
+
 0.10.0 (2016-03-15)
 -------------------
 * update maintainer

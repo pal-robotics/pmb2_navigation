@@ -2,6 +2,16 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* removed rgbd launches and config, fixed dependencies
+* minor changes in mapping and localization config
+* better mapping and slam configurations
+* updated local_planner config for enhanced version of planner
+* updated costmap config based on new tiago files
+* add rviz launch file
+* Contributors: Jeremie Deray, Procópio Stein
+
 0.10.0 (2016-03-15)
 -------------------
 * use degree

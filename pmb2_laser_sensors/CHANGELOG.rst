@@ -2,6 +2,14 @@
 Changelog for package pmb2_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* removed rgbd related files
+* replaced dependency of pal_laser_filters to laser_filters
+* normalized and updated laser files
+* fix sick laser launch files
+* Contributors: Jeremie Deray, Procópio Stein
+
 0.10.0 (2016-03-15)
 -------------------
 * load laser model on param srv
