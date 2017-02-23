@@ -2,8 +2,8 @@
 Changelog for package pmb2_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.10.1 (2017-02-23)
+-------------------
 * removed rgbd related files
 * replaced dependency of pal_laser_filters to laser_filters
 * normalized and updated laser files
