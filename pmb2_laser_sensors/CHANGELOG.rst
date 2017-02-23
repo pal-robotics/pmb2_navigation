@@ -2,6 +2,11 @@
 Changelog for package pmb2_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* added dependency to pal_filters
+* Contributors: Procópio Stein
+
 0.10.1 (2017-02-23)
 -------------------
 * removed rgbd related files
