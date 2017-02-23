@@ -15,6 +15,10 @@ update_min_a     : !degrees 10.0
 resample_interval: 1
 converge_dist_threshold: 0.5
 
+# Note that whichever mixture weights are in use should sum to 1. 
+# The beam model uses all 4: z_hit, z_short, z_max, and z_rand. 
+# The likelihood_field model uses only 2: z_hit and z_rand
+
 # Measurement (laser) model:
 laser_model_type         : likelihood_field
 laser_max_beams          : 30
