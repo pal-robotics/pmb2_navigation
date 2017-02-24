@@ -2,6 +2,11 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* enhanced navigation config, fixed recovery behaviors
+* Contributors: Procópio Stein
+
 0.10.2 (2017-02-23)
 -------------------
 
