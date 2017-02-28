@@ -2,6 +2,12 @@
 Changelog for package pmb2_maps
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* 0.10.4
+* changelogs
+* Contributors: Procópio Stein
+
 0.10.4 (2017-02-28)
 -------------------
 

@@ -2,6 +2,18 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* removed legacy move_base configs
+* updated costmap files to match template
+* fixed global planner config file
+* updated rviz navigation config
+* 0.10.4
+* changelogs
+* updated costmap and recovery params
+* fixed robot radius
+* Contributors: Procópio Stein
+
 0.10.4 (2017-02-28)
 -------------------
 * updated costmap and recovery params
