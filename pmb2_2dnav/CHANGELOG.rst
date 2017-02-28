@@ -2,8 +2,8 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.10.4 (2017-02-28)
+-------------------
 * updated costmap and recovery params
 * fixed robot radius
 * Contributors: Procópio Stein
