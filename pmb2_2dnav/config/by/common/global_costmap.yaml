@@ -24,12 +24,6 @@ global_costmap:
   plugins:
     - name: obstacle_laser_layer
       type: 'costmap_2d::ObstacleLayer'
-    - name: obstacle_sonar_layer
-      type: 'costmap_2d::ObstacleLayer'
-    - name: obstacle_ir_layer
-      type: 'costmap_2d::ObstacleLayer'
-    - name: obstacle_bumper_layer
-      type: 'costmap_2d::ObstacleLayer'
     - name: obstacle_vo_layer
       type: 'costmap_2d::ObstacleLayer'
     - name: footprint_layer
@@ -56,55 +50,6 @@ global_costmap:
       min_obstacle_height: -0.1
       max_obstacle_height: 0.2
 
-  obstacle_sonar_layer:
-    enabled: false
-    observation_sources: sonar_cloud sonar_max_range_cloud
-    combination_method: 0
-
-    sonar_cloud:
-      sensor_frame: base_link
-      data_type: PointCloud2
-      topic: /sonar_cloud
-      expected_update_rate: 1.0
-      observation_persistence: 0.0
-      marking: true
-      clearing: true
-      raytrace_range: 4.5
-      obstacle_range: 3.0
-      min_obstacle_height: 0.1
-      max_obstacle_height: 1.8
-
-    sonar_max_range_cloud:
-      sensor_frame: base_link
-      data_type: PointCloud2
-      topic: /sonar_max_range_cloud
-      expected_update_rate: 1.0
-      observation_persistence: 0.0
-      marking: false
-      clearing: true
-      raytrace_range: 4.5
-      obstacle_range: 3.0
-      min_obstacle_height: 0.1
-      max_obstacle_height: 1.8
-
-  obstacle_ir_layer:
-    enabled: false
-    observation_sources: ir_cloud
-    combination_method: 0
-
-    ir_cloud:
-      sensor_frame: base_link
-      data_type: PointCloud2
-      topic: /ir_cloud
-      expected_update_rate: 1.0
-      observation_persistence: 0.0
-      marking: true
-      clearing: true
-      raytrace_range: 2.0
-      obstacle_range: 1.7
-      min_obstacle_height: 0.2
-      max_obstacle_height: 1.8
-
   obstacle_vo_layer:
     enabled: true
     observation_sources: vo_cloud
@@ -128,5 +73,5 @@ global_costmap:
 
   inflation_layer:
     enabled            : true
-    inflation_radius   : 1.0
-    cost_scaling_factor: 2.0
+    inflation_radius   : 0.55
+    cost_scaling_factor: 25.0
