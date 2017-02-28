@@ -2,8 +2,8 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.11.0 (2017-02-28)
+-------------------
 * removed legacy move_base configs
 * updated costmap files to match template
 * fixed global planner config file
