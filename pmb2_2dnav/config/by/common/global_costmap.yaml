@@ -19,7 +19,7 @@ global_costmap:
   track_unknown_space: true
   unknown_cost_value : 255
 
-  robot_radius    : 0.25
+  robot_radius    : 0.275
 
   plugins:
     - name: obstacle_laser_layer

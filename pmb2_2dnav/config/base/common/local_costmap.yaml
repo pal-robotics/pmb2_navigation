@@ -15,7 +15,7 @@ local_costmap:
   height        : 5.0
   resolution    : 0.025
 
-  robot_radius: 0.25
+  robot_radius: 0.275
 
   plugins:
     - name: obstacle_laser_layer
