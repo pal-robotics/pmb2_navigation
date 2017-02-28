@@ -17,6 +17,6 @@ PalLocalPlanner:
   max_dist_plan_ahead: 2.0
   dist_to_avoid      : 0.25
   allow_backwards    : false
-  robotWidth      : 0.5
+  robotWidth      : 0.55
 
   transform_tolerance: 0.2
