@@ -53,7 +53,7 @@ global_costmap:
   obstacle_vo_layer:
     enabled: true
     observation_sources: vo_cloud
-    combination_method: 0
+    combination_method: 1
 
     vo_cloud:
       sensor_frame: map
@@ -62,7 +62,7 @@ global_costmap:
       expected_update_rate: 12.0
       observation_persistence: 0.0
       marking: true
-      clearing: false
+      clearing: true
       raytrace_range: 1.0
       obstacle_range: 100.0
       min_obstacle_height: 0.0
