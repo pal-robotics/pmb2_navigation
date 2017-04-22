@@ -2,8 +2,8 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.11.1 (2017-04-22)
+-------------------
 * added advanced nav config
 * Contributors: Procópio Stein
 
