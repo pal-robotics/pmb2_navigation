@@ -2,6 +2,11 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* added advanced nav config
+* Contributors: Procópio Stein
+
 0.11.0 (2017-02-28)
 -------------------
 * removed legacy move_base configs

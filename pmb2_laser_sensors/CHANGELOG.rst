@@ -2,6 +2,12 @@
 Changelog for package pmb2_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* moved filter launch to base launch
+* added filter to hokuyo launch file
+* Contributors: Procópio Stein
+
 0.11.0 (2017-02-28)
 -------------------
 * 0.10.4
