@@ -2,8 +2,8 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.11.2 (2017-04-25)
+-------------------
 * updated adv nav rviz config
 * Contributors: Procópio Stein
 
