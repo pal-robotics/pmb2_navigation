@@ -1,12 +1,12 @@
 Panels:
   - Class: rviz/Displays
-    Help Height: 0
+    Help Height: 78
     Name: Displays
     Property Tree Widget:
       Expanded:
         - /Planning1/Base1
       Splitter Ratio: 0.598726
-    Tree Height: 707
+    Tree Height: 425
   - Class: rviz/Selection
     Name: Selection
   - Class: rviz/Tool Properties
@@ -25,7 +25,7 @@ Panels:
     Experimental: false
     Name: Time
     SyncMode: 0
-    SyncSource: Laser
+    SyncSource: ""
   - Class: pal-teleop_rviz_plugins/PalTeleop
     Name: PalTeleop
   - Class: pal-navigation_rviz_plugins/MapManagementWidget
@@ -67,120 +67,6 @@ Visualization Manager:
             Expand Link Details: false
             Expand Tree: false
             Link Tree Style: Links in Alphabetic Order
-            base_antenna_left_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-              Value: true
-            base_antenna_right_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-              Value: true
-            base_cover_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-              Value: true
-            base_footprint:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-            base_imu_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-            base_laser_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-              Value: true
-            base_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-              Value: true
-            base_mic_back_left_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-            base_mic_back_right_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-            base_mic_front_left_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-            base_mic_front_right_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-            base_sonar_01_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-              Value: true
-            base_sonar_02_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-              Value: true
-            base_sonar_03_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-              Value: true
-            caster_back_left_1_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-              Value: true
-            caster_back_left_2_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-              Value: true
-            caster_back_right_1_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-              Value: true
-            caster_back_right_2_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-              Value: true
-            caster_front_left_1_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-              Value: true
-            caster_front_left_2_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-              Value: true
-            caster_front_right_1_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-              Value: true
-            caster_front_right_2_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-              Value: true
-            wheel_left_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-              Value: true
-            wheel_right_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-              Value: true
           Name: RobotModel
           Robot Description: robot_description
           TF Prefix: ""
@@ -213,7 +99,7 @@ Visualization Manager:
           Marker Topic: twist_marker
           Name: Twist
           Namespaces:
-            "": true
+            {}
           Queue Size: 100
           Value: true
         - Class: rviz/Marker
@@ -221,7 +107,7 @@ Visualization Manager:
           Marker Topic: text_marker
           Name: Mode
           Namespaces:
-            "": true
+            {}
           Queue Size: 100
           Value: true
         - Class: rviz/Group
@@ -925,22 +811,22 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/XYOrbit
-      Distance: 9.82934
+      Distance: 13.4147
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.06
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: -1.41169
-        Y: -2.16472
-        Z: 1.90735e-06
+        X: 2.75765
+        Y: 3.67981
+        Z: 2.86102e-06
       Name: Current View
       Near Clip Distance: 0.01
-      Pitch: 0.805399
+      Pitch: 0.755399
       Target Frame: <Fixed Frame>
       Value: XYOrbit (rviz)
-      Yaw: 5.88358
+      Yaw: 1.0004
     Saved: ~
 Window Geometry:
   Compressed Map:
@@ -949,7 +835,7 @@ Window Geometry:
     collapsed: false
   DockUndockPanel:
     collapsed: false
-  Height: 907
+  Height: 744
   Hide Left Dock: false
   Hide Right Dock: false
   MapManagementWidget:
@@ -958,7 +844,7 @@ Window Geometry:
     collapsed: false
   PalTeleop:
     collapsed: false
-  QMainWindow State: 000000ff00000000fd00000004000000000000010f00000304fc0200000009fb0000001200530065006c0065006300740069006f006e00000001e10000009b0000006400fffffffb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073010000002800000304000000dd00fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261fb0000001c0043006f006d00700072006500730073006500640020004d00610070000000018d000000c90000001600fffffffb0000001c0043006f006d00700072006500730073006500640020004d0061007000000001f2000000800000000000000000000000010000017400000304fc0200000008fb0000001e0054006f006f006c002000500072006f007000650072007400690065007300000000280000010d0000006400fffffffb00000028004e0061007600690067006100740069006f006e005500740069006c007300500061006e0065006c00000000280000017e0000008500fffffffb0000001e0054006f006f006c002000500072006f00700065007200740069006500730000000028000000a30000000000000000fb0000000a0056006900650077007300000000280000016c000000b000fffffffb00000026004d00610070004d0061006e006100670065006d0065006e007400570069006400670065007401000000280000014e0000014e00fffffffb0000001e0044006f0063006b0055006e0064006f0063006b00500061006e0065006c010000017c000000640000006400fffffffb0000001200500061006c00540065006c0065006f007001000001e6000001460000014600fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e100000197000000030000052e0000003bfc0100000002fb0000000800540069006d006501000000000000052e000002f600fffffffb0000000800540069006d006501000000000000045000000000000000000000029f0000030400000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd00000004000000000000010f000002a2fc020000000afb0000001200530065006c0065006300740069006f006e00000001e10000009b0000006400fffffffb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073010000002800000238000000dd00fffffffb0000001e0044006f0063006b0055006e0064006f0063006b00500061006e0065006c0100000266000000640000006400fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261fb0000001c0043006f006d00700072006500730073006500640020004d00610070000000018d000000c90000001600fffffffb0000001c0043006f006d00700072006500730073006500640020004d0061007000000001f20000008000000000000000000000000100000174000002a2fc0200000007fb0000001e0054006f006f006c002000500072006f007000650072007400690065007300000000280000010d0000006400fffffffb00000028004e0061007600690067006100740069006f006e005500740069006c007300500061006e0065006c00000000280000017e0000008500fffffffb0000001e0054006f006f006c002000500072006f00700065007200740069006500730000000028000000a30000000000000000fb0000000a0056006900650077007300000000280000016c000000b000fffffffb00000026004d00610070004d0061006e006100670065006d0065006e007400570069006400670065007401000000280000014e0000014e00fffffffb0000001200500061006c00540065006c0065006f0070010000017c0000014e0000014600fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e10000019700000003000005150000003bfc0100000002fb0000000800540069006d0065000000000000000515000002f600fffffffb0000000800540069006d0065010000000000000450000000000000000000000286000002a200000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Selection:
     collapsed: false
   Time:
@@ -967,6 +853,6 @@ Window Geometry:
     collapsed: false
   Views:
     collapsed: false
-  Width: 1326
-  X: 322
-  Y: 113
+  Width: 1301
+  X: 55
+  Y: -14
