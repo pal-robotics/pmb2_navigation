@@ -2,6 +2,11 @@
 Changelog for package pmb2_maps
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* updated pal office map
+* Contributors: Procópio Stein
+
 0.11.2 (2017-04-25)
 -------------------
 
