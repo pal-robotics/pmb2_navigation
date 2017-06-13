@@ -1,0 +1,9 @@
+slam_karto:
+  base_frame: base_footprint
+
+  # Scans:
+  minimum_travel_distance: 0.2
+  minimum_travel_heading : !degrees 10.0
+  range_threshold        : 24.0
+  use_scan_barycenter    : true
+  resolution             : 0.025
