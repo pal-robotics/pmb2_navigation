@@ -5,6 +5,9 @@ recovery_behaviors:
     type: 'clear_costmap_recovery/ClearCostmapRecovery'
   - name: 'aggressive_reset'
     type: 'clear_costmap_recovery/ClearCostmapRecovery'
+  - name: 'rotate'
+    type: rotate_recovery/RotateRecovery
+
 
 super_conservative_reset:
   reset_distance: 5.0
@@ -17,3 +20,6 @@ conservative_reset:
 aggressive_reset:
   reset_distance: 1.2
   layer_names: ["obstacle_laser_layer"]
+
+rotate:
+  max_rotational_vel: 0.6
