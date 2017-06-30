@@ -2,6 +2,12 @@
 Changelog for package pmb2_maps
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* added installation rules for building info files
+* added new, clean map. removed old maps
+* Contributors: Procópio Stein
+
 0.11.3 (2017-06-01)
 -------------------
 * updated pal office map
