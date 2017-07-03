@@ -2,8 +2,8 @@
 Changelog for package pmb2_maps
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.11.6 (2017-07-03)
+-------------------
 * fixed new building name
 * Contributors: Procópio Stein
 

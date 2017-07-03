@@ -2,8 +2,8 @@
 Changelog for package pmb2_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.11.6 (2017-07-03)
+-------------------
 * increased lasers fov
 * Contributors: Procópio Stein
 
