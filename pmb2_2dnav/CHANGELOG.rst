@@ -2,6 +2,9 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.11.5 (2017-06-30)
 -------------------
 * added rotate recovery behavior
