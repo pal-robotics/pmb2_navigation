@@ -2,6 +2,13 @@
 Changelog for package pmb2_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* updated launch params to match tiago's
+* change default laser to sick_tim561
+* cosmetic
+* Contributors: Procópio Stein
+
 0.11.6 (2017-07-03)
 -------------------
 * increased lasers fov

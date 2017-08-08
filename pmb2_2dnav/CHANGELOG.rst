@@ -2,6 +2,11 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* allow global plan in unkown spaces
+* Contributors: Procópio Stein
+
 0.11.6 (2017-07-03)
 -------------------
 
