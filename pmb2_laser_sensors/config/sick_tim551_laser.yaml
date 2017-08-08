@@ -8,4 +8,3 @@ min_ang: !degrees -100
 max_ang: !degrees  100
 
 range_max: 10.0
-
