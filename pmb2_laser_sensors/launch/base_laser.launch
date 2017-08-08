@@ -1,5 +1,5 @@
 <launch>
-  <arg name="laser" default="hokuyo_urg_04lx_ug01"/>
+  <arg name="laser" default="sick_tim561"/>
 
   <include file="$(find pmb2_laser_sensors)/launch/$(arg laser)_laser.launch"/>
 
