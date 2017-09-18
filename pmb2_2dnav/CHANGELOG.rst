@@ -2,8 +2,8 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.11.8 (2017-09-18)
+-------------------
 * added config base path arg, so it can load params from .pal
 * Contributors: Procópio Stein
 
