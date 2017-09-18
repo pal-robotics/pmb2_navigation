@@ -2,6 +2,11 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* added config base path arg, so it can load params from .pal
+* Contributors: Procópio Stein
+
 0.11.7 (2017-08-08)
 -------------------
 * allow global plan in unkown spaces
