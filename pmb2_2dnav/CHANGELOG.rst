@@ -2,6 +2,11 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* updated parameters to new pal local planner
+* Contributors: Procópio Stein
+
 0.11.8 (2017-09-18)
 -------------------
 * added config base path arg, so it can load params from .pal
