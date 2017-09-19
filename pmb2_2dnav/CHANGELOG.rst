@@ -2,8 +2,8 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.11.9 (2017-09-19)
+-------------------
 * updated parameters to new pal local planner
 * Contributors: Procópio Stein
 
