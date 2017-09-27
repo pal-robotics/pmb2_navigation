@@ -2,8 +2,8 @@
 Changelog for package pmb2_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.11.10 (2017-09-27)
+--------------------
 * added rgbd scan related files
 * normalized package.xml for all packages
 * Contributors: Procópio Stein
