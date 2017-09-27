@@ -2,6 +2,13 @@
 Changelog for package pmb2_rgbd_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* added rgbd scan related files
+* updated and added files for new rgbd setup
+* normalized package.xml for all packages
+* Contributors: Procópio Stein
+
 0.11.9 (2017-09-19)
 -------------------
 

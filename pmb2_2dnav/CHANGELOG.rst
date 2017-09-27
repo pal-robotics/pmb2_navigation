@@ -2,6 +2,11 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* normalized package.xml for all packages
+* Contributors: Procópio Stein
+
 0.11.9 (2017-09-19)
 -------------------
 * updated parameters to new pal local planner
