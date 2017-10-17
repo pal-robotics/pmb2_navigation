@@ -2,6 +2,11 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* updated parameter due to refactoring in pal-local-planner
+* Contributors: Procópio Stein
+
 0.11.10 (2017-09-27)
 --------------------
 * normalized package.xml for all packages

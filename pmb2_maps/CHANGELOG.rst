@@ -2,6 +2,9 @@
 Changelog for package pmb2_maps
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.11.10 (2017-09-27)
 --------------------
 * normalized package.xml for all packages
