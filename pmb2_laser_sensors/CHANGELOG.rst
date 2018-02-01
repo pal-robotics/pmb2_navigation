@@ -2,6 +2,14 @@
 Changelog for package pmb2_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'urg-node-driver' into 'dubnium-devel'
+  replace hokuyo_node with urg_node
+  See merge request robots/pmb2_navigation!10
+* replace hokuyo_node with urg_node
+* Contributors: Procópio Stein
+
 0.12.0 (2017-10-17)
 -------------------
 
