@@ -2,6 +2,14 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'respawn-move-base' into 'dubnium-devel'
+  added respawn flag to move_base.launch
+  See merge request robots/pmb2_navigation!11
+* added respawn flag to move_base.launch
+* Contributors: Procópio Stein
+
 0.13.0 (2018-02-01)
 -------------------
 
