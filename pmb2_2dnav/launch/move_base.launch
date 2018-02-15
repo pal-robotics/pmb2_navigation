@@ -13,7 +13,7 @@
   <arg name="launch_prefix" value="gdb -ex run --args"     if="$(arg debug)"/>
   <arg name="launch_prefix" value=""                   unless="$(arg debug)"/>
 
-  <node pkg="move_base" type="move_base" name="move_base" clear_params="true" output="screen" launch-prefix="$(arg launch_prefix)">
+  <node pkg="move_base" type="move_base" name="move_base" clear_params="true" output="screen" respawn="true" launch-prefix="$(arg launch_prefix)">
     <remap from="odom"    to="$(arg odom)"/>
     <remap from="cmd_vel" to="$(arg cmd_vel)"/>
 
