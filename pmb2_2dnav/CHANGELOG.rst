@@ -2,6 +2,9 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.13.1 (2018-02-15)
 -------------------
 * Merge branch 'respawn-move-base' into 'dubnium-devel'

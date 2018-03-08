@@ -2,6 +2,15 @@
 Changelog for package pmb2_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'restore-old-hokuyo-node' into 'dubnium-devel'
+  Revert "replace hokuyo_node with urg_node"
+  See merge request robots/pmb2_navigation!12
+* Revert "replace hokuyo_node with urg_node"
+  This reverts commit 97a9bbe24e1efbbca6cd59c54acd5b99bbc4ce7c.
+* Contributors: Procópio Stein, Victor Lopez
+
 0.13.1 (2018-02-15)
 -------------------
 
