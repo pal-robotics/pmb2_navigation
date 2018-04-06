@@ -2,6 +2,14 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* added TEB config
+* disable navigation in unknown
+* added dependency on range layer and teb local planner
+* avoid oscillating global path and prefer shorter paths
+* Contributors: Procópio Stein
+
 0.13.2 (2018-03-08)
 -------------------
 
