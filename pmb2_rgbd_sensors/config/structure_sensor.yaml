@@ -8,8 +8,8 @@ driver:
     # Skip #frames, so the frame rate turns into:
     # frame_rate /= (1 + data_skip)
     # which for mode #8 (30Hz) and data_skip = 4 gives:
-    # 30Hz / (1 + 4) = 30Hz / 5 = 6Hz
-    data_skip : 4
+    # 30Hz / (1 + 5) = 30Hz / 6 = 5Hz
+    data_skip : 5
 
 depth_points:
     range_max: &depth_range_max 4.0
