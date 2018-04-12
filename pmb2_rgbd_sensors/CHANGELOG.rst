@@ -2,6 +2,13 @@
 Changelog for package pmb2_rgbd_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* added dep on usb utils
+* reduce rgb frame rate to 5hz and search for device to connect
+* reduced pc rate to 5hz
+* Contributors: Procópio Stein
+
 0.13.3 (2018-04-06)
 -------------------
 
