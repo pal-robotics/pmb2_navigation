@@ -2,6 +2,11 @@
 Changelog for package pmb2_maps
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* added back small office because simulation needs it
+* Contributors: Procópio Stein
+
 0.13.4 (2018-04-12)
 -------------------
 
