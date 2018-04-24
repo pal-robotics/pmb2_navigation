@@ -2,6 +2,12 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Revert "avoid oscillating global path and prefer shorter paths"
+  This reverts commit 0d0601e59441e560ffb56ce15d7cb37bce0a9d71.
+* Contributors: Procópio Stein
+
 0.13.5 (2018-04-17)
 -------------------
 
