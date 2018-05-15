@@ -2,8 +2,8 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.13.7 (2018-05-15)
+-------------------
 * added slippage related launch files
 * Contributors: Procópio Stein
 
