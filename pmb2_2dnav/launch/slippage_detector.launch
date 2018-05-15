@@ -1,0 +1,29 @@
+<launch>
+  <!-- pal slippage detector  -->
+
+  <arg name="debug"      default="false"/>
+
+  <arg name="launch_prefix" value="gdb -ex run --args"     if="$(arg debug)"/>
+  <arg name="launch_prefix" value=""                   unless="$(arg debug)"/>
+
+  <node pkg ="slippage_detector"
+        type="slippage_detector_node"
+        name="slippage_detector"
+        output="screen"
+        launch-prefix="$(arg launch_prefix)">
+
+    <remap from="odom" to="mobile_base_controller/odom"/>
+    <remap from="cmd_vel" to="mobile_base_controller/cmd_vel"/>
+
+    <param name="min_angular_slip" type="double" value="0.1" />
+    <param name="min_linear_slip" type="double" value="0.075" />
+    <param name="max_angular_slip" type="double" value="1.5" />
+    <param name="max_linear_slip" type="double" value="0.5" />
+    <param name="adaptive_thresholds" type="bool" value="false" />
+    <param name="good_poses_duration" type="double" value="5.0" />
+    <param name="slippage_events_trigger" type="int" value="2" />
+    <param name="timer_period" type="double" value="0.5" />
+
+  </node>
+
+</launch>
