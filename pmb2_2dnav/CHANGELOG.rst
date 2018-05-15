@@ -2,6 +2,11 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* added slippage related launch files
+* Contributors: Procópio Stein
+
 0.13.6 (2018-04-24)
 -------------------
 * Revert "avoid oscillating global path and prefer shorter paths"
