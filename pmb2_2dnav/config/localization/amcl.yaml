@@ -21,6 +21,8 @@ converge_dist_threshold: 0.5
 
 # Measurement (laser) model:
 laser_model_type         : likelihood_field
+laser_max_range          : -1.0 #use reported max range (default)
+laser_min_range          : -1.0 #use reported min range (default)
 laser_max_beams          : 30
 laser_z_hit              : 0.5
 laser_z_short            : 0.05
@@ -45,8 +47,9 @@ recovery_alpha_slow: 0.0
 recovery_alpha_fast: 0.0
 
 # Frames:
-base_frame_id: base_footprint
-odom_frame_id: odom
+base_frame_id   : base_footprint
+odom_frame_id   : odom
+global_frame_id : map
 
 # Initial pose:
 save_pose_rate: -1.0 # disabled (< 0.0)
