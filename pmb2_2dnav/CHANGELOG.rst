@@ -2,6 +2,12 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* updated amcl and karto configs for clarity and to match last developments in specifics
+* added odom filter config and changed search path to pmb2_2dnav
+* Contributors: Procópio Stein
+
 0.13.7 (2018-05-15)
 -------------------
 * added slippage related launch files
