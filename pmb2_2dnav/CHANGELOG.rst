@@ -2,6 +2,9 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.13.8 (2018-05-17)
 -------------------
 * updated amcl and karto configs for clarity and to match last developments in specifics
