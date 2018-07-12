@@ -27,6 +27,6 @@
   </include>
 
   <!-- VO map server -->
-  <include file="$(find pal_vo_server)/launch/vo_server.launch"/>
+  <!--<include file="$(find pal_vo_server)/launch/vo_server.launch"/>-->
 
 </launch>
