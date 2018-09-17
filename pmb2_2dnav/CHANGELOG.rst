@@ -2,8 +2,8 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.13.10 (2018-09-17)
+--------------------
 * increased plp threshold
 * updated recovery to match cobra, but commented blanking recoveries
 * updated rviz config

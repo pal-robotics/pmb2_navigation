@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package format="2">
   <name>pmb2_maps</name>
-  <version>0.13.9</version>
+  <version>0.13.10</version>
   <description>PMB2-specific maps and launch files.</description>
   <maintainer email="jeremie.deray@pal-robotics.com">Jeremie Deray</maintainer>
   <maintainer email="procopio.stein@pal-robotics.com">Procopio Stein</maintainer>
