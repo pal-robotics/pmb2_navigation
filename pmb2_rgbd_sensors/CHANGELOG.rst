@@ -2,6 +2,9 @@
 Changelog for package pmb2_rgbd_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.13.9 (2018-06-22)
 -------------------
 * uses new filter launch that loads robot specific config

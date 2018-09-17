@@ -2,6 +2,18 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* increased plp threshold
+* updated recovery to match cobra, but commented blanking recoveries
+* updated rviz config
+* enabled search alternative goals
+* reduced pub freq of costmaps, cleaned them up
+* adjusted default threshold and sec distance
+* better visualization
+* updated pal_local_planner config
+* Contributors: Procópio Stein
+
 0.13.9 (2018-06-22)
 -------------------
 
