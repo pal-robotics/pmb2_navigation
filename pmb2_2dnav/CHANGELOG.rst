@@ -2,8 +2,8 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.13.12 (2018-09-26)
+--------------------
 * changed param name from threshold to max_threshold
 * removed deprecated parameter
 * Contributors: Procópio Stein
