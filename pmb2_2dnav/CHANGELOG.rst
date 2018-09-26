@@ -2,8 +2,8 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.13.11 (2018-09-26)
+--------------------
 * Merge branch 'adjust-plp-params' into 'dubnium-devel'
   increased max threshold and reduced security
   See merge request robots/pmb2_navigation!23
