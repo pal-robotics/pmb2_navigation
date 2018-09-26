@@ -2,6 +2,12 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* changed param name from threshold to max_threshold
+* removed deprecated parameter
+* Contributors: Procópio Stein
+
 0.13.11 (2018-09-26)
 --------------------
 * Merge branch 'adjust-plp-params' into 'dubnium-devel'
