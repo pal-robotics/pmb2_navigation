@@ -22,5 +22,5 @@ PalLocalPlanner:
   target_direction_infl   : 0.3
   wheel_orientation_infl  : 0.0
   previous_direction_infl : 0.3
-  threshold               : 1.0
-  security_dist           : 0.05
+  threshold               : 1.5
+  security_dist           : 0.025
