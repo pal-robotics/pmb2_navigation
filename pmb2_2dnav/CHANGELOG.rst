@@ -2,6 +2,11 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* slightly increased max_threshold from 1.5 to 1.8
+* Contributors: Procópio Stein
+
 0.13.12 (2018-09-26)
 --------------------
 * changed param name from threshold to max_threshold
