@@ -28,7 +28,7 @@ global_costmap:
 
   static_layer:
     enabled  : true
-    map_topic: map
+    map_topic: vo_map
 
   obstacle_laser_layer:
     enabled: true
@@ -44,18 +44,18 @@ global_costmap:
       inf_is_valid: true
       marking: true
       clearing: true
-      raytrace_range: 6
-      obstacle_range: 5
+      raytrace_range: 6.0
+      obstacle_range: 5.0
       min_obstacle_height: -0.1
       max_obstacle_height: 0.4
 
   obstacle_vo_layer:
     enabled: true
     observation_sources: vo_cloud
-    combination_method: 0
+    combination_method: 1
 
     vo_cloud:
-      sensor_frame: map
+      sensor_frame: base_link
       data_type: PointCloud
       topic: vo_cloud
       expected_update_rate: 12.0
@@ -63,7 +63,7 @@ global_costmap:
       marking: true
       clearing: false
       raytrace_range: 1.0
-      obstacle_range: 100.0
+      obstacle_range: 20.0
       min_obstacle_height: 0.0
       max_obstacle_height: 2.0
 
