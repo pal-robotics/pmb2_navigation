@@ -2,6 +2,11 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* updated costmaps config to correspond to template generation
+* Contributors: Procópio Stein
+
 0.13.13 (2018-09-28)
 --------------------
 * slightly increased max_threshold from 1.5 to 1.8
