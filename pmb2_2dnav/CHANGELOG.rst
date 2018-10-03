@@ -2,8 +2,8 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.13.14 (2018-10-03)
+--------------------
 * updated costmaps config to correspond to template generation
 * Contributors: Procópio Stein
 
