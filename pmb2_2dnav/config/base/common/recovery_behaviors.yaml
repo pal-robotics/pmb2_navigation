@@ -1,6 +1,8 @@
 recovery_behaviors:
  # - name: 'in_place_blanking'
  #   type: blanking_recovery/BlankingRecovery
+  - name: 'refresh_vo'
+    type: 'clear_costmap_recovery/ClearCostmapRecovery'
   - name: 'costmap_reset_far'
     type: 'clear_costmap_recovery/ClearCostmapRecovery'
   - name: 'costmap_reset_close'
@@ -46,3 +48,7 @@ full_rotation_blanking:
   clearing_max_dist: 0.7
   count_threshold: 450
   use_roof_camera: false
+
+refresh_vo:
+  reset_distance: 0.0
+  layer_names: ["obstacle_vo_layer"]
