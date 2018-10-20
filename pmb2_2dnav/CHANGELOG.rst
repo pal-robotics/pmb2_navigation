@@ -2,8 +2,8 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.13.15 (2018-10-20)
+--------------------
 * Merge branch 'clear-vo-on-recovery' into 'dubnium-devel'
   added vo clearing in recovery behavior
   See merge request robots/pmb2_navigation!25
