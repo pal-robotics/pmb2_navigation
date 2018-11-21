@@ -2,8 +2,8 @@
 Changelog for package pmb2_maps
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.13.16 (2018-11-21)
+--------------------
 * move definition of buildings to a directory
 * Contributors: Sergio Ramos
 

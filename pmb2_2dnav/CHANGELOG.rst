@@ -2,8 +2,8 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.13.16 (2018-11-21)
+--------------------
 * added sonar layer
 * added sound feedback for loop closure
 * Contributors: Procópio Stein, Sai Kishor Kothakota
