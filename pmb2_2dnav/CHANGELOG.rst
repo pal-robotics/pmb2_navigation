@@ -2,6 +2,12 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* added sonar layer
+* added sound feedback for loop closure
+* Contributors: Procópio Stein, Sai Kishor Kothakota
+
 0.13.15 (2018-10-20)
 --------------------
 * Merge branch 'clear-vo-on-recovery' into 'dubnium-devel'
