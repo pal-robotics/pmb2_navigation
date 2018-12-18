@@ -10,6 +10,3 @@ slam_karto:
 
   # ! As for now this feature works only with SICK lasers
   map_free_space         : false
-
-  # .wav file to be played for audio loop-closure feedback
-  loop_closure_audio_feedback_file: "fanfare_x.wav"
