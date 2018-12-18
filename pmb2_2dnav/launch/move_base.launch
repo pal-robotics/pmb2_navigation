@@ -6,14 +6,14 @@
   <arg name="odom"    default="mobile_base_controller/odom"/>
   <arg name="cmd_vel" default="nav_vel"/>
 
-  <arg name="config_base_path" default="$(find pmb2_2dnav)"/>
-
-  <arg name="rgbd_sensors"   default="false"/>
-
   <arg name="debug"      default="false"/>
 
   <arg name="launch_prefix" value="gdb -ex run --args"     if="$(arg debug)"/>
   <arg name="launch_prefix" value=""                   unless="$(arg debug)"/>
+
+  <arg name="config_base_path" default="$(find pmb2_2dnav)"/>
+
+  <arg name="rgbd_sensors"   default="false"/>
 
   <arg name="rgbd_suffix" value="_rgbd" if="$(arg rgbd_sensors)"/>
   <arg name="rgbd_suffix" value=""      unless="$(arg rgbd_sensors)"/>
