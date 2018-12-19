@@ -2,6 +2,12 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* change the param load order to overrite the karto config
+* activated latch xy for goals
+* Contributors: Procópio Stein
+
 0.13.16 (2018-11-21)
 --------------------
 * added sonar layer
