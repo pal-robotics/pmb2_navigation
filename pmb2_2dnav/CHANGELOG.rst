@@ -2,8 +2,8 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.13.18 (2018-12-19)
+--------------------
 * Merge branch 'compatibility' into 'dubnium-devel'
   Add rgbd_sensors argument for compatibility
   See merge request robots/pmb2_navigation!31
