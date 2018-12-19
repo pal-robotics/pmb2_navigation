@@ -15,18 +15,7 @@ global_costmap:
 
   robot_radius: 0.275
 
-  # attention, the order and combination method matters
-  plugins:
-    - name: static_layer
-      type: 'costmap_2d::StaticLayer'
-    - name: obstacle_laser_layer
-      type: 'costmap_2d::ObstacleLayer'
-    - name: base_sonar_layer
-      type: 'range_sensor_layer::RangeSensorLayer'
-    - name: obstacle_vo_layer
-      type: 'costmap_2d::ObstacleLayer'
-    - name: inflation_layer
-      type: 'costmap_2d::InflationLayer'
+  # plugins are in a separate file
 
   static_layer:
     enabled  : true
@@ -46,19 +35,41 @@ global_costmap:
       inf_is_valid: true
       marking: true
       clearing: true
-      raytrace_range: 6.0
-      obstacle_range: 5.0
+      raytrace_range: 4.0
+      obstacle_range: 3.5
       min_obstacle_height: -0.1
       max_obstacle_height: 0.4
 
-  base_sonar_layer:
+  obstacle_sonar_layer:
     enabled: false
-    ns: ""
-    topics: ["/sonar_base"]
-    no_readings_timeout: 0.0
-    clear_threshold: 0.20
-    mark_threshold: 0.80
-    clear_on_max_reading: true
+    observation_sources: sonar_cloud sonar_max_range_cloud
+    combination_method: 1
+
+    sonar_cloud:
+      sensor_frame: base_link
+      data_type: PointCloud2
+      topic: sonar_cloud
+      expected_update_rate: 1.0
+      observation_persistence: 0.0
+      marking: true
+      clearing: true
+      raytrace_range: 4.5
+      obstacle_range: 3.0
+      min_obstacle_height: 0.1
+      max_obstacle_height: 1.8
+
+    sonar_max_range_cloud:
+      sensor_frame: base_link
+      data_type: PointCloud2
+      topic: sonar_max_range_cloud
+      expected_update_rate: 1.0
+      observation_persistence: 0.0
+      marking: false
+      clearing: true
+      raytrace_range: 4.5
+      obstacle_range: 3.0
+      min_obstacle_height: 0.1
+      max_obstacle_height: 1.8
 
   obstacle_vo_layer:
     enabled: true
@@ -78,6 +89,31 @@ global_costmap:
       min_obstacle_height: 0.0
       max_obstacle_height: 2.0
 
+  obstacle_rgbd_layer:
+    enabled: true
+    observation_sources: rgbd_scan
+    combination_method: 1
+    # NOTE: all distance values below include an offset
+    # of 0.9 meters due to the virtual frame of the rgbd_laser_scan
+    # the blanking uses an offset of 1.085 which is the distance from
+    # the rgbd_laser_link to the camera link
+
+    rgbd_scan:
+      sensor_frame: rgbd_laser_link
+      data_type: LaserScan
+      topic: rgbd_scan
+      expected_update_rate: 0.5
+      observation_persistence: 0.0
+      inf_is_valid: true
+      marking: true
+      clearing: true
+      raytrace_range: 4.4   #(3.5  + 0.9)
+      obstacle_range: 3.9   #(3.0  + 0.9)
+      blanking_range: 1.65  #(0.565  + 1.085)
+      mark_blanking: true
+      min_obstacle_height: 0.0
+      max_obstacle_height: 0.2
+      debug: false
 
   inflation_layer:
     enabled            : true

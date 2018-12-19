@@ -6,22 +6,27 @@
   <arg name="odom"    default="mobile_base_controller/odom"/>
   <arg name="cmd_vel" default="nav_vel"/>
 
-  <arg name="config_base_path" default="$(find pmb2_2dnav)"/>
-
   <arg name="debug"      default="false"/>
 
   <arg name="launch_prefix" value="gdb -ex run --args"     if="$(arg debug)"/>
   <arg name="launch_prefix" value=""                   unless="$(arg debug)"/>
 
+  <arg name="config_base_path" default="$(find pmb2_2dnav)"/>
+
+  <arg name="rgbd_sensors"   default="false"/>
+
+  <arg name="rgbd_suffix" value="_rgbd" if="$(arg rgbd_sensors)"/>
+  <arg name="rgbd_suffix" value=""      unless="$(arg rgbd_sensors)"/>
   <node pkg="move_base" type="move_base" name="move_base" clear_params="true" output="screen" respawn="true" launch-prefix="$(arg launch_prefix)">
     <remap from="odom"    to="$(arg odom)"/>
     <remap from="cmd_vel" to="$(arg cmd_vel)"/>
 
     <rosparam command="load" file="$(arg config_base_path)/config/base/common/move_base.yaml"/>
-    <rosparam command="load" file="$(arg config_base_path)/config/base/common/recovery_behaviors.yaml"/>
-
+    <rosparam command="load" file="$(arg config_base_path)/config/base/common/recovery_behaviors$(arg rgbd_suffix).yaml"/>
     <rosparam command="load" file="$(arg config_base_path)/config/base/common/global_costmap.yaml"/>
     <rosparam command="load" file="$(arg config_base_path)/config/base/common/local_costmap.yaml"/>
+    <rosparam command="load" file="$(arg config_base_path)/config/base/common/global_costmap_plugins$(arg rgbd_suffix).yaml"/>
+    <rosparam command="load" file="$(arg config_base_path)/config/base/common/local_costmap_plugins$(arg rgbd_suffix).yaml"/>
 
     <rosparam command="load" file="$(arg config_base_path)/config/base/global_planner/$(arg global_planner).yaml"/>
 
