@@ -2,8 +2,8 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.0.0 (2018-12-19)
+------------------
 * Merge branch 'specifics-refactor' into 'erbium-devel'
   Specifics refactor
   See merge request robots/pmb2_navigation!30
