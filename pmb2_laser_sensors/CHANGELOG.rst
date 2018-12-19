@@ -2,6 +2,15 @@
 Changelog for package pmb2_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'specifics-refactor' into 'erbium-devel'
+  Specifics refactor
+  See merge request robots/pmb2_navigation!30
+* Expand all laser configurations
+* rename laser launch files according to new standard
+* Contributors: Victor Lopez
+
 0.13.17 (2018-12-19)
 --------------------
 * reduced laser fov to avoid noise

@@ -2,6 +2,16 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'specifics-refactor' into 'erbium-devel'
+  Specifics refactor
+  See merge request robots/pmb2_navigation!30
+* Cosmetic
+* Add parameters for using rgbd
+* Specify one karto file per laser model
+* Contributors: Victor Lopez
+
 0.13.17 (2018-12-19)
 --------------------
 * change the param load order to overrite the karto config
