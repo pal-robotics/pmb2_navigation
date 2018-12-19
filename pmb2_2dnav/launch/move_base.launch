@@ -9,6 +9,7 @@
   <arg name="config_base_path" default="$(find pmb2_2dnav)"/>
 
   <arg name="debug"      default="false"/>
+  <arg name="rgbd_sensors"      default="false"/> <!-- unused, for compatibility-->
 
   <arg name="launch_prefix" value="gdb -ex run --args"     if="$(arg debug)"/>
   <arg name="launch_prefix" value=""                   unless="$(arg debug)"/>
