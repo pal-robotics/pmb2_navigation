@@ -2,6 +2,14 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'compatibility' into 'dubnium-devel'
+  Add rgbd_sensors argument for compatibility
+  See merge request robots/pmb2_navigation!31
+* Add rgbd_sensors argument for compatibility
+* Contributors: Victor Lopez
+
 0.13.17 (2018-12-19)
 --------------------
 * change the param load order to overrite the karto config
