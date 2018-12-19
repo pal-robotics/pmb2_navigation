@@ -2,8 +2,8 @@
 Changelog for package pmb2_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.13.17 (2018-12-19)
+--------------------
 * reduced laser fov to avoid noise
 * Contributors: Procópio Stein
 

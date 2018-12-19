@@ -2,8 +2,8 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.13.17 (2018-12-19)
+--------------------
 * change the param load order to overrite the karto config
 * activated latch xy for goals
 * Contributors: Procópio Stein
