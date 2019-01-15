@@ -10,6 +10,6 @@
     <arg name="trajectory_file" value="$(arg trajectory_file)"/>
   </include>
 
-  <rosparam file="$(find pmb2_2dnav)/config/mapping/karto_($arg laser_model).yaml" command="load"/>
+  <rosparam file="$(find pmb2_2dnav)/config/mapping/karto_$(arg laser_model).yaml" command="load"/>
 
 </launch>
