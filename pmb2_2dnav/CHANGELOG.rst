@@ -2,8 +2,8 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.0.1 (2019-01-15)
+------------------
 * Fix typo
 * Contributors: Victor Lopez
 
