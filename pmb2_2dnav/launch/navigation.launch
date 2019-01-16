@@ -8,6 +8,7 @@
   <arg name="localization"   default="amcl"/>
   <arg name="mapping"        default="karto"/>
   <arg name="octomap"        default="false"/>
+  <arg name="public_sim"   default="false"/>
 
   <arg name="map" default="$(env HOME)/.pal/pmb2_maps/config"/>
 
@@ -24,9 +25,12 @@
   <include file="$(find pmb2_2dnav)/launch/move_$(arg planner).launch">
     <arg name="global_planner" value="$(arg global_planner)"/>
     <arg name="local_planner"  value="$(arg local_planner)"/>
+    <arg name="public_sim" value="$(arg public_sim)"/>
   </include>
 
   <!-- VO map server -->
-  <include file="$(find pal_vo_server)/launch/vo_server.launch"/>
+  <group unless="$(arg public_sim)">
+    <include file="$(find pal_vo_server)/launch/vo_server.launch"/>
+  </group>
 
 </launch>

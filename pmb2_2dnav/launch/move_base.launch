@@ -12,6 +12,9 @@
   <arg name="launch_prefix" value=""                   unless="$(arg debug)"/>
 
   <arg name="config_base_path" default="$(find pmb2_2dnav)"/>
+  <arg name="public_sim"   default="false"/>
+  <arg name="sim_sufix" value="_public_sim"     if="$(arg public_sim)"/>
+  <arg name="sim_sufix" value=""                unless="$(arg public_sim)"/>
 
   <arg name="rgbd_sensors"   default="false"/>
 
@@ -23,8 +26,8 @@
 
     <rosparam command="load" file="$(arg config_base_path)/config/base/common/move_base.yaml"/>
     <rosparam command="load" file="$(arg config_base_path)/config/base/common/recovery_behaviors$(arg rgbd_suffix).yaml"/>
-    <rosparam command="load" file="$(arg config_base_path)/config/base/common/global_costmap.yaml"/>
-    <rosparam command="load" file="$(arg config_base_path)/config/base/common/local_costmap.yaml"/>
+    <rosparam command="load" file="$(arg config_base_path)/config/base/common/global_costmap$(arg sim_sufix).yaml"/>
+    <rosparam command="load" file="$(arg config_base_path)/config/base/common/local_costmap$(arg sim_sufix).yaml"/>
     <rosparam command="load" file="$(arg config_base_path)/config/base/common/global_costmap_plugins$(arg rgbd_suffix).yaml"/>
     <rosparam command="load" file="$(arg config_base_path)/config/base/common/local_costmap_plugins$(arg rgbd_suffix).yaml"/>
 
