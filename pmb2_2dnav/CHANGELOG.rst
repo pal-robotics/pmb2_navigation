@@ -2,6 +2,14 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'public_sim_kinetic' into 'erbium-devel'
+  add Kinetic pulbic simulation changes
+  See merge request robots/pmb2_navigation!33
+* add kinetic public simulation changes
+* Contributors: Sai Kishor Kothakota, Victor Lopez
+
 1.0.1 (2019-01-15)
 ------------------
 * Fix typo
