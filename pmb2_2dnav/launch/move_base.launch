@@ -28,8 +28,8 @@
     <rosparam command="load" file="$(arg config_base_path)/config/base/common/recovery_behaviors$(arg rgbd_suffix).yaml"/>
     <rosparam command="load" file="$(arg config_base_path)/config/base/common/global_costmap$(arg sim_sufix).yaml"/>
     <rosparam command="load" file="$(arg config_base_path)/config/base/common/local_costmap$(arg sim_sufix).yaml"/>
-    <rosparam command="load" file="$(arg config_base_path)/config/base/common/global_costmap_plugins$(arg rgbd_suffix).yaml"/>
-    <rosparam command="load" file="$(arg config_base_path)/config/base/common/local_costmap_plugins$(arg rgbd_suffix).yaml"/>
+    <rosparam command="load" file="$(arg config_base_path)/config/base/common/global_costmap_plugins$(arg sim_sufix)$(arg rgbd_suffix).yaml"/>
+    <rosparam command="load" file="$(arg config_base_path)/config/base/common/local_costmap_plugins$(arg sim_sufix)$(arg rgbd_suffix).yaml"/>
 
     <rosparam command="load" file="$(arg config_base_path)/config/base/global_planner/$(arg global_planner).yaml"/>
 
