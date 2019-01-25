@@ -2,6 +2,18 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'public_eband_conf' into 'erbium-devel'
+  added eband planner config
+  See merge request robots/pmb2_navigation!35
+* added eband planner config
+* Merge branch 'plugin_fix' into 'erbium-devel'
+  public simulation plugin fix
+  See merge request robots/pmb2_navigation!34
+* public simulation plugin fix
+* Contributors: Sai Kishor Kothakota, Victor Lopez
+
 1.0.2 (2019-01-17)
 ------------------
 * Merge branch 'public_sim_kinetic' into 'erbium-devel'
