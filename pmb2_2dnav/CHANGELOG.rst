@@ -2,8 +2,8 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.0.3 (2019-01-25)
+------------------
 * Merge branch 'public_eband_conf' into 'erbium-devel'
   added eband planner config
   See merge request robots/pmb2_navigation!35
