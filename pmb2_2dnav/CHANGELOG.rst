@@ -2,6 +2,14 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'update-karto-cfg' into 'erbium-devel'
+  updated karto params to improve loop closures
+  See merge request robots/pmb2_navigation!36
+* updated karto params to improve loop closures
+* Contributors: Procópio Stein
+
 1.0.3 (2019-01-25)
 ------------------
 * Merge branch 'public_eband_conf' into 'erbium-devel'
