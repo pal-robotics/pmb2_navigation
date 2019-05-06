@@ -2,8 +2,8 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.0.5 (2019-05-06)
+------------------
 * updated teb config to match tiago's
 * Contributors: Procópio Stein
 
