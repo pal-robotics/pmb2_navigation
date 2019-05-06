@@ -2,6 +2,11 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* updated teb config to match tiago's
+* Contributors: Procópio Stein
+
 1.0.4 (2019-03-22)
 ------------------
 * Merge branch 'update-karto-cfg' into 'erbium-devel'

@@ -2,6 +2,9 @@
 Changelog for package pmb2_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 1.0.4 (2019-03-22)
 ------------------
 * Merge branch 'tf2-frames' into 'erbium-devel'
