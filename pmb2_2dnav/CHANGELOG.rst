@@ -2,8 +2,8 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.0.6 (2019-05-20)
+------------------
 * Merge branch 'update_adv_nav' into 'erbium-devel'
   Update AdvNav Rviz config
   See merge request robots/pmb2_navigation!38
