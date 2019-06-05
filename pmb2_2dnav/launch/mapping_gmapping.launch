@@ -1,8 +1,0 @@
-<launch>
-  <arg name="scan" default="scan"/>
-
-  <node pkg="gmapping" type="slam_gmapping" name="slam_gmapping" output="screen">
-    <remap from="scan" to="$(arg scan)"/>
-    <rosparam file="$(find pmb2_2dnav)/config/mapping/gmapping.yaml" command="load"/>
-  </node>
-</launch>
