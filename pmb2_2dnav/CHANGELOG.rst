@@ -2,8 +2,8 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.0 (2019-06-17)
+------------------
 * added pal_navigation_cfg_pmb2 dependency
 * moved config and launch to pal_navigation_cfg_pmb2
 * Contributors: Procópio Stein, Sai Kishor Kothakota
