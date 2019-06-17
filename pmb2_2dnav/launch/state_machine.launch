@@ -1,11 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <launch>
 
   <arg name="state"  default="localization"/>
-  <arg name="config" default="$(find pmb2_2dnav)/config/state_machine/state_machine.yaml"/>
+  <arg name="public_sim"     default="false"/>
 
-  <include file="$(find pal_navigation_sm)/launch/pal_navigation_sm.launch">
+  <include file="$(find pal_navigation_cfg_pmb2)/launch/state_machine.launch">
     <arg name="state"  value="$(arg state)"/>
-    <arg name="config" value="$(arg config)"/>
+    <arg name="public_sim" value="$(arg public_sim)"/>
   </include>
 
 </launch>
