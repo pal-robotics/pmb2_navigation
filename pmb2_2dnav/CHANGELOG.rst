@@ -2,6 +2,12 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* added pal_navigation_cfg_pmb2 dependency
+* moved config and launch to pal_navigation_cfg_pmb2
+* Contributors: Procópio Stein, Sai Kishor Kothakota
+
 1.0.6 (2019-05-20)
 ------------------
 * Merge branch 'update_adv_nav' into 'erbium-devel'
