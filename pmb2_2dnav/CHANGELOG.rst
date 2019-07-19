@@ -2,6 +2,14 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'multi_pmb2' into 'erbium-devel'
+  Add multi pmb2 navigation
+  See merge request robots/pmb2_navigation!40
+* Add multi pmb2 navigation
+* Contributors: Adria Roig, Victor Lopez
+
 2.0.0 (2019-06-17)
 ------------------
 * added pal_navigation_cfg_pmb2 dependency
