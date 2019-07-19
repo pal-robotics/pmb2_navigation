@@ -2,7 +2,12 @@
 <launch>
 
   <arg name="localization" default="amcl"/>
+  <arg name="multiple" default="false"/>
+  <arg name="tf_prefix" default=""/>
 
-  <include file="$(find pal_navigation_cfg_pmb2)/launch/localization_$(arg localization).launch"/>
+  <include file="$(find pal_navigation_cfg_pmb2)/launch/localization_$(arg localization).launch">
+  	<arg name="multiple" value="$(arg multiple)"/>
+    <arg name="tf_prefix" value="$(arg tf_prefix)"/>
+  </include>
 
 </launch>
