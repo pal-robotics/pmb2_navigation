@@ -2,6 +2,14 @@
 Changelog for package pmb2_maps
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'update_pal_map' into 'erbium-devel'
+  added update pal map
+  See merge request robots/pmb2_navigation!41
+* added update pal map
+* Contributors: Federico Nardi, Procópio Stein
+
 2.0.1 (2019-07-19)
 ------------------
 
