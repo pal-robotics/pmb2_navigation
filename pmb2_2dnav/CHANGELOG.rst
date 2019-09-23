@@ -2,6 +2,11 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* use scan_raw for mapping
+* Contributors: Procópio Stein
+
 2.0.2 (2019-09-18)
 ------------------
 
