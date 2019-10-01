@@ -2,8 +2,8 @@
 Changelog for package pmb2_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.4 (2019-10-01)
+------------------
 * Merge branch 'new-config' into 'erbium-devel'
   updating filter configuration
   See merge request robots/pmb2_navigation!43
