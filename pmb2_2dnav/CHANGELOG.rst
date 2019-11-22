@@ -2,6 +2,11 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* passing subtype parameter to move_base
+* Contributors: federiconardi
+
 2.0.4 (2019-10-01)
 ------------------
 
