@@ -2,6 +2,15 @@
 Changelog for package pmb2_rgbd_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'pmb2-stvl' into 'erbium-devel'
+  adding config files for pcl filters
+  See merge request robots/pmb2_navigation!45
+* updated config filenames
+* adding config files for pcl filters
+* Contributors: federiconardi, procopiostein
+
 2.0.5 (2019-11-22)
 ------------------
 
