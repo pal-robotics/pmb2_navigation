@@ -2,6 +2,11 @@
 Changelog for package pmb2_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Add laser_doctor
+* Contributors: Victor Lopez
+
 2.0.6 (2020-04-02)
 ------------------
 
