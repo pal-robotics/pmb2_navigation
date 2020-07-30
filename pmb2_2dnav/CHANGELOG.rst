@@ -2,6 +2,14 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'rename_tf_prefix' into 'erbium-devel'
+  Rename tf_prefix to robot_namespace
+  See merge request robots/pmb2_navigation!46
+* Rename tf_prefix to robot_namespace
+* Contributors: davidfernandez, victor
+
 2.0.7 (2020-07-02)
 ------------------
 
