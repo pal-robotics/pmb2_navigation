@@ -9,10 +9,13 @@
   <license>Apache License 2.0</license>
   <author email="enrique.fernandez@pal-robotics.com">Enrique Fernandez</author>
 
-  <buildtool_depend>catkin</buildtool_depend>
+  <buildtool_depend>ament_cmake</buildtool_depend>
 
   <exec_depend>pmb2_rgbd_sensors</exec_depend>
   <exec_depend>pmb2_laser_sensors</exec_depend>
   <exec_depend>pmb2_maps</exec_depend>
   <exec_depend>pal_navigation_cfg_pmb2</exec_depend>
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
 </package>

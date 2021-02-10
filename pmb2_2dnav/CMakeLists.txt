@@ -1,9 +1,14 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.5)
 project(pmb2_2dnav)
 
-find_package(catkin REQUIRED)
+find_package(ament_cmake_auto REQUIRED)
 
-catkin_package()
+# PAL Robotics stricter build flags, other developers should not worry about this
+find_package(ament_cmake_pal QUIET)
+ 
+ament_auto_find_build_dependencies()
+
+
 
 install(
     PROGRAMS
@@ -12,9 +17,6 @@ install(
         scripts/record_odom.sh
         scripts/record_patrol.sh
         scripts/record_rgbd.sh
-    DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
+    DESTINATION lib/${PROJECT_NAME})
 
-foreach(dir launch config)
-    install(DIRECTORY ${dir}/
-        DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/${dir})
-endforeach(dir)
+ament_auto_package(INSTALL_TO_SHARE config launch params)
