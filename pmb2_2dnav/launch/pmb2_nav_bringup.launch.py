@@ -32,6 +32,8 @@ def generate_launch_description():
 
     pmb2_bringup_dir = get_package_share_directory('pmb2_2dnav')
 
+    pmb2_maps_dir = get_package_share_directory('pmb2_maps')
+
     # Create the launch configuration variables
     namespace = LaunchConfiguration('namespace')
     use_namespace = LaunchConfiguration('use_namespace')
@@ -64,6 +66,7 @@ def generate_launch_description():
 
     declare_map_yaml_cmd = DeclareLaunchArgument(
         'map',
+        default_value=os.path.join(pmb2_maps_dir, "config", "map.yaml"),
         description='Full path to map yaml file to load')
 
     declare_use_sim_time_cmd = DeclareLaunchArgument(
