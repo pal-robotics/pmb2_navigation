@@ -21,7 +21,7 @@ from launch.actions import (DeclareLaunchArgument,
                             IncludeLaunchDescription, SetEnvironmentVariable)
 from launch.conditions import IfCondition
 from launch.launch_description_sources import PythonLaunchDescriptionSource
-from launch.substitutions import LaunchConfiguration
+from launch.substitutions import LaunchConfiguration, PathJoinSubstitution
 from launch_ros.actions import SetRemap
 
 
@@ -40,7 +40,8 @@ def generate_launch_description():
     slam = LaunchConfiguration('slam')
     use_rviz = LaunchConfiguration('use_rviz')
     rviz_config_file = LaunchConfiguration('rviz_config_file')
-    map_yaml_file = LaunchConfiguration('map')
+    map_yaml_file = PathJoinSubstitution([pmb2_maps_dir, 'configurations',
+                                          LaunchConfiguration('map'), 'map.yaml'])
     use_sim_time = LaunchConfiguration('use_sim_time')
     params_file = LaunchConfiguration('params_file')
     default_bt_xml_filename = LaunchConfiguration('default_bt_xml_filename')
