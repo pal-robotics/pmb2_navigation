@@ -2,6 +2,9 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 2.0.8 (2020-07-30)
 ------------------
 * Merge branch 'rename_tf_prefix' into 'erbium-devel'

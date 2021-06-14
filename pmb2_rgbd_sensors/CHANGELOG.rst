@@ -2,6 +2,15 @@
 Changelog for package pmb2_rgbd_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'device' into 'erbium-devel'
+  chore: Get first device
+  See merge request robots/pmb2_navigation!47
+* chore: Get first device
+  Fix: Kernel 4.15 and newer
+* Contributors: yueerro
+
 2.0.8 (2020-07-30)
 ------------------
 
