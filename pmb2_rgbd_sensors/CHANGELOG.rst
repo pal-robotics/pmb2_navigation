@@ -2,8 +2,8 @@
 Changelog for package pmb2_rgbd_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.9 (2021-06-14)
+------------------
 * Merge branch 'device' into 'erbium-devel'
   chore: Get first device
   See merge request robots/pmb2_navigation!47
