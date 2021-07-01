@@ -1,15 +1,14 @@
 <launch>
+  <arg name="base_device_id" default="XXXXX"/>
+  <arg name="roof_device_id" default="XXXXX"/>
 
-  <include file="$(find pmb2_rgbd_sensors)/launch/base_structure_sensor.launch"/>
-  <include file="$(find pmb2_rgbd_sensors)/launch/roof_structure_sensor.launch"/>
+  <include file="$(find pmb2_rgbd_sensors)/launch/base_structure_sensor.launch" pass_all_args="true">
+    <arg name="device_id" value="$(arg base_device_id)" unless="$(eval base_device_id == 'XXXXX')"/>
+  </include>
+
+  <include file="$(find pmb2_rgbd_sensors)/launch/roof_structure_sensor.launch" pass_all_args="true">
+    <arg name="device_id" value="$(arg roof_device_id)" unless="$(eval roof_device_id == 'XXXXX')"/>
+  </include>
+
   <include file="$(find pmb2_rgbd_sensors)/launch/elp_rgb_nodelet.launch"/>
-
-  <include file="$(find pal_pcl)/launch/floor_filter_base_roof.launch">
-    <arg name="robot" value="cobra"/>
-  </include>
-
-  <include file="$(find pmb2_laser_sensors)/launch/rgbd_cloud_laser.launch">
-    <arg name="cloud" value="floor_filter_xtion/filtered_cloud"/>
-  </include>
-
 </launch>
