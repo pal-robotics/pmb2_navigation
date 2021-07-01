@@ -1,0 +1,20 @@
+<launch>
+    <!-- Launch node that checks a topic to be alive, when it stops publishing
+    restarts the given node name-->
+    <node pkg="node_doctor" name="roof_rgbd_node_doctor" type="node_doctor_node.py" output="screen">
+        <!-- topic to check, type will be deduced in runtime -->
+        <param name="topic_to_check" value="/roof_rgbd_camera_filter/filtered_cloud"/>
+        <!-- node name in pal_startup to reboot -->
+        <param name="node_to_reboot" value="rgbd"/>
+        <!-- time between checks if the topic is alive -->
+        <param name="check_interval" value="60.0"/>
+        <!-- time to wait for the subscriber to get a message -->
+        <param name="check_timeout" value="3.0"/>
+        <!-- time to wait after starting the node, before initializing the checking again -->
+        <param name="wait_after_start" value="20.0"/>
+        <!-- publish to /supervisor/diagnostic_errors an informative string when rebooting? -->
+        <param name="publish_tablet_screen" value="false"/>
+        <!-- computer that holds the pal_startup_XXXXX/[start|stop] service -->
+        <param name="pal_startup_computer_name" value="control"/>
+    </node>
+</launch>

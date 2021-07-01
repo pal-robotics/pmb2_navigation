@@ -15,5 +15,6 @@
   <exec_depend>uvc_camera</exec_depend>
   <exec_depend>pal_pcl</exec_depend>
   <exec_depend>pal_usb_utils</exec_depend>
+  <exec_depend>node_doctor</exec_depend>
 
 </package>
