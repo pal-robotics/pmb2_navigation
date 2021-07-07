@@ -1,0 +1,5 @@
+<launch>
+  <include file="$(find pmb2_rgbd_sensors)/launch/base_rgbd_doctor.launch"/>
+  <include file="$(find pmb2_rgbd_sensors)/launch/roof_rgbd_doctor.launch"/>
+  <include file="$(find pmb2_rgbd_sensors)/launch/elp_rgb_doctor.launch"/>
+</launch>
