@@ -2,8 +2,8 @@
 Changelog for package pmb2_maps
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+3.0.0 (2021-07-12)
+------------------
 * Create pal_office map with nav2
 * Remove hard coded map
 * Contributors: Victor Lopez

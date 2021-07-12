@@ -2,8 +2,8 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+3.0.0 (2021-07-12)
+------------------
 * Remove ROS1 launch files
 * Comment dependencies pending to be migrated to ROS2
 * Fix costmaps and increase max velocity
