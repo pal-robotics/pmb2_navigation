@@ -2,6 +2,26 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Remove ROS1 launch files
+* Comment dependencies pending to be migrated to ROS2
+* Fix costmaps and increase max velocity
+* Revert "Fix usage of map argument"
+  This reverts commit 22d9e4a02b93fa5e9016738312538740a8c7e376.
+  Specifying full path is more work but more flexible
+* Fix usage of map argument
+* Reduce max speeds to avoid crashing into walls
+  A similara issue seems to be reported in:
+  https://github.com/ros-planning/navigation2/issues/938
+  Probably we need more tunning for our robot and/or a different
+  controller
+* Fixes for slam
+* More linter fixes
+* Remove hard coded map
+* First working pmb2_nav_bringup launch file
+* Contributors: Victor Lopez
+
 2.0.8 (2020-07-30)
 ------------------
 * Merge branch 'rename_tf_prefix' into 'erbium-devel'

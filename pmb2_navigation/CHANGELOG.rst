@@ -2,6 +2,12 @@
 Changelog for package pmb2_navigation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Comment dependencies pending to be migrated to ROS2
+* Migrate pmb2_navigation to ros2
+* Contributors: Victor Lopez
+
 2.0.8 (2020-07-30)
 ------------------
 
