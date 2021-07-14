@@ -7,7 +7,7 @@
   <license>Apache License 2.0</license>
   <author email="enrique.fernandez@pal-robotics.com">Enrique Fernandez</author>
 
-  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_cmake_auto</buildtool_depend>
   <export>
     <build_type>ament_cmake</build_type>
   </export>
