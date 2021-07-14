@@ -2,6 +2,9 @@
 Changelog for package pmb2_navigation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 3.0.0 (2021-07-12)
 ------------------
 * Comment dependencies pending to be migrated to ROS2

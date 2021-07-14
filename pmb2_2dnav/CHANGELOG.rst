@@ -2,6 +2,11 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Add missing ament_cmake_auto dependency
+* Contributors: Victor Lopez
+
 3.0.0 (2021-07-12)
 ------------------
 * Remove ROS1 launch files
