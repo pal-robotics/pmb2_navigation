@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package format="2">
   <name>pmb2_navigation</name>
-  <version>3.0.0</version>
+  <version>3.0.1</version>
   <description>PMB2 navigation metapackage</description>
   <maintainer email="federico.nardi@pal-robotics.com">Federico Nardi</maintainer>
   <license>Apache License 2.0</license>

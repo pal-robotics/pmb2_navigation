@@ -2,8 +2,8 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+3.0.1 (2021-07-14)
+------------------
 * Add missing ament_cmake_auto dependency
 * Contributors: Victor Lopez
 
