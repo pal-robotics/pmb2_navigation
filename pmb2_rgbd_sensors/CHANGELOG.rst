@@ -2,6 +2,11 @@
 Changelog for package pmb2_rgbd_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Fixed uvc camera dependency in noetic
+* Contributors: Jordan Palacios
+
 2.0.10 (2021-09-13)
 -------------------
 * Merge branch 'gallium_fixes' into 'erbium-devel'
