@@ -2,6 +2,21 @@
 Changelog for package pmb2_rgbd_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'gallium_fixes' into 'erbium-devel'
+  Gallium fixes
+  See merge request robots/pmb2_navigation!50
+* Using libuvc_ros instead of camera_umd in noetic
+* Merge branch 'refactor-rgbd-sensors-to-align-with-stockbot' into 'erbium-devel'
+  Update pmb2_rgbd_sensors package to align with stockbot_rgbd_sensors package
+  See merge request robots/pmb2_navigation!49
+* added rgbd doctor and elp rgb doctor launch files
+* added rgbd doctor
+* added launches files aligned with stockbot pipeline
+* changed the name of filters params files
+* Contributors: Jordan Palacios, federiconardi, josegarcia
+
 2.0.9 (2021-06-14)
 ------------------
 * Merge branch 'device' into 'erbium-devel'
