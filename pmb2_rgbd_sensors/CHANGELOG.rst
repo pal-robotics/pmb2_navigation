@@ -2,8 +2,8 @@
 Changelog for package pmb2_rgbd_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.11 (2021-09-13)
+-------------------
 * Fixed uvc camera dependency in noetic
 * Contributors: Jordan Palacios
 
