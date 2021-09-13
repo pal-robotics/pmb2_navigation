@@ -2,8 +2,8 @@
 Changelog for package pmb2_rgbd_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.10 (2021-09-13)
+-------------------
 * Merge branch 'gallium_fixes' into 'erbium-devel'
   Gallium fixes
   See merge request robots/pmb2_navigation!50
