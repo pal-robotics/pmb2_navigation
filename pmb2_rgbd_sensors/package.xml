@@ -13,7 +13,7 @@
   <exec_depend>openni2_launch</exec_depend>
   <exec_depend>pal-orbbec-openni2</exec_depend>
   <exec_depend condition="$ROS_DISTRO != noetic">uvc_camera</exec_depend>
-  <exec_depend condition="$ROS_DISTRO == noetic">libuvc_ros</exec_depend>
+  <exec_depend condition="$ROS_DISTRO == noetic">libuvc_camera</exec_depend>
   <exec_depend>pal_pcl</exec_depend>
   <exec_depend>pal_usb_utils</exec_depend>
   <exec_depend>node_doctor</exec_depend>
