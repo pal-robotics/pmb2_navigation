@@ -1,13 +1,23 @@
 <launch>
   <arg name="camera" default="roof_rgbd_camera"/>
+  <arg name="device_id" default="XXXXX"/>
+
+  <arg name="calibration_file_path" value="$(eval optenv('pmb2_rgbd_sensors_calibration_path', find('pmb2_rgbd_sensors')))"/>
 
   <rosparam command="load" file="$(find pmb2_rgbd_sensors)/config/structure_sensor.yaml" ns="$(arg camera)"/>
 
   <include file="$(find openni2_launch)/launch/openni2.launch">
     <arg name="camera" value="$(arg camera)"/>
-    <arg name="device_id"   default="55597" />
+    <arg name="device_id" value="$(arg device_id)" />
     <arg name="publish_tf"  value="false"/>
     <arg name="respawn"     value="true"/>
     <arg name="rgb"         default="empty" />
   </include>
+  <node name="$(arg camera)_param_set" pkg="dynamic_reconfigure" type="dynparam" args="set $(arg camera)/driver depth_mode 8 --timeout=60" required="false"/>
+
+  <node name="roof_rgbd_camera_filter" pkg="pal_pcl" type="pal_stockbot_floor_filter_node" output="screen">
+    <remap from="cloud1" to="/roof_rgbd_camera/depth/points"/>
+    <rosparam command="load" file="$(arg calibration_file_path)/config/roof_floor_filter_xtion.yaml" />
+  </node>
 </launch>
+
