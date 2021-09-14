@@ -16,6 +16,6 @@
   <exec_depend condition="$ROS_DISTRO == noetic">libuvc_camera</exec_depend>
   <exec_depend>pal_pcl</exec_depend>
   <exec_depend>pal_usb_utils</exec_depend>
-  <exec_depend>node_doctor</exec_depend>
+  <exec_depend condition="$PAL_DISTRO > 0">node_doctor</exec_depend>
 
 </package>
