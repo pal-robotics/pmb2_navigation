@@ -2,6 +2,14 @@
 Changelog for package pmb2_rgbd_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'internal-depend' into 'erbium-devel'
+  Only use node_doctor internally
+  See merge request robots/pmb2_navigation!51
+* Only use node_doctor internally
+* Contributors: Victor Lopez, federiconardi
+
 2.0.11 (2021-09-13)
 -------------------
 * Fixed uvc camera dependency in noetic
