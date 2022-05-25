@@ -1,19 +1,22 @@
-scan_filter_chain:
+scan_to_scan_filter_chain:
+  ros__parameters:
+    filter1:
+      name: footprint_filter
+      type: laser_filters/LaserScanFootprintFilter
+      params:
+        inscribed_radius: 0.30
 
-- name: outlier
-  type: pal_filters/LaserScanOutlierFilter
-  params:
-    distance_threshold: 0.5
+    filter2:
+      name: range
+      type: laser_filters/LaserScanRangeFilter
+      params:
+        lower_threshold: 0.05
+        upper_threshold: 10.0
+        lower_replacement_value: -.inf
+        upper_replacement_value: .inf
 
-- name: footprint_filter
-  type: laser_filters/LaserScanFootprintFilter
-  params:
-    inscribed_radius: 0.30
-
-- name: range
-  type: laser_filters/LaserScanRangeFilter
-  params:
-    lower_threshold: 0.05
-    upper_threshold: 10.0
-    lower_replacement_value: -.inf
-    upper_replacement_value: .inf
+    # filter3:
+    #   name: outlier
+    #   type: pal_filters/LaserScanOutlierFilter
+    #   params:
+    #     distance_threshold: 0.5

@@ -1,10 +1,10 @@
-frame_id: base_laser_link
-
-intensity: true
-
-time_offset: -0.08
-
-min_ang: !degrees -95
-max_ang: !degrees  95
-
-range_max: 10.0
+sick_scan2:
+  ros__parameters:
+    hostname : "192.168.0.72"
+    frame_id: "base_laser_link"
+    scanner_name: "sick_tim_5xx"
+    intensity: true
+    time_offset: -0.08
+    min_ang: !degrees -95.0
+    max_ang: !degrees  95.0
+    max_range: 10.0

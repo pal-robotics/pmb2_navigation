@@ -1,19 +1,21 @@
 <?xml version="1.0"?>
-<package format="2">
+<package format="3">
   <name>pmb2_laser_sensors</name>
   <version>2.0.8</version>
-  <description>PMB2-specific laser sensors launch and config files.</description>
-  <maintainer email="jeremie.deray@pal-robotics.com">Jeremie Deray</maintainer>
-  <maintainer email="procopio.stein@pal-robotics.com">Procopio Stein</maintainer>
+  <description>Launch files and scripts needed to bring up the ROS nodes of a PMB2 robot.</description>
+  <maintainer email="jordan.palacios@pal-robotics.com">Jordan Palacios</maintainer>
   <license>Apache License 2.0</license>
-  <author email="enrique.fernandez@pal-robotics.com">Enrique Fernandez</author>
+  <author email="noel.jimenez@pal-robotics.com">Enrique Fernandez</author>
 
-  <buildtool_depend>catkin</buildtool_depend>
+  <buildtool_depend>ament_cmake_auto</buildtool_depend>
 
-  <exec_depend>hokuyo_node</exec_depend>
-  <exec_depend>sick_tim</exec_depend>
-  <exec_depend>depthimage_to_laserscan</exec_depend>
-  <exec_depend>pointcloud_to_laserscan</exec_depend>
+  <exec_depend>sick_scan2</exec_depend>
   <exec_depend>laser_filters</exec_depend>
-  <exec_depend>pal_filters</exec_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
 </package>
