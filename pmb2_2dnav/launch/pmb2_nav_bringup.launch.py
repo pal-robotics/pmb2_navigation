@@ -67,7 +67,7 @@ def generate_launch_description():
 
     declare_map_yaml_cmd = DeclareLaunchArgument(
         'map',
-        default_value=os.path.join(pmb2_maps_dir, "config", "map.yaml"),
+        default_value=os.path.join(pmb2_maps_dir, 'config', 'map.yaml'),
         description='Full path to map yaml file to load')
 
     declare_use_sim_time_cmd = DeclareLaunchArgument(
@@ -124,7 +124,7 @@ def generate_launch_description():
                           'use_sim_time': use_sim_time,
                           'autostart': autostart,
                           'params_file': params_file,
-                          'use_composition':use_composition,
+                          'use_composition': use_composition,
                           'use_respawn': use_respawn}.items())
 
     # Create the launch description and populate
