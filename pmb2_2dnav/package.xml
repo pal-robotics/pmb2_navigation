@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<package format="2">
+<package format="3">
   <name>pmb2_2dnav</name>
   <version>3.0.1</version>
   <description>PMB2-specific launch files needed to run
