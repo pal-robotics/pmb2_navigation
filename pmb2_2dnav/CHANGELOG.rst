@@ -2,8 +2,8 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+3.0.2 (2022-10-21)
+------------------
 * Merge branch 'missing_dependency' into 'humble-devel'
   add missing dependency
   See merge request robots/pmb2_navigation!58
