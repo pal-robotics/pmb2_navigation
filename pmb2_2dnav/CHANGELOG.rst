@@ -2,6 +2,40 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'missing_dependency' into 'humble-devel'
+  add missing dependency
+  See merge request robots/pmb2_navigation!58
+* add missing dependencies
+* Merge branch 'initial_pose' into 'humble-devel'
+  Set initial pose automatically
+  See merge request robots/pmb2_navigation!57
+* set initial pose automatically
+* Merge branch 'update_copyright' into 'humble-devel'
+  Update copyright
+  See merge request robots/pmb2_navigation!56
+* update package format
+* update copyright
+* Merge branch 'update_maintainers' into 'humble-devel'
+  Update maintainers
+  See merge request robots/pmb2_navigation!55
+* update maintainers
+* Merge branch 'fix_robot_model_type' into 'humble-devel'
+  humble fixes
+  See merge request robots/pmb2_navigation!54
+* linters
+* use args for rviz
+* update nav2 params file
+* update nav2_bringup arguments
+* update robot_model_type for humble
+* Merge branch 'fix_bt_navigator' into 'galactic-devel'
+  fix  bt_navigator libraries
+  See merge request robots/pmb2_navigation!52
+* undo change transform_timeout
+* add bt_navigator libraries
+* Contributors: Jordan Palacios, Noel Jimenez
+
 3.0.1 (2021-07-14)
 ------------------
 * Add missing ament_cmake_auto dependency

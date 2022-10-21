@@ -2,6 +2,18 @@
 Changelog for package pmb2_maps
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'update_copyright' into 'humble-devel'
+  Update copyright
+  See merge request robots/pmb2_navigation!56
+* update package format
+* Merge branch 'update_maintainers' into 'humble-devel'
+  Update maintainers
+  See merge request robots/pmb2_navigation!55
+* update maintainers
+* Contributors: Jordan Palacios, Noel Jimenez
+
 3.0.1 (2021-07-14)
 ------------------
 * Add missing ament_cmake_auto dependency
