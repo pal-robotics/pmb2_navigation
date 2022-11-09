@@ -8,6 +8,7 @@
   <arg name="is_sim"          default="false"/>
   <arg name="multiple"        default="false"/>
   <arg name="robot_namespace" default=""/>
+  <arg name="is_fleet"        default="false"/>
 
 
   <include file="$(find pal_navigation_cfg_pmb2)/launch/state_machine.launch">
@@ -18,6 +19,7 @@
     <arg name="is_sim"          value="$(arg is_sim)"/>
     <arg name="multiple"        value="$(arg multiple)"/>
     <arg name="robot_namespace" value="$(arg robot_namespace)"/>
+    <arg name="is_fleet"        value="$(arg is_fleet)"/>
   </include>
 
 </launch>
