@@ -2,8 +2,8 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.13 (2023-01-27)
+-------------------
 * Merge branch 'feat/map-manager' into 'erbium-devel'
   Move to map manager
   See merge request robots/pmb2_navigation!59
