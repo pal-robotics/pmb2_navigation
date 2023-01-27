@@ -2,6 +2,9 @@
 Changelog for package pmb2_rgbd_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 2.0.12 (2021-09-15)
 -------------------
 * Merge branch 'internal-depend' into 'erbium-devel'

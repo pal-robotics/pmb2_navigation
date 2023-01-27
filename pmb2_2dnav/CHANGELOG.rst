@@ -2,6 +2,15 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'feat/map-manager' into 'erbium-devel'
+  Move to map manager
+  See merge request robots/pmb2_navigation!59
+* addded is_fleet param
+* Move to map manager
+* Contributors: antoniobrandi
+
 2.0.12 (2021-09-15)
 -------------------
 
