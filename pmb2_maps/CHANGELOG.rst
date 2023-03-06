@@ -2,6 +2,14 @@
 Changelog for package pmb2_maps
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'add_pal_office_7th_floor_map' into 'erbium-devel'
+  Add new pal office map
+  See merge request robots/pmb2_navigation!62
+* Add new pal office map
+* Contributors: antoniobrandi, thomaspeyrucain
+
 2.0.13 (2023-01-27)
 -------------------
 
