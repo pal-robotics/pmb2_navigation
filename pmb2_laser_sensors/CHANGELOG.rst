@@ -2,6 +2,15 @@
 Changelog for package pmb2_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'feat/ydlidar' into 'erbium-devel'
+  added support to ydlidar
+  See merge request robots/pmb2_navigation!60
+* updated port and frame_id
+* added support to ydlidar
+* Contributors: AntoBrandi, antoniobrandi
+
 2.0.14 (2023-03-06)
 -------------------
 
