@@ -2,6 +2,14 @@
 Changelog for package pmb2_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'fix/port' into 'erbium-devel'
+  fixed laser port
+  See merge request robots/pmb2_navigation!65
+* fixed laser port
+* Contributors: AntoBrandi, antoniobrandi
+
 2.0.15 (2023-03-13)
 -------------------
 * Merge branch 'feat/ydlidar' into 'erbium-devel'
