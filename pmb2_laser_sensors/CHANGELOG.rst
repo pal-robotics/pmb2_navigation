@@ -2,8 +2,8 @@
 Changelog for package pmb2_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.16 (2023-03-15)
+-------------------
 * Merge branch 'fix/port' into 'erbium-devel'
   fixed laser port
   See merge request robots/pmb2_navigation!65
