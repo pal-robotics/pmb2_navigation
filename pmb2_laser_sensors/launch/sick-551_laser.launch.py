@@ -25,13 +25,13 @@ def generate_launch_description():
 
     node = Node(
         package="sick_tim",
-        name="sick_tim_561_ros_driver",
+        name="sick_tim_551_ros_driver",
         executable="sick_tim551_2050001",
         output="screen",
         remappings=[("scan", "scan_raw")],
         parameters=[
             os.path.join(
-                pmb2_laser_sensors_dir, "config", "sick_tim561_laser.yaml"
+                pmb2_laser_sensors_dir, "config", "sick_tim551_laser.yaml"
             )
         ],
     )

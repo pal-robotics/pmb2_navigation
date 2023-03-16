@@ -13,50 +13,70 @@
 # limitations under the License.
 
 import os
-
 from ament_index_python.packages import get_package_share_directory
 
 from launch import LaunchDescription
-from launch.substitutions import PathJoinSubstitution, LaunchConfiguration, PythonExpression
-from launch.actions import IncludeLaunchDescription, DeclareLaunchArgument, LogInfo
+from launch.substitutions import (
+    PathJoinSubstitution,
+    LaunchConfiguration,
+    PythonExpression,
+)
+from launch.actions import (
+    IncludeLaunchDescription,
+    DeclareLaunchArgument,
+)
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch_ros.actions import Node
-from launch.conditions import LaunchConfigurationEquals
+
 
 def generate_launch_description():
-
-    pmb2_laser_sensors_dir = get_package_share_directory('pmb2_laser_sensors')
-    laser = LaunchConfiguration('laser')
+    pmb2_laser_sensors_dir = get_package_share_directory("pmb2_laser_sensors")
+    laser_model = LaunchConfiguration("laser")
 
     declare_laser_cmd = DeclareLaunchArgument(
-		'laser', default_value='sick-561',
-		description='Specify the type of laser in the robot'
-	)
+        "laser",
+        default_value="sick-561",
+        description="Specify the type of laser in the robot",
+    )
 
     laser_launch = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(PathJoinSubstitution(
-            substitutions=[pmb2_laser_sensors_dir, "launch",
-                PythonExpression(['"', LaunchConfiguration("laser"), '_laser.launch.py"'])]))
+        PythonLaunchDescriptionSource(
+            PathJoinSubstitution(
+                substitutions=[
+                    pmb2_laser_sensors_dir,
+                    "launch",
+                    PythonExpression(
+                        [
+                            '"',
+                            laser_model,
+                            '_laser.launch.py"',
+                        ]
+                    ),
+                ]
+            )
+        )
     )
 
     laser_config_path = PathJoinSubstitution(
-            substitutions=[pmb2_laser_sensors_dir, "config",
-                PythonExpression(['"', LaunchConfiguration("laser"), '_filter.yaml"'])])
+        substitutions=[
+            pmb2_laser_sensors_dir,
+            os.path.join("config", laser_model + "_filter.yaml"),
+        ]
+    )
 
     laser_filter_node = Node(
-        package='laser_filters',
+        package="laser_filters",
         # name = 'laser_filter',        # Name changed produces multiple nodes with the same name.
-                                        # https://answers.ros.org/question/344141/ros2-launch-creates-two-nodes-of-same-type/
-        executable='scan_to_scan_filter_chain',
-        output='screen',
-        remappings=[('scan', 'scan_raw'),
-                    ('scan_filtered', 'scan')],
-        parameters = [laser_config_path]
+        # https://answers.ros.org/question/344141/ros2-launch-creates-two-nodes-of-same-type/
+        executable="scan_to_scan_filter_chain",
+        output="screen",
+        remappings=[("scan", "scan_raw"), ("scan_filtered", "scan")],
+        parameters=[laser_config_path],
     )
-    
+
     # Create the launch description
     ld = LaunchDescription()
-    
+
     # Declare the launch options
     ld.add_action(declare_laser_cmd)
 
