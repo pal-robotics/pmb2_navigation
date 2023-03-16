@@ -1,7 +1,7 @@
-sick_tim551_2050001:
+sick_tim_571_ros_driver:
   ros__parameters:
     frame_id: "base_laser_link"
-    min_ang: !degrees -95.0
-    max_ang: !degrees  95.0
+    min_ang: -1.65806 # Radians
+    max_ang:  1.65806 # Radians
     intensity: true
     range_max: 25.0
