@@ -10,7 +10,7 @@
 
   <buildtool_depend>ament_cmake_auto</buildtool_depend>
 
-  <exec_depend>sick_scan2</exec_depend>
+  <exec_depend>sick_tim</exec_depend>
   <exec_depend>laser_filters</exec_depend>
 
   <test_depend>ament_lint_auto</test_depend>
