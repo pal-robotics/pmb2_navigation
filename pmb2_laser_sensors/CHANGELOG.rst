@@ -2,6 +2,14 @@
 Changelog for package pmb2_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'fix/ydlidar-angle' into 'erbium-devel'
+  fix ydlidar mounting angle
+  See merge request robots/pmb2_navigation!67
+* fix ydlidar mounting angle
+* Contributors: AntoBrandi, antoniobrandi
+
 2.0.16 (2023-03-15)
 -------------------
 * Merge branch 'fix/port' into 'erbium-devel'
