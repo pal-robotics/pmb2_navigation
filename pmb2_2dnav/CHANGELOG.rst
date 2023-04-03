@@ -2,6 +2,14 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'feat/nav' into 'humble-devel'
+  Using pal_navigation_cfg
+  See merge request robots/pmb2_navigation!64
+* Using pal_navigation_cfg
+* Contributors: antoniobrandi
+
 4.0.0 (2022-12-15)
 ------------------
 * Merge pull request #1 from jmguerreroh/humble-devel
