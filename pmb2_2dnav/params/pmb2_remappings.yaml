@@ -1,0 +1,12 @@
+#* Remappings that will be applied to all the Navigation,
+#* SLAM and Localization parameters for PMB2 Robot
+#* If not set, following default parameters will be used
+
+global_frame : "map"  # Default: "map"
+base_link_frame : "base_link" # Default: "base_link" 
+odom_topic : "/odom"  # Default: "/odom"
+use_sim_time : True # Default: True
+robot_radius : 0.275  # Default: 0.275
+scan_topic : "/scan_raw"  # Default: "/scan_raw"
+odom_frame : "odom" # Default: "odom"
+base_footprint_frame : "base_footprint" # Default: "base_footprint"
