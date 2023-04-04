@@ -2,6 +2,9 @@
 Changelog for package pmb2_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 2.0.17 (2023-03-23)
 -------------------
 * Merge branch 'fix/ydlidar-angle' into 'erbium-devel'
