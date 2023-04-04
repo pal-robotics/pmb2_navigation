@@ -2,8 +2,8 @@
 Changelog for package pmb2_rgbd_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.18 (2023-04-04)
+-------------------
 * Merge branch 'fix/replace-uvc-camera-by-libuvc' into 'erbium-devel'
   fix: replace uvc_camera by libuvc_camera
   See merge request robots/pmb2_navigation!68
