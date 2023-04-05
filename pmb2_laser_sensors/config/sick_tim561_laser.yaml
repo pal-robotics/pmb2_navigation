@@ -1,10 +1,7 @@
-frame_id: base_laser_link
-
-intensity: true
-
-time_offset: -0.08
-
-min_ang: !degrees -95
-max_ang: !degrees  95
-
-range_max: 10.0
+sick_tim_561_ros_driver:
+  ros__parameters:
+    frame_id: "base_laser_link"
+    min_ang: -1.65806 # Radians
+    max_ang:  1.65806 # Radians
+    intensity: true
+    range_max: 10.0
