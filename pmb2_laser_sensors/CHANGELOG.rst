@@ -2,8 +2,8 @@
 Changelog for package pmb2_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+4.0.2 (2023-04-05)
+------------------
 * Update package.xmversion
 * Merge branch 'laser_migration' into 'humble-devel'
   Migrate laser_sensors
