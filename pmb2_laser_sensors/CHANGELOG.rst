@@ -2,6 +2,21 @@
 Changelog for package pmb2_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Update package.xmversion
+* Merge branch 'laser_migration' into 'humble-devel'
+  Migrate laser_sensors
+  See merge request robots/pmb2_navigation!66
+* updated copyrigt
+* Updated copyright
+* Apply 1 suggestion(s) to 1 file(s)
+* using radians instead of degrees
+* replacing sick_scan2 with sick_tim
+* sick_tim laser migration
+* sick-561 to ros2
+* Contributors: Noel Jimenez, Noel Jimenez Garcia, antoniobrandi
+
 2.0.8 (2020-07-30)
 ------------------
 

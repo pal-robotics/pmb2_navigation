@@ -2,6 +2,14 @@
 Changelog for package pmb2_navigation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'laser_migration' into 'humble-devel'
+  Migrate laser_sensors
+  See merge request robots/pmb2_navigation!66
+* removed commented deps
+* Contributors: antoniobrandi
+
 4.0.1 (2023-04-03)
 ------------------
 

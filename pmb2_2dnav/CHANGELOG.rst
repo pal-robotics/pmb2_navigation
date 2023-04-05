@@ -2,6 +2,15 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'laser_migration' into 'humble-devel'
+  Migrate laser_sensors
+  See merge request robots/pmb2_navigation!66
+* removed commented deps
+* sick_tim laser migration
+* Contributors: antoniobrandi
+
 4.0.1 (2023-04-03)
 ------------------
 * Merge branch 'feat/nav' into 'humble-devel'
