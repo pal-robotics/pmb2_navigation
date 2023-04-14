@@ -19,6 +19,8 @@ from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
 from launch.actions import IncludeLaunchDescription, DeclareLaunchArgument
 from launch.launch_description_sources import PythonLaunchDescriptionSource
+from launch.substitutions import LaunchConfiguration
+from launch.conditions import UnlessCondition
 
 
 def generate_launch_description():
@@ -26,6 +28,9 @@ def generate_launch_description():
         get_package_share_directory("pal_navigation_cfg_bringup"), "launch"
     )
     pmb2_2dnav = get_package_share_directory("pmb2_2dnav")
+    pmb2_laser_sensors = get_package_share_directory("pmb2_laser_sensors")
+
+    is_robot = LaunchConfiguration('is_robot')
 
     is_robot_arg = DeclareLaunchArgument(
         'is_robot', default_value='false',
@@ -42,9 +47,17 @@ def generate_launch_description():
         }.items()
     )
 
+    laser_filters_launch = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource([os.path.join(
+            pmb2_laser_sensors, 'launch', 'laser_filters.launch.py')]
+        ),
+        condition=UnlessCondition(is_robot)
+    )
+
     # Create the launch description and populate
     ld = LaunchDescription()
     ld.add_action(is_robot_arg)
     ld.add_action(nav_bringup_launch)
+    ld.add_action(laser_filters_launch)
 
     return ld
