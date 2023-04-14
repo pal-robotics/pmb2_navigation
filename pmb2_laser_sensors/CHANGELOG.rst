@@ -2,6 +2,14 @@
 Changelog for package pmb2_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'fix/deps' into 'humble-devel'
+  temporarily removed sick_tim dependency
+  See merge request robots/pmb2_navigation!69
+* temporarily removed sick_tim dependency
+* Contributors: antoniobrandi
+
 4.0.2 (2023-04-05)
 ------------------
 * Update package.xmversion
