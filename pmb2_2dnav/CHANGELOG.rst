@@ -2,8 +2,8 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+4.0.4 (2023-04-28)
+------------------
 * Setting odom topic
 * Contributors: antoniobrandi
 
