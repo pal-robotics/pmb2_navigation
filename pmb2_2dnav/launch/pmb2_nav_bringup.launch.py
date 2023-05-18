@@ -22,7 +22,7 @@ from launch.launch_description_sources import PythonLaunchDescriptionSource
 
 
 def generate_launch_description():
-    """Launch Navigation common application to robot and sim"""
+    """Launch Navigation common application to robot and sim."""
     nav2_bringup_pkg = os.path.join(
         get_package_share_directory("pal_navigation_cfg_bringup"), "launch"
     )

@@ -22,7 +22,7 @@ from launch.launch_description_sources import PythonLaunchDescriptionSource
 
 
 def generate_launch_description():
-    """Launch Sim specifics applications (typically the ones in startups)"""
+    """Launch Sim specifics applications (typically the ones in startups)."""
     pmb2_2dnav = get_package_share_directory("pmb2_2dnav")
     pmb2_laser_sensors = get_package_share_directory("pmb2_laser_sensors")
 
