@@ -34,7 +34,6 @@ def generate_launch_description():
         ),
         launch_arguments={
             "params_file": os.path.join(pmb2_2dnav, "params", "pmb2_nav.yaml"),
-            "remappings_file": os.path.join(pmb2_2dnav, "params", "pmb2_remappings.yaml"),
         }.items()
     )
 
