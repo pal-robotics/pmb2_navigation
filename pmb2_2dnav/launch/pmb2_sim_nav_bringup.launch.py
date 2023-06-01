@@ -18,7 +18,8 @@ from ament_index_python.packages import get_package_share_directory
 
 from launch import LaunchDescription
 from launch.actions import IncludeLaunchDescription, DeclareLaunchArgument
-from launch.substitutions import LaunchConfiguration, PythonExpression
+from launch.substitutions import LaunchConfiguration
+from launch.conditions import UnlessCondition
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 
 
@@ -60,8 +61,8 @@ def generate_launch_description():
 
     # Private Simulation Only
     # ------------------
-    if not PythonExpression(LaunchConfiguration("is_public_sim")):
-
+    # Can throw if some pkg is not available in public sim
+    try:
         # Navigation Configuration Monitor
         nav_cfg_monitor_launch = IncludeLaunchDescription(
             PythonLaunchDescriptionSource(
@@ -75,8 +76,11 @@ def generate_launch_description():
                     )
                 ]
             ),
+            condition=UnlessCondition(LaunchConfiguration("is_public_sim")),
         )
         ld.add_action(nav_cfg_monitor_launch)
+    except Exception:
+        pass
 
     # Create the launch description and populate
     ld.add_action(declare_is_public_sim_arg)
