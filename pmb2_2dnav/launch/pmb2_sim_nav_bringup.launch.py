@@ -25,13 +25,16 @@ def generate_launch_description():
     """Launch Sim specifics applications (typically the ones in startups)."""
     pmb2_2dnav = get_package_share_directory("pmb2_2dnav")
     pmb2_laser_sensors = get_package_share_directory("pmb2_laser_sensors")
+    nav_cfg_monitor = get_package_share_directory("pal_navigation_cfg_monitor")
 
+    # Common Nav Applications Sim + Robot
     pmb2_nav_bringup_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             os.path.join(pmb2_2dnav, 'launch', 'pmb2_nav_bringup.launch.py')
         ),
     )
 
+    # Add below your Sim only Nav Application
     # Laser Filters
     laser_filters_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([os.path.join(
@@ -39,11 +42,17 @@ def generate_launch_description():
         )
     )
 
-    # Add below your Nav Application to launch only in Sim
+    # Navigation Configuration Monitor
+    nav_cfg_monitor_launch = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource([os.path.join(
+            nav_cfg_monitor, 'launch', 'navigation_cfg_monitor.launch.py')]
+        )
+    )
 
     # Create the launch description and populate
     ld = LaunchDescription()
     ld.add_action(pmb2_nav_bringup_launch)
     ld.add_action(laser_filters_launch)
+    ld.add_action(nav_cfg_monitor_launch)
 
     return ld
