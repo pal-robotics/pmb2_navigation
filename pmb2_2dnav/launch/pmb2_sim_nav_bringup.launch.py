@@ -17,42 +17,70 @@ import os
 from ament_index_python.packages import get_package_share_directory
 
 from launch import LaunchDescription
-from launch.actions import IncludeLaunchDescription
+from launch.actions import IncludeLaunchDescription, DeclareLaunchArgument
+from launch.substitutions import LaunchConfiguration, PythonExpression
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 
 
 def generate_launch_description():
     """Launch Sim specifics applications (typically the ones in startups)."""
+    ld = LaunchDescription()
+
     pmb2_2dnav = get_package_share_directory("pmb2_2dnav")
     pmb2_laser_sensors = get_package_share_directory("pmb2_laser_sensors")
-    nav_cfg_monitor = get_package_share_directory("pal_navigation_cfg_monitor")
 
-    # Common Nav Applications Sim + Robot
+    declare_is_public_sim_arg = DeclareLaunchArgument(
+        "is_public_sim",
+        default_value="false",
+        description="Whether or not you are using a public simulation",
+    )
+
+    # Simulation + Robot Navigation Applications
+    # ====================================
     pmb2_nav_bringup_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
-            os.path.join(pmb2_2dnav, 'launch', 'pmb2_nav_bringup.launch.py')
+            os.path.join(pmb2_2dnav, "launch", "pmb2_nav_bringup.launch.py")
         ),
     )
 
-    # Add below your Sim only Nav Application
+    # Simulation Navigation Applications Only
+    # =================================
+    # Private + Public Simulation
+    # ---------------------------
     # Laser Filters
     laser_filters_launch = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource([os.path.join(
-            pmb2_laser_sensors, 'launch', 'laser_filters.launch.py')]
+        PythonLaunchDescriptionSource(
+            [
+                os.path.join(
+                    pmb2_laser_sensors, "launch", "laser_filters.launch.py"
+                )
+            ]
         )
     )
 
-    # Navigation Configuration Monitor
-    nav_cfg_monitor_launch = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource([os.path.join(
-            nav_cfg_monitor, 'launch', 'navigation_cfg_monitor.launch.py')]
+    # Private Simulation Only
+    # ------------------
+    if not PythonExpression(LaunchConfiguration("is_public_sim")):
+
+        # Navigation Configuration Monitor
+        nav_cfg_monitor_launch = IncludeLaunchDescription(
+            PythonLaunchDescriptionSource(
+                [
+                    os.path.join(
+                        get_package_share_directory(
+                            "pal_navigation_cfg_monitor"
+                        ),
+                        "launch",
+                        "navigation_cfg_monitor.launch.py",
+                    )
+                ]
+            ),
         )
-    )
+        ld.add_action(nav_cfg_monitor_launch)
 
     # Create the launch description and populate
-    ld = LaunchDescription()
+    ld.add_action(declare_is_public_sim_arg)
     ld.add_action(pmb2_nav_bringup_launch)
     ld.add_action(laser_filters_launch)
-    ld.add_action(nav_cfg_monitor_launch)
 
     return ld

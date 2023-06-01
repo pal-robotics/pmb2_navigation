@@ -22,7 +22,7 @@ from launch.launch_description_sources import PythonLaunchDescriptionSource
 
 
 def generate_launch_description():
-    """Launch Navigation common application to robot and sim."""
+    """Launch Navigation common application Robot + Simulation."""
     nav2_bringup_pkg = os.path.join(
         get_package_share_directory("pal_navigation_cfg_bringup"), "launch"
     )
@@ -36,8 +36,6 @@ def generate_launch_description():
             "params_file": os.path.join(pmb2_2dnav, "params", "pmb2_nav.yaml"),
         }.items()
     )
-
-    # Add below any common Nav application to be started in Robot and in Sim
 
     # Create the launch description and populate
     ld = LaunchDescription()
