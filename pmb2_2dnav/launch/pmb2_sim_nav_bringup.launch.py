@@ -78,12 +78,12 @@ def generate_launch_description():
             ),
             condition=UnlessCondition(LaunchConfiguration("is_public_sim")),
         )
+        ld.add_action(declare_is_public_sim_arg)
         ld.add_action(nav_cfg_monitor_launch)
     except Exception:
         pass
 
     # Create the launch description and populate
-    ld.add_action(declare_is_public_sim_arg)
     ld.add_action(pmb2_nav_bringup_launch)
     ld.add_action(laser_filters_launch)
 
