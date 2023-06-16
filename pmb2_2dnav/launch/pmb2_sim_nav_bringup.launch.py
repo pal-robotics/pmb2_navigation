@@ -62,6 +62,7 @@ def generate_launch_description():
     # Private Simulation Only
     # ------------------
     # Can throw if some pkg is not available in public sim
+    ld.add_action(declare_is_public_sim_arg)
     try:
         # Navigation Configuration Monitor
         nav_cfg_monitor_launch = IncludeLaunchDescription(
@@ -78,7 +79,6 @@ def generate_launch_description():
             ),
             condition=UnlessCondition(LaunchConfiguration("is_public_sim")),
         )
-        ld.add_action(declare_is_public_sim_arg)
         ld.add_action(nav_cfg_monitor_launch)
     except Exception:
         pass
