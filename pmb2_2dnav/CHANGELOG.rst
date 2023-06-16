@@ -2,6 +2,24 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'feat/laser-filters' into 'humble-devel'
+  using laser filters in simulation
+  See merge request robots/pmb2_navigation!70
+* changed is_public_sim arg order
+* clarifying remapping file usage
+* declaring is_sim before using it
+* added private dependencies
+* added is_public_sim argument
+* added is_public_sim
+* updated dependencies and rviz config
+* using sim bringup
+* fix linter
+* start laser filters for simulation
+* using laser filters in simulation
+* Contributors: antoniobrandi
+
 4.0.4 (2023-04-28)
 ------------------
 * Setting odom topic

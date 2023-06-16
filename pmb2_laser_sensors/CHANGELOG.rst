@@ -2,6 +2,15 @@
 Changelog for package pmb2_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'feat/laser-filters' into 'humble-devel'
+  using laser filters in simulation
+  See merge request robots/pmb2_navigation!70
+* added private dependencies
+* using laser filters in simulation
+* Contributors: antoniobrandi
+
 4.0.4 (2023-04-28)
 ------------------
 
