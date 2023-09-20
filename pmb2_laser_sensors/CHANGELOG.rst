@@ -2,6 +2,14 @@
 Changelog for package pmb2_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'add_module' into 'humble-devel'
+  Adding module
+  See merge request robots/pmb2_navigation!73
+* Adding module
+* Contributors: Jordan Palacios
+
 4.0.5 (2023-06-16)
 ------------------
 * Merge branch 'feat/laser-filters' into 'humble-devel'

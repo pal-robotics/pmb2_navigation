@@ -2,6 +2,14 @@
 Changelog for package pmb2_maps
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'remove_pal_flags_dependency' into 'humble-devel'
+  Remove pal flags dependency
+  See merge request robots/pmb2_navigation!72
+* Remove pal flags dependency
+* Contributors: Jordan Palacios, Noel Jimenez
+
 4.0.5 (2023-06-16)
 ------------------
 
