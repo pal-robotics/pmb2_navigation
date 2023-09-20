@@ -2,8 +2,8 @@
 Changelog for package pmb2_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+4.0.6 (2023-09-20)
+------------------
 * Merge branch 'add_module' into 'humble-devel'
   Adding module
   See merge request robots/pmb2_navigation!73
