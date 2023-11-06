@@ -1,2 +1,3 @@
 laser:
-  launch: "pmb2_laser_sensors laser.launch.py"
+  launch: "pmb2_laser_sensors laser.launch.py
+           laser:=@laser_model@"
