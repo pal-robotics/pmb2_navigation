@@ -2,6 +2,9 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 4.0.6 (2023-09-20)
 ------------------
 * Merge branch 'remove_pal_flags_dependency' into 'humble-devel'

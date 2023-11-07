@@ -2,6 +2,11 @@
 Changelog for package pmb2_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Specify laser model
+* Contributors: Noel Jimenez
+
 4.0.6 (2023-09-20)
 ------------------
 * Merge branch 'add_module' into 'humble-devel'
