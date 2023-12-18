@@ -2,8 +2,8 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.20 (2023-12-18)
+-------------------
 * Merge branch 'feat/move-base-flex' into 'erbium-devel'
   initial move_base_flex integration
   See merge request robots/pmb2_navigation!61
