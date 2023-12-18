@@ -2,8 +2,8 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+4.0.9 (2023-12-18)
+------------------
 * Merge branch 'fix/clean' into 'humble-devel'
   Clean old scripts
   See merge request robots/pmb2_navigation!77
