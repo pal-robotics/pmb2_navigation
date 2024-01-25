@@ -1,5 +1,4 @@
-#* Configure the Navigation, Localization and SLAM
-#* If not set, following default params will be used
+# Configure the Navigation, Localization and SLAM
 navigation_container:
   components: ["bt_navigator", "controller_server", "planner_server", "behavior_server",
     "waypoint_follower", "lifecycle_manager_navigation"]
@@ -29,8 +28,7 @@ navigation_container:
     params: ["lifecycle_manager_navigation"]
 
 localization_container:
-  components: ["slam_toolbox", "map_server", "map_saver",
-    "amcl", "lifecycle_manager_localization"]
+  components: ["map_server", "map_saver", "amcl", "lifecycle_manager_localization"]
   slam_toolbox:
     package: "slam_toolbox"
     component: "slam_toolbox_sync"
