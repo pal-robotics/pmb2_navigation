@@ -1,51 +1,44 @@
 # Configure the Navigation, Localization and SLAM
-navigation_container:
-  components: ["bt_navigator", "controller_server", "planner_server", "behavior_server",
-    "waypoint_follower", "lifecycle_manager_navigation"]
-  bt_navigator:
-    package: "nav2_bt_navigator"
-    component: "bt_navigator"
-    params: ["navigate_w_replanning_and_recovery"]
-  controller_server:
-    package: "nav2_controller"
-    component: "controller_server"
-    params: ["dwb_w_progress_checker_and_goal_checker", "local_costmap_w_inflation"]
-  planner_server:
-    package: "nav2_planner"
-    component: "planner_server"
-    params: ["navfn", "global_costmap_w_inflation"]
-  behavior_server:
-    package: "nav2_behaviors"
-    component: "behavior_server"
-    params: ["spin_backup_wait"]
-  waypoint_follower:
-    package: "nav2_waypoint_follower"
-    component: "waypoint_follower"
-    params: ["wait_at_waypoint"]
-  lifecycle_manager_navigation:
-    package: "nav2_lifecycle_manager"
-    component: "lifecycle_manager"
-    params: ["lifecycle_manager_navigation"]
+# nodes:
+#   <NODE-NAME>:
+#     app: <APP-NAME>
+#     params: [<LIST-YAML-PARAM-FILES>]
+#
+# containers:
+#   <CONTAINER-NAME>
+#     <NODE-NAME>:
+#       app: <APP-NAME>
+#       params: [<LIST-YAML-PARAM-FILES>]
 
-localization_container:
-  components: ["map_server", "map_saver", "amcl", "lifecycle_manager_localization"]
-  slam_toolbox:
-    package: "slam_toolbox"
-    component: "slam_toolbox_sync"
-    params: ["slam_toolbox_sync"]
+nodes:
+  bt_navigator:
+    app: bt_navigator
+    params: [navigate_w_replanning_and_recovery]
+  controller_server:
+    app: controller_server
+    params: [dwb_w_progress_checker_and_goal_checker, local_costmap_w_inflation]
+  planner_server:
+    app: planner_server
+    params: [navfn, global_costmap_w_inflation]
+  behavior_server:
+    app: behavior_server
+    params: [spin_backup_wait]
+  waypoint_follower:
+    app: waypoint_follower
+    params: [wait_at_waypoint]
+  lifecycle_manager_navigation:
+    app: lifecycle_manager
+    params: [lifecycle_manager_navigation]
   map_server:
-    package: "nav2_map_server"
-    component: "map_server"
-    params: ["map_server"]
+    app: map_server
+    params: [map_server]
   map_saver:
-    package: "nav2_map_server"
-    component: "map_saver"
-    params: ["map_saver"]
+    app: map_saver
+    params: [map_saver]
   amcl:
-    package: "nav2_amcl"
-    component: "amcl"
-    params: ["amcl_diff"]
+    app: amcl
+    params: [amcl_diff]
   lifecycle_manager_localization:
-    package: "nav2_lifecycle_manager"
-    component: "lifecycle_manager"
-    params: ["lifecycle_manager_localization"]
+    app: lifecycle_manager
+    params: [lifecycle_manager_localization]
+  
