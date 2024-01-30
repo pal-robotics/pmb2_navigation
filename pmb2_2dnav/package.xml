@@ -15,8 +15,8 @@
 
   <exec_depend>pmb2_laser_sensors</exec_depend>
   <exec_depend>pmb2_maps</exec_depend>
+  <exec_depend>nav2_bringup</exec_depend>
   <exec_depend condition="$PAL_DISTRO > 0">pal_nav2_bringup</exec_depend>
-  <exec_depend condition="$PAL_DISTRO > 0">pal_navigation_cfg_monitor</exec_depend>
   <exec_depend>rviz2</exec_depend>
   <exec_depend>ros2launch</exec_depend>
 

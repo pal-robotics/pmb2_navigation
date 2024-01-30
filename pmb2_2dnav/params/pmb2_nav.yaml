@@ -41,4 +41,3 @@ nodes:
   lifecycle_manager_localization:
     app: lifecycle_manager
     params: [lifecycle_manager_localization]
-  
