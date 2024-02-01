@@ -2,15 +2,15 @@
 #* SLAM and Localization parameters for PMB2 Robot
 #* 
 #* Used in NavigationParamsBuilder in pal_navigation_cfg
-#* If not set, following default parameters will be used
 
-global_frame : "map"  # Default: "map"
-base_link_frame : "base_link" # Default: "base_link" 
-odom_topic : "/mobile_base_controller/odom"  # Default: "/odom"
+global_frame : "map" 
+base_link_frame : "base_link"
+odom_topic : "/mobile_base_controller/odom"
 # As today use_sim_time can only be set from the launch file 
 # https://github.com/ros-planning/navigation2/blob/main/nav2_bringup/launch/navigation_launch.py#L111
-use_sim_time : False # Default: True 
-robot_radius : 0.275  # Default: 0.275
-scan_topic : "/scan"  # Default: "/scan_raw"
-odom_frame : "odom" # Default: "odom"
-base_footprint_frame : "base_footprint" # Default: "base_footprint"
+use_sim_time : False
+robot_radius : 0.275
+footprint: ""
+scan_topic : "/scan"
+odom_frame : "odom"
+base_footprint_frame : "base_footprint"
