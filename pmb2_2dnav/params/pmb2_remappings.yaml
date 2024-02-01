@@ -9,7 +9,7 @@ base_link_frame : "base_link" # Default: "base_link"
 odom_topic : "/mobile_base_controller/odom"  # Default: "/odom"
 # As today use_sim_time can only be set from the launch file 
 # https://github.com/ros-planning/navigation2/blob/main/nav2_bringup/launch/navigation_launch.py#L111
-use_sim_time : True # Default: True 
+use_sim_time : False # Default: True 
 robot_radius : 0.275  # Default: 0.275
 scan_topic : "/scan"  # Default: "/scan_raw"
 odom_frame : "odom" # Default: "odom"
