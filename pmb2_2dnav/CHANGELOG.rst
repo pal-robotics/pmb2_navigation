@@ -2,8 +2,8 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+4.0.10 (2024-02-02)
+-------------------
 * Merge branch 'feat/register-components' into 'humble-devel'
   using components and parameters
   See merge request robots/pmb2_navigation!78
