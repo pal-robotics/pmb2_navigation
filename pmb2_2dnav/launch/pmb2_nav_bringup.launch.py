@@ -90,7 +90,6 @@ def navigation_bringup(context, *args, **kwargs):
 
 def generate_launch_description():
     """Launch Navigation common application Robot + Simulation."""
-
     declare_is_public_sim_arg = DeclareLaunchArgument(
         "is_public_sim",
         default_value="false",
