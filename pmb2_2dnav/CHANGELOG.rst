@@ -2,6 +2,20 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'feat/register-components' into 'humble-devel'
+  using components and parameters
+  See merge request robots/pmb2_navigation!78
+* linters
+* removing defaults
+* update remappings for real robot
+* simplify launch files and adapt for public_sim
+* adding nav config for composition and standalone
+* using pal_nav2_bringup
+* using components and parameters
+* Contributors: antoniobrandi
+
 4.0.9 (2023-12-18)
 ------------------
 * Merge branch 'fix/clean' into 'humble-devel'
