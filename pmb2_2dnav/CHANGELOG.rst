@@ -2,6 +2,14 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'fix/pal_nav2_bringup' into 'humble-devel'
+  Use pal_nav2_bringup only for private simulation
+  See merge request robots/pmb2_navigation!79
+* Use pal_nav2_bringup only for private simulation
+* Contributors: Noel Jimenez, antoniobrandi
+
 4.0.10 (2024-02-02)
 -------------------
 * Merge branch 'feat/register-components' into 'humble-devel'
