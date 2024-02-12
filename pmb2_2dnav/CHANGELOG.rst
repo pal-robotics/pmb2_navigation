@@ -2,8 +2,8 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+4.0.11 (2024-02-12)
+-------------------
 * Merge branch 'fix/pal_nav2_bringup' into 'humble-devel'
   Use pal_nav2_bringup only for private simulation
   See merge request robots/pmb2_navigation!79
