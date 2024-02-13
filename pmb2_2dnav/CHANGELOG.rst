@@ -2,8 +2,8 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+4.0.12 (2024-02-13)
+-------------------
 * Merge branch 'abr/fix/world-name' into 'humble-devel'
   set default world_name for standalone navigation
   See merge request robots/pmb2_navigation!80
