@@ -2,6 +2,14 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+4.0.17 (2024-05-29)
+-------------------
+* Merge branch 'fix/aca/public-sim' into 'humble-devel'
+  fix public sim
+  See merge request robots/pmb2_navigation!88
+* fix public sim
+* Contributors: Noel Jimenez, andreacapodacqua
+
 4.0.16 (2024-05-09)
 -------------------
 * Merge branch 'fix/aca/module' into 'humble-devel'
