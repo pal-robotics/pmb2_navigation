@@ -10,6 +10,9 @@ Changelog for package pmb2_2dnav
 * initial move_base_flex integration
 * Contributors: antoniobrandi
 
+Forthcoming
+-----------
+
 2.0.19 (2023-04-14)
 -------------------
 
