@@ -1,17 +1,5 @@
-# Configure the Navigation, Localization and SLAM
-# nodes:
-#   <NODE-NAME>:
-#     app: <APP-NAME>
-#     params: [<LIST-YAML-PARAM-FILES>]
-#
-# containers:
-#   <CONTAINER-NAME>
-#     <NODE-NAME>:
-#       app: <APP-NAME>
-#       params: [<LIST-YAML-PARAM-FILES>]
-
-containers:
-  navigation_container:
+navigation:
+  nodes:
     bt_navigator:
       app: bt_navigator
       params: [navigate_w_replanning_and_recovery]

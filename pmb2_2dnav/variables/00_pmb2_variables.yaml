@@ -1,8 +1,5 @@
 #* Remappings that will be applied to all the Navigation,
 #* SLAM, Localization and sensors parameters for PMB2 Robot
-
-# As today use_sim_time can only be set from the launch file 
-# https://github.com/ros-planning/navigation2/blob/main/nav2_bringup/launch/navigation_launch.py#L111
 use_sim_time : True
 global_frame : "map" 
 base_link_frame : "base_link"
@@ -18,5 +15,4 @@ laser_max_angle: 1.65806 # !degrees  95 (not supported)
 #laser remappings
 scan_raw_topic : "/scan_raw"
 laser_frame: "base_laser_link"
-device_number_laser_0: 0
 scan_topic : "/scan"

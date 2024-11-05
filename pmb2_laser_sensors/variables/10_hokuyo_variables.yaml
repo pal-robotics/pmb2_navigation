@@ -1,0 +1,4 @@
+#* Variables that will be used to configure the Navigation,
+#* SLAM, Localization and sensors parameters for TIAGo OMNI Base Robot
+#laser_0 remappings:
+serial_port_0: /dev/ttyACM1

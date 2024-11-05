@@ -1,4 +1,4 @@
 slam:
-  launch: "pal_nav2_bringup nav_bringup.launch.py
-          params_file:=pmb2_slam.yaml
+  launch: "pal_navigation_cfg_utils pipeline_executor.launch.py
+          pipeline:=slam
           robot_name:=@robot_type@"

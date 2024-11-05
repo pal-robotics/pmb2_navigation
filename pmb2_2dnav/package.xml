@@ -14,12 +14,13 @@
   <buildtool_depend>ament_cmake_auto</buildtool_depend>
   
   <build_depend condition="$PAL_DISTRO >= alum">pal_module_cmake</build_depend>
+  <build_depend condition="$PAL_DISTRO >= alum">pal_navigation_cfg_cmake</build_depend>
 
   <exec_depend>pmb2_laser_sensors</exec_depend>
   <exec_depend>pal_maps</exec_depend>
   <exec_depend>nav2_bringup</exec_depend>
   <exec_depend>launch_pal</exec_depend>
-  <exec_depend condition="$PAL_DISTRO >= alum">pal_nav2_bringup</exec_depend>
+  <exec_depend condition="$PAL_DISTRO >= alum">pal_navigation_cfg_utils</exec_depend>
   <exec_depend condition="$PAL_DISTRO >= alum">pal_nav2_bt_navigator</exec_depend>
   <exec_depend>rviz2</exec_depend>
   <exec_depend>ros2launch</exec_depend>

@@ -1,17 +1,5 @@
-# Configure the Navigation, Localization and SLAM
-# nodes:
-#   <NODE-NAME>:
-#     app: <APP-NAME>
-#     params: [<LIST-YAML-PARAM-FILES>]
-#
-# containers:
-#   <CONTAINER-NAME>
-#     <NODE-NAME>:
-#       app: <APP-NAME>
-#       params: [<LIST-YAML-PARAM-FILES>]
-
-containers:
-  localization_container:
+localization:
+  nodes:
     map_server:
       app: map_server
       params: [map_server]

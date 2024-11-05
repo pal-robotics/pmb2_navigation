@@ -1,4 +1,4 @@
 navigation:
-  launch: "pal_nav2_bringup nav_bringup.launch.py
-          params_file:=pmb2_nav.yaml
+  launch: "pal_navigation_cfg_utils pipeline_executor.launch.py
+          pipeline:=navigation
           robot_name:=@robot_type@"
