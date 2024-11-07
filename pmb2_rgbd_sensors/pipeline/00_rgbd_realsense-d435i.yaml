@@ -1,0 +1,17 @@
+pmb2:
+  rgbd_realsense-d435i:
+    nodes: 
+      roof_rgbd_camera:
+        app: realsense
+        params: [d435i_rgbd_low_contrast]
+        namespace: "roof_rgbd_camera"
+        variables:
+          camera_name: ${name_camera_0}
+          serial_no: ${serial_no_camera_0}
+      base_rgbd_camera:
+        app: realsense
+        params: [d435i_rgbd_high_accuracy]
+        namespace: "base_rgbd_camera"
+        variables:
+          camera_name: ${name_camera_1}
+          serial_no: ${serial_no_camera_1}

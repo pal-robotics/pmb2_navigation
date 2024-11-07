@@ -1,6 +1,6 @@
-laser_w_composition_sick_561:
-  containers:
-    laser_container:
+pmb2:
+  laser_sick-561:
+    nodes: 
       sick_561:
         app: sick_driver
         params: [sick_561]

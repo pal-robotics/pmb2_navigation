@@ -4,15 +4,6 @@ project(pmb2_2dnav)
 find_package(ament_cmake_auto REQUIRED)
 ament_auto_find_build_dependencies()
 
-if(pal_module_cmake_FOUND)
-  pal_register_modules(module/00_localization.yaml
-                      module/00_localization_w_composition.yaml
-                      module/00_navigation.yaml
-                      module/00_navigation_w_composition.yaml
-                      module/00_slam.yaml)
-elseif(DEFINED ENV{PAL_DISTRO})
-  message(FATAL_ERROR "The pal_module_cmake package was not found. Modules not registered.")
-endif()
 if(pal_navigation_cfg_cmake_FOUND)
   pal_navigation_cfg_register_pipeline(pipeline/00_localization.yaml
                       pipeline/00_localization_w_composition.yaml

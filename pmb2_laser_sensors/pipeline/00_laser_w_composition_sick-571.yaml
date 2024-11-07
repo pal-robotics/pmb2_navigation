@@ -1,13 +1,12 @@
 pmb2:
-  laser_w_composition_hokuyo:
+  laser_w_composition_sick-571:
     containers:
       laser_container:
-        urg_driver:
-          app: urg_driver
-          params: [urg_04lx_ug01]
+        sick_571:
+          app: sick_driver
+          params: [sick_571]
           variables:
-            serial_port: ${serial_port_0}
-          remappings: ["/scan", "${scan_raw_topic}"]
+            device_number: ${device_number_laser_0}
         pal_laser_filters:
           app: pal_laser_filters
           params: [circular_footprint]
@@ -18,4 +17,4 @@ pmb2:
           app: lifecycle_manager
           params: [default]
           variables:
-            node_names: ["pal_laser_filters", "dlo_ros"]
+            node_names: ["sick_571", "pal_laser_filters", "dlo_ros"]

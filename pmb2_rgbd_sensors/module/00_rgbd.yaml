@@ -1,4 +1,0 @@
-rgbd:
-  launch: "pal_navigation_cfg_utils pipeline_executor.launch.py
-          pipeline:=rgbd_d435i
-          robot_name:=@robot_type@"
