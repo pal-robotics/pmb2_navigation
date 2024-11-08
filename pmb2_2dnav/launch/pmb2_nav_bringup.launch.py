@@ -57,7 +57,7 @@ def public_nav_function(context, *args, **kwargs):
     pmb2_2dnav = get_package_share_directory("pmb2_2dnav")
     pal_maps = get_package_share_directory("pal_maps")
     world_name = read_launch_argument("world_name", context)
-    param_file = os.path.join(pmb2_2dnav, "params", "pmb2_nav_public_sim.yaml")
+    param_file = os.path.join(pmb2_2dnav, "config", "pmb2_nav_public_sim.yaml")
     map_path = os.path.join(pal_maps, "maps", world_name, "map.yaml")
     rviz_config_file = os.path.join(pmb2_2dnav, "config", "rviz", "navigation.rviz")
 
