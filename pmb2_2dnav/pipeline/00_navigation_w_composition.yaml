@@ -7,10 +7,10 @@ pmb2:
           params: [navigate_w_replanning_and_recovery]
         controller_server:
           app: controller_server
-          params: [mppi_diff, local_costmap_w_filters]
+          params: [mppi_diff, local_costmap]
         planner_server:
           app: planner_server
-          params: [smac_2D, global_costmap_w_filters]
+          params: [smac_2D, global_costmap]
         behavior_server:
           app: behavior_server
           params: [spin_backup_wait]
