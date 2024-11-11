@@ -17,6 +17,12 @@ if(pal_navigation_cfg_cmake_FOUND)
 elseif(DEFINED ENV{PAL_DISTRO})
   message(FATAL_ERROR "The pal_navigation_cfg_cmake package was not found. Pipelines not registered.")
 endif()
+if(pal_module_cmake_FOUND)
+  pal_register_modules(module/00_laser_w_composition.yaml
+                      module/00_laser.yaml)
+elseif(DEFINED ENV{PAL_DISTRO})
+  message(FATAL_ERROR "The pal_module_cmake package was not found. Modules not registered.")
+endif()
 
 if(BUILD_TESTING)
   ament_auto_find_test_dependencies()

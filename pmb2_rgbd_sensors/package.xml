@@ -9,6 +9,7 @@
 
   <buildtool_depend>ament_cmake_auto</buildtool_depend>
 
+  <build_depend condition="$PAL_DISTRO >= alum">pal_module_cmake</build_depend>
   <build_depend condition="$PAL_DISTRO >= alum">pal_navigation_cfg_cmake</build_depend>
   
   <exec_depend condition="$PAL_DISTRO >= alum">realsense2_camera</exec_depend>
