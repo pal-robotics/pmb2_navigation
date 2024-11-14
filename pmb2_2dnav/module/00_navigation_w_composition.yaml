@@ -1,4 +1,4 @@
 navigation_w_composition:
-  launch: "pal_nav2_bringup nav_bringup.launch.py
-          params_file:=pmb2_nav_w_composition.yaml
+  launch: "pal_navigation_cfg_utils pipeline_executor.launch.py
+          pipeline:=navigation_w_composition
           robot_name:=@robot_type@"

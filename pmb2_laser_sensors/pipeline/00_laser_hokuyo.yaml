@@ -1,0 +1,20 @@
+pmb2:
+  laser_hokuyo:
+    nodes: 
+      urg_driver:
+        app: urg_driver
+        params: [urg_04lx_ug01]
+        variables:
+          serial_port: ${serial_port_0}
+        remappings: ["/scan", "${scan_raw_topic}"]
+      pal_laser_filters:
+        app: pal_laser_filters
+        params: [circular_footprint]
+      dlo_ros:
+        app: dlo_ros
+        params: [default]
+      lifecycle_manager_laser:
+        app: lifecycle_manager
+        params: [default]
+        variables:
+          node_names: ["pal_laser_filters", "dlo_ros"]

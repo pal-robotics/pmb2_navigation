@@ -57,7 +57,7 @@ def public_nav_function(context, *args, **kwargs):
     pmb2_2dnav = get_package_share_directory("pmb2_2dnav")
     pal_maps = get_package_share_directory("pal_maps")
     world_name = read_launch_argument("world_name", context)
-    param_file = os.path.join(pmb2_2dnav, "params", "pmb2_nav_public_sim.yaml")
+    param_file = os.path.join(pmb2_2dnav, "config", "pmb2_nav_public_sim.yaml")
     map_path = os.path.join(pal_maps, "maps", world_name, "map.yaml")
     rviz_config_file = os.path.join(pmb2_2dnav, "config", "rviz", "navigation.rviz")
 
@@ -108,50 +108,40 @@ def public_nav_function(context, *args, **kwargs):
 def private_nav_function(context, *args, **kwargs):
     actions = []
     pmb2_2dnav = get_package_share_directory("pmb2_2dnav")
-    remappings_file = os.path.join(
-        pmb2_2dnav, "params", "pmb2_remappings_sim.yaml")
 
     nav_bringup_launch = include_scoped_launch_py_description(
-        pkg_name="pal_nav2_bringup",
-        paths=["launch", "nav_bringup.launch.py"],
+        pkg_name="pal_navigation_cfg_utils",
+        paths=["launch", "pipeline_executor.launch.py"],
         launch_arguments={
-            "params_pkg": "pmb2_2dnav",
-            "params_file": "pmb2_nav.yaml",
+            "pipeline": "navigation",
             "robot_name": "pmb2",
-            "remappings_file": remappings_file,
-        }
+        },
     )
     slam_bringup_launch = include_scoped_launch_py_description(
-        pkg_name="pal_nav2_bringup",
-        paths=["launch", "nav_bringup.launch.py"],
+        pkg_name="pal_navigation_cfg_utils",
+        paths=["launch", "pipeline_executor.launch.py"],
         launch_arguments={
-            "params_pkg": "pmb2_2dnav",
-            "params_file": "pmb2_slam.yaml",
+            "pipeline": "slam",
             "robot_name": "pmb2",
-            "remappings_file": remappings_file,
         },
         condition=IfCondition(LaunchConfiguration("slam"))
     )
     loc_bringup_launch = include_scoped_launch_py_description(
-        pkg_name="pal_nav2_bringup",
-        paths=["launch", "nav_bringup.launch.py"],
+        pkg_name="pal_navigation_cfg_utils",
+        paths=["launch", "pipeline_executor.launch.py"],
         launch_arguments={
-            "params_pkg": "pmb2_2dnav",
-            "params_file": "pmb2_loc.yaml",
+            "pipeline": "localization",
             "robot_name": "pmb2",
-            "remappings_file": remappings_file,
         },
         condition=UnlessCondition(LaunchConfiguration("slam"))
     )
     laser_bringup_launch = include_scoped_launch_py_description(
-        pkg_name="pal_nav2_bringup",
-        paths=["launch", "nav_bringup.launch.py"],
+        pkg_name="pal_navigation_cfg_utils",
+        paths=["launch", "pipeline_executor.launch.py"],
         launch_arguments={
-            "params_pkg": "pmb2_laser_sensors",
-            "params_file": "laser_pipeline_sim.yaml",
+            "pipeline": "laser_sim",
             "robot_name": "pmb2",
-            "remappings_file": remappings_file,
-        }
+        },
     )
 
     rviz_node = Node(

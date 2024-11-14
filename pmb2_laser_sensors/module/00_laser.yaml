@@ -1,5 +1,4 @@
 laser:
-  launch: "pal_nav2_bringup nav_bringup.launch.py 
-          params_pkg:=pmb2_laser_sensors
-          params_file:=laser_pipeline.yaml
+  launch: "pal_navigation_cfg_utils pipeline_executor.launch.py
+          pipeline:=laser_@laser_model@
           robot_name:=@robot_type@"

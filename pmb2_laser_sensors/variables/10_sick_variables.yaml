@@ -1,0 +1,5 @@
+#* Variables that will be used to configure the Navigation,
+#* SLAM, Localization and sensors parameters for TIAGo OMNI Base Robot
+pmb2:
+  #laser_0 remappings:
+  device_number_laser_0: 0

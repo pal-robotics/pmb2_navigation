@@ -1,0 +1,16 @@
+#* Variables that will be used to configure the Navigation,
+#* SLAM, Localization and sensors parameters for TIAGo OMNI Base Robot
+pmb2:
+  #camera_0 remappings:
+  name_camera_0: "base_rgbd_camera"
+  serial_no_camera_0: "_XXXXXXXXXXXX"
+  pointcloud_topic_0: "/base_rgbd_camera/depth/color/points"
+  camera_0_vertical_fov: 1.01
+  camera_0_horizontal_fov: 1.5
+
+  #camera_1 remappings:
+  name_camera_1: "roof_rgbd_camera"
+  serial_no_camera_1: "_XXXXXXXXXXXX"
+  pointcloud_topic_1: "/roof_rgbd_camera/depth/color/points"
+  camera_1_vertical_fov: 1.01
+  camera_1_horizontal_fov: 1.5

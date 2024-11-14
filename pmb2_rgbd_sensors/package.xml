@@ -1,21 +1,24 @@
 <?xml version="1.0"?>
-<package format="2">
+<package format="3">
   <name>pmb2_rgbd_sensors</name>
-  <version>2.0.8</version>
-  <description>PMB2-specific RGBD sensors launch and config files.</description>
-  <maintainer email="jeremie.deray@pal-robotics.com">Jeremie Deray</maintainer>
-  <maintainer email="procopio.stein@pal-robotics.com">Procopio Stein</maintainer>
+  <version>4.5.0</version>
+  <description>pmb2-specific RGBD sensors module and params files.</description>
+  <author email="antonio.brandi@pal-robotics.com">Antonio Brandi</author>
+  <maintainer email="antonio.brandi@pal-robotics.com">Antonio Brandi</maintainer>
   <license>Apache License 2.0</license>
-  <author email="enrique.fernandez@pal-robotics.com">Enrique Fernandez</author>
 
-  <url type="website">https://github.com/pal-robotics/pmb2_simulation</url>
+  <buildtool_depend>ament_cmake_auto</buildtool_depend>
 
-  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend condition="$PAL_DISTRO >= alum">pal_module_cmake</build_depend>
+  <build_depend condition="$PAL_DISTRO >= alum">pal_navigation_cfg_cmake</build_depend>
+  
+  <exec_depend condition="$PAL_DISTRO >= alum">realsense2_camera</exec_depend>
+  <exec_depend condition="$PAL_DISTRO >= alum">pal_navigation_cfg_utils</exec_depend>
 
-  <exec_depend>openni2_launch</exec_depend>
-  <exec_depend>pal-orbbec-openni2</exec_depend>
-  <exec_depend>uvc_camera</exec_depend>
-  <exec_depend>pal_pcl</exec_depend>
-  <exec_depend>pal_usb_utils</exec_depend>
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
 
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
 </package>

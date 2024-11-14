@@ -1,5 +1,4 @@
 laser_w_composition:
-  launch: "pal_nav2_bringup nav_bringup.launch.py 
-          params_pkg:=pmb2_laser_sensors
-          params_file:=laser_pipeline_w_composition.yaml
+  launch: "pal_navigation_cfg_utils pipeline_executor.launch.py
+          pipeline:=laser_w_composition_@laser_model@
           robot_name:=@robot_type@"
