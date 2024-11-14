@@ -2,6 +2,16 @@
 Changelog for package pmb2_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'abr/feat/nav-params' into 'humble-devel'
+  register nav variables and pipelines
+  See merge request robots/pmb2_navigation!103
+* register modules
+* support multi-robot
+* using new pipelines architecture
+* Contributors: antoniobrandi
+
 4.5.0 (2024-10-25)
 ------------------
 

@@ -2,6 +2,18 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'abr/feat/nav-params' into 'humble-devel'
+  register nav variables and pipelines
+  See merge request robots/pmb2_navigation!103
+* disable costmap filters for normal nav
+* register modules
+* update public sim paths
+* support multi-robot
+* using new pipelines architecture
+* Contributors: antoniobrandi
+
 4.5.0 (2024-10-25)
 ------------------
 * Merge branch 'abr/fix/mppi' into 'humble-devel'
