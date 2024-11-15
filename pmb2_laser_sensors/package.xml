@@ -19,6 +19,7 @@
   <exec_depend condition="$PAL_DISTRO >= alum">pal_laser_filters</exec_depend>
   <exec_depend condition="$PAL_DISTRO >= alum">dlo_ros</exec_depend>
   <exec_depend condition="$PAL_DISTRO >= alum">pal_navigation_cfg_utils</exec_depend>
+  <exec_depend>urg_node</exec_depend>
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
