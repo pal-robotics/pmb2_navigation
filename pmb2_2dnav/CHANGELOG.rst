@@ -2,6 +2,14 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'abr/fix/rviz' into 'humble-devel'
+  start rviz with use_public_sim
+  See merge request robots/pmb2_navigation!106
+* start rviz with use_public_sim
+* Contributors: antoniobrandi
+
 4.6.0 (2024-11-14)
 ------------------
 * Merge branch 'abr/feat/nav-params' into 'humble-devel'
