@@ -2,6 +2,14 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'abr/fix/suppress-footprint-error' into 'humble-devel'
+  suppress footprint error
+  See merge request robots/pmb2_navigation!107
+* suppress footprint error
+* Contributors: antoniobrandi
+
 4.6.1 (2024-11-21)
 ------------------
 * Merge branch 'abr/fix/rviz' into 'humble-devel'
