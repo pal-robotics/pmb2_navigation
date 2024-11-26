@@ -15,9 +15,7 @@ elseif(DEFINED ENV{PAL_DISTRO})
   message(FATAL_ERROR "The pal_navigation_cfg_cmake package was not found. Pipelines not registered.")
 endif()
 if(pal_module_cmake_FOUND)
-  pal_register_modules(module/00_localization_w_composition.yaml
-                      module/00_localization.yaml
-                      module/00_navigation_w_composition.yaml
+  pal_register_modules(module/00_localization.yaml
                       module/00_navigation.yaml
                       module/00_slam.yaml)
 elseif(DEFINED ENV{PAL_DISTRO})
