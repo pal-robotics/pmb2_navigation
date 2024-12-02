@@ -2,6 +2,14 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'abr/feat/deps-and-specs' into 'humble-devel'
+  nav deps and specs
+  See merge request robots/pmb2_navigation!108
+* nav deps and specifics
+* Contributors: antoniobrandi
+
 4.6.2 (2024-11-22)
 ------------------
 * Merge branch 'abr/fix/suppress-footprint-error' into 'humble-devel'
