@@ -2,8 +2,8 @@
 Changelog for package pmb2_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+4.8.0 (2025-01-21)
+------------------
 * added support to multiple topic remappings
 * Contributors: andreacapodacqua
 
