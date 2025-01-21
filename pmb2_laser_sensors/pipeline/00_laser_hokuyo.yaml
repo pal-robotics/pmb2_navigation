@@ -6,7 +6,7 @@ pmb2:
         params: [urg_04lx_ug01]
         variables:
           serial_port: ${serial_port_0}
-        remappings: ["/scan", "${scan_raw_topic}"]
+        remappings: [["/scan", "${scan_raw_topic}"]]
       pal_laser_filters:
         app: pal_laser_filters
         params: [circular_footprint]
