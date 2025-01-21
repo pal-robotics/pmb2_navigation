@@ -2,6 +2,11 @@
 Changelog for package pmb2_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* added support to multiple topic remappings
+* Contributors: andreacapodacqua
+
 4.7.0 (2024-12-02)
 ------------------
 * Merge branch 'abr/feat/deps-and-specs' into 'humble-devel'
