@@ -1,0 +1,32 @@
+pmb2:
+  rgbd_cobra_structure:
+    containers:
+      rgbd_container:
+        roof_rgbd_camera:
+          app: openni2_camera
+          params: [default]
+          namespace: "roof_rgbd_camera"
+          variables:
+            serial_no: ${serial_no_camera_0}
+          remappings: [["depth/image", "depth_registered/image_raw"]]
+        roof_rgbd_camera_depth:
+          app: depth_image_proc
+          params: [default]
+          namespace: "roof_rgbd_camera"
+          variables:
+            serial_no: ${serial_no_camera_0}
+          remappings: [["image_rect", "depth/image_raw"], ["camera_info", "depth/camera_info"],["points", "depth/points"]]
+        base_rgbd_camera:
+          app: openni2_camera
+          params: [default]
+          namespace: "base_rgbd_camera"
+          variables:
+            serial_no: ${serial_no_camera_1}
+          remappings: [["depth/image", "depth_registered/image_raw"]]
+        base_rgbd_camera_depth:
+          app: depth_image_proc
+          params: [default]
+          namespace: "base_rgbd_camera"
+          variables:
+            serial_no: ${serial_no_camera_1}
+          remappings: [["image_rect", "depth/image_raw"], ["camera_info", "depth/camera_info"],["points", "depth/points"]]
