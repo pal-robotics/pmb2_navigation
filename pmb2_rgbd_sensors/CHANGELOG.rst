@@ -2,6 +2,11 @@
 Changelog for package pmb2_rgbd_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* support cobra add_on
+* Contributors: antoniobrandi
+
 4.8.0 (2025-01-21)
 ------------------
 
