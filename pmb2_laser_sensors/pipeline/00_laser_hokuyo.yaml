@@ -5,7 +5,7 @@ pmb2:
         app: urg_driver
         params: [urg_04lx_ug01]
         variables:
-          serial_port: ${serial_port_0}
+          serial_port: /dev/ttyACM${serial_number_laser_0}
         remappings: [["/scan", "${scan_raw_topic}"]]
       pal_laser_filters:
         app: pal_laser_filters
