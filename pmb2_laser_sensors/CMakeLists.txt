@@ -12,8 +12,7 @@ if(pal_navigation_cfg_cmake_FOUND)
                       pipeline/00_laser_w_composition_hokuyo.yaml
                       pipeline/00_laser_w_composition_sick-561.yaml
                       pipeline/00_laser_w_composition_sick-571.yaml)
-  pal_navigation_cfg_register_variables(variables/10_hokuyo_variables.yaml
-                      variables/10_sick_variables.yaml)
+  pal_navigation_cfg_register_variables(variables/10_laser_variables.yaml)
 elseif(DEFINED ENV{PAL_DISTRO})
   message(FATAL_ERROR "The pal_navigation_cfg_cmake package was not found. Pipelines not registered.")
 endif()

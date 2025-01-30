@@ -2,4 +2,4 @@
 #* SLAM, Localization and sensors parameters for TIAGo OMNI Base Robot
 pmb2:
   #laser_0 remappings:
-  serial_port_0: /dev/ttyACM1
+  serial_number_laser_0: ""

@@ -6,7 +6,7 @@ pmb2:
           app: sick_driver
           params: [sick_561]
           variables:
-            device_number: ${device_number_laser_0}
+            serial_number: "${serial_number_laser_0}"
         pal_laser_filters:
           app: pal_laser_filters
           params: [circular_footprint]
