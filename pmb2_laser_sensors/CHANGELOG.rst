@@ -2,8 +2,8 @@
 Changelog for package pmb2_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+4.10.0 (2025-01-30)
+-------------------
 * uniform serial number in all laser
 * pass sn down as string
 * using serial_number for sick lasers
