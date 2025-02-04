@@ -155,7 +155,6 @@ def private_nav_function(context, *args, **kwargs):
             "navigation.rviz",
         )],
         output="screen",
-        parameters=[{"use_sim_time": True}],
     )
 
     actions.append(laser_bringup_launch)
