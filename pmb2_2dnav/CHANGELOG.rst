@@ -2,8 +2,8 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+4.11.0 (2025-02-04)
+-------------------
 * Update pmb2_nav_bringup.launch.py
 * Contributors: antoniobrandi
 
