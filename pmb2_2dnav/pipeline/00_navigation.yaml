@@ -16,11 +16,8 @@ pmb2:
       waypoint_follower:
         app: waypoint_follower
         params: [wait_at_waypoint]
-      pal_bt_navigator:
-        app: pal_bt_navigator
-        params: [navigate_through_waypoints]
       lifecycle_manager_navigation:
         app: lifecycle_manager
         params: [default]
         variables:
-          node_names: ["bt_navigator", "controller_server", "planner_server", "behavior_server", "waypoint_follower", "pal_bt_navigator"]
+          node_names: ["bt_navigator", "controller_server", "planner_server", "behavior_server", "waypoint_follower"]
