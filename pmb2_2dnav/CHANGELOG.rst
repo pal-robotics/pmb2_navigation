@@ -2,6 +2,11 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* removed pal_bt_navigator
+* Contributors: martinaannicelli
+
 4.11.0 (2025-02-04)
 -------------------
 * Update pmb2_nav_bringup.launch.py
