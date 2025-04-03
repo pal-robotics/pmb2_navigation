@@ -1,0 +1,43 @@
+/roof_rgbd_camera:
+  use_preset: "structure_driver.yaml"
+  use_if:
+    robot_type: pmb2
+    camera_model: structure
+    add_on_module: cobra
+  ros__parameters:
+    device_id: "${serial_number_camera_0}"
+  remappings:
+    depth/image: "depth_registered/image_raw"
+
+/roof_rgbd_camera_proc:
+  use_preset: "depth_image_processing.yaml"
+  use_if:
+    robot_type: pmb2
+    camera_model: structure
+    add_on_module: cobra
+  remappings:
+    image_rect: "depth/image_raw"
+    camera_info: "depth/camera_info"
+    points: "depth/points"
+
+/base_rgbd_camera_driver:
+  use_preset: "structure_driver.yaml"
+  use_if:
+    robot_type: pmb2
+    camera_model: structure
+    add_on_module: cobra
+  ros__parameters:
+    device_id: "${serial_number_camera_1}"
+  remappings:
+    depth/image: "depth_registered/image_raw"
+
+/base_rgbd_camera_proc:
+  use_preset: "depth_image_processing.yaml"
+  use_if:
+    robot_type: pmb2
+    camera_model: structure
+    add_on_module: cobra
+  remappings:
+    image_rect: "depth/image_raw"
+    camera_info: "depth/camera_info"
+    points: "depth/points"

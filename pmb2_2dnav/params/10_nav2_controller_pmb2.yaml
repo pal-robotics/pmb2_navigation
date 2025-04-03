@@ -1,0 +1,6 @@
+/local_costmap:
+  use_preset: "local_costmap.yaml"
+  use_if:
+    base_type: pmb2
+  ros__parameters:
+    robot_radius: 0.275

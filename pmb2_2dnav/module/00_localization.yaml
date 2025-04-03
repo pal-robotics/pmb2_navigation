@@ -1,4 +1,2 @@
 localization:
-  launch: "pal_navigation_cfg_utils pipeline_executor.launch.py
-          pipeline:=localization
-          robot_name:=@robot_type@"
+  launch: "pmb2_2dnav localization.launch.py"
