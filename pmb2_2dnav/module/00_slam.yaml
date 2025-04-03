@@ -1,4 +1,2 @@
 slam:
-  launch: "pal_navigation_cfg_utils pipeline_executor.launch.py
-          pipeline:=slam
-          robot_name:=@robot_type@"
+  launch: "pmb2_2dnav slam.launch.py"

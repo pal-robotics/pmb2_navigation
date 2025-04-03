@@ -1,0 +1,6 @@
+/global_costmap:
+  use_preset: "global_costmap.yaml"
+  use_if:
+    base_type: pmb2
+  ros__parameters:
+    robot_radius: 0.275

@@ -1,0 +1,35 @@
+/lifecycle_manager_localization:
+  use_preset: "lifecycle_manager.yaml"
+  use_if:
+    base_type: pmb2
+  ros__parameters:
+    node_names:
+      [
+        "map_server",
+        "map_saver",
+        "amcl",
+      ]
+
+/lifecycle_manager_navigation:
+  use_preset: "lifecycle_manager.yaml"
+  use_if:
+    base_type: pmb2
+  ros__parameters:
+    node_names:
+      [
+        "bt_navigator",
+        "controller_server",
+        "planner_server",
+        "behavior_server",
+        "waypoint_follower",
+      ]
+
+/lifecycle_manager_slam:
+  use_preset: "lifecycle_manager.yaml"
+  use_if:
+    base_type: pmb2
+  ros__parameters:
+    node_names:
+      [
+        "map_saver",
+      ]

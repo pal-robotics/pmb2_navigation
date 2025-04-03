@@ -1,0 +1,8 @@
+/pal_laser_filters:
+  use_preset: "range_filter_w_circular_footprint.yaml"
+  use_if:
+    base_type: pmb2
+  ros__parameters:
+    filter2:
+      params:
+        inscribed_radius: 0.275

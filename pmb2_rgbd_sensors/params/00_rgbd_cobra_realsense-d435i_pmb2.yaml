@@ -1,0 +1,19 @@
+/roof_rgbd_camera:
+  use_preset: "d435i_rgbd_low_contrast.yaml"
+  use_if:
+    robot_type: pmb2
+    camera_model: realsense-d435i
+    add_on_module: cobra
+  ros__parameters:
+    camera_name: "roof_rgbd_camera"
+    serial_no: "${serial_number_camera_0}"
+
+/base_rgbd_camera:
+  use_preset: "d435i_rgbd_high_accuracy.yaml"
+  use_if:
+    robot_type: pmb2
+    camera_model: realsense-d435i
+    add_on_module: cobra
+  ros__parameters:
+    camera_name: "base_rgbd_camera"
+    serial_no: "${serial_number_camera_1}"

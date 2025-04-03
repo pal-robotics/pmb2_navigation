@@ -10,11 +10,18 @@
   <buildtool_depend>ament_cmake_auto</buildtool_depend>
 
   <build_depend condition="$PAL_DISTRO >= alum">pal_module_cmake</build_depend>
-  <build_depend condition="$PAL_DISTRO >= alum">pal_navigation_cfg_cmake</build_depend>
+  <build_depend condition="$PAL_DISTRO >= alum">pal_configuration_cmake</build_depend>
   
-  <exec_depend condition="$PAL_DISTRO >= alum">pal_navigation_cfg_params</exec_depend>
-  <exec_depend condition="$PAL_DISTRO >= alum">pal_navigation_cfg_utils</exec_depend>
+  <exec_depend condition="$PAL_DISTRO >= alum">depth_image_proc</exec_depend>
+  <exec_depend condition="$PAL_DISTRO >= alum">openni2_camera</exec_depend>
   <exec_depend condition="$PAL_DISTRO >= alum">realsense2_camera</exec_depend>
+  <exec_depend condition="$PAL_DISTRO >= alum">realsense_camera_cfg</exec_depend>
+  <exec_depend condition="$PAL_DISTRO >= alum">structure_camera_cfg</exec_depend>
+  
+  <exec_depend>launch_pal</exec_depend>
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>rclcpp_components</exec_depend>
+  <exec_depend>ros2launch</exec_depend>  
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>

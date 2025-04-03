@@ -1,4 +1,2 @@
 rgbd:
-  launch: "pal_navigation_cfg_utils pipeline_executor.launch.py
-          pipeline:=rgbd_@add_on_module@_@camera_model@
-          robot_name:=@robot_type@"
+  launch: "pmb2_rgbd_sensors rgbd_@add_on_module@_@camera_model@.launch.py"

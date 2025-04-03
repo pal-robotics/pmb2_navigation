@@ -1,0 +1,8 @@
+/laser:
+  use_preset: "sick_driver.yaml"
+  use_if:
+    base_type: pmb2
+    laser_model: sick-571
+  ros__parameters:
+    scan_topic: "/scan_raw"
+    frame_id: "base_laser_link"
