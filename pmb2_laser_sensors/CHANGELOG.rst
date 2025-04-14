@@ -2,8 +2,8 @@
 Changelog for package pmb2_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+4.13.1 (2025-04-14)
+-------------------
 * fixed laser angles
 * Contributors: andreacapodacqua
 
