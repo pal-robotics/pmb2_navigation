@@ -2,6 +2,9 @@
 Changelog for package pmb2_rgbd_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 4.13.0 (2025-04-03)
 -------------------
 * Adopt pal configuration

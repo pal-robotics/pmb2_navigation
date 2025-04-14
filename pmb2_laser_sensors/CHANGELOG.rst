@@ -2,6 +2,11 @@
 Changelog for package pmb2_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* fixed laser angles
+* Contributors: andreacapodacqua
+
 4.13.0 (2025-04-03)
 -------------------
 * Adopt pal configuration
