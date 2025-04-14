@@ -6,3 +6,5 @@
   ros__parameters:
     scan_topic: "/scan_raw"
     frame_id: "base_laser_link"
+    min_ang: -1.65806
+    max_ang: 1.65806
