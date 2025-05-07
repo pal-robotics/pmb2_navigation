@@ -1,0 +1,12 @@
+/lifecycle_manager_laser:
+  use_preset: "lifecycle_manager.yaml"
+  use_if:
+    base_type: pmb2
+    laser_model: hokuyo
+    use_sim_time: false
+  ros__parameters:
+    node_names:
+      [
+        "pal_laser_filters",
+        "direct_laser_odometry",
+      ]
