@@ -1,8 +1,7 @@
-/lifecycle_manager_laser:
+/lifecycle_manager_laser_sim:
   use_preset: "lifecycle_manager.yaml"
   use_if:
     base_type: pmb2
-    use_sim_time: true
   ros__parameters:
     node_names:
       [
