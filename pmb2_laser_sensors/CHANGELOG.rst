@@ -2,6 +2,11 @@
 Changelog for package pmb2_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* fix laser sim
+* Contributors: antoniobrandi
+
 4.14.0 (2025-05-07)
 -------------------
 * fix hokuo
