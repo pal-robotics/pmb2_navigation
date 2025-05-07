@@ -2,6 +2,11 @@
 Changelog for package pmb2_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* fix hokuo
+* Contributors: antoniobrandi
+
 4.13.1 (2025-04-14)
 -------------------
 * fixed laser angles
