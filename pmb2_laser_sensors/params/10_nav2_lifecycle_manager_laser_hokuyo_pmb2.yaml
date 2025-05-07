@@ -3,7 +3,6 @@
   use_if:
     base_type: pmb2
     laser_model: hokuyo
-    use_sim_time: false
   ros__parameters:
     node_names:
       [

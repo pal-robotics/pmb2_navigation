@@ -24,7 +24,7 @@ def generate_launch_description():
 
     pal_laser_filters_node = 'pal_laser_filters'
     dlo_node = 'direct_laser_odometry'
-    lifecycle_manager_node = 'lifecycle_manager_laser'
+    lifecycle_manager_node = 'lifecycle_manager_laser_sim'
 
     pal_laser_filters_config = get_pal_configuration(
         pkg='pal_laser_filters',
