@@ -2,6 +2,11 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Added pal_maps exec_depend
+* Contributors: martinaannicelli
+
 4.15.0 (2025-05-07)
 -------------------
 
