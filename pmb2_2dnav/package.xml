@@ -18,6 +18,7 @@
 
   <exec_depend>launch_pal</exec_depend>
   <exec_depend>ros2launch</exec_depend>
+  <exec_depend>pal_maps</exec_depend>
 
   <exec_depend condition="$PAL_DISTRO >= alum">nav2_amcl</exec_depend>
   <exec_depend condition="$PAL_DISTRO >= alum">nav2_behavior_tree</exec_depend>
