@@ -12,18 +12,40 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import rclpy
-from rclpy.node import Node as RclpyNode
+from dataclasses import dataclass
+
 from launch import LaunchDescription
+from launch.actions import DeclareLaunchArgument
 from launch_ros.actions import LoadComposableNodes, Node
 from launch_ros.descriptions import ComposableNode
+
 from launch_pal import get_pal_configuration
+from launch_pal.arg_utils import LaunchArgumentsBase
+from launch_pal.robot_arguments import CommonArgs
+from launch_pal.conditions import UnlessNodeRunning
+
+
+@dataclass(frozen=True)
+class LaunchArguments(LaunchArgumentsBase):
+    namespace: DeclareLaunchArgument = CommonArgs.namespace
 
 
 def generate_launch_description():
 
+    # Create the launch description and populate
     ld = LaunchDescription()
+    launch_arguments = LaunchArguments()
 
+    launch_arguments.add_to_launch_description(ld)
+
+    declare_actions(ld, launch_arguments)
+
+    return ld
+
+
+def declare_actions(
+    launch_description: LaunchDescription, launch_args: LaunchArguments
+):
     base_camera_driver_node = 'base_rgbd_camera'
     roof_camera_driver_node = 'roof_rgbd_camera'
     base_camera_proc_node = 'base_rgbd_camera_proc'
@@ -31,42 +53,39 @@ def generate_launch_description():
     base_camera_driver_config = get_pal_configuration(
         pkg='structure_camera_cfg',
         node=base_camera_driver_node,
-        ld=ld,
+        ld=launch_description,
         cmdline_args=False,
     )
     roof_camera_driver_config = get_pal_configuration(
         pkg='structure_camera_cfg',
         node=roof_camera_driver_node,
-        ld=ld,
+        ld=launch_description,
         cmdline_args=False,
     )
     base_camera_proc_config = get_pal_configuration(
         pkg='structure_camera_cfg',
         node=base_camera_proc_node,
-        ld=ld,
+        ld=launch_description,
         cmdline_args=False,
     )
     roof_camera_proc_config = get_pal_configuration(
         pkg='structure_camera_cfg',
         node=roof_camera_proc_node,
-        ld=ld,
+        ld=launch_description,
         cmdline_args=False,
     )
 
     # If the container node already exists, just load the component
-    rclpy.init()
-    node = RclpyNode('node_checker')
-    rclpy.spin_once(node, timeout_sec=1.0)
-    if 'rgbd_container' not in node.get_node_names():
-        rgbd_container = Node(
-            name='rgbd_container',
-            package='rclcpp_components',
-            executable='component_container',
-            emulate_tty=True,
-            output='screen',
-        )
-        ld.add_action(rgbd_container)
-    rclpy.shutdown()
+    rgbd_container = Node(
+        name='rgbd_container',
+        package='rclcpp_components',
+        executable='component_container',
+        emulate_tty=True,
+        output='screen',
+        condition=UnlessNodeRunning('rgbd_container')
+    )
+
+    launch_description.add_action(rgbd_container)
 
     camera_components = LoadComposableNodes(
         target_container='rgbd_container',
@@ -112,5 +131,4 @@ def generate_launch_description():
         ],
     )
 
-    ld.add_action(camera_components)
-    return ld
+    launch_description.add_action(camera_components)

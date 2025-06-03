@@ -12,15 +12,39 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+from dataclasses import dataclass
+
 from launch import LaunchDescription
+from launch.actions import DeclareLaunchArgument
+from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
+
 from launch_pal import get_pal_configuration
+from launch_pal.arg_utils import LaunchArgumentsBase
+from launch_pal.robot_arguments import CommonArgs
+
+
+@dataclass(frozen=True)
+class LaunchArguments(LaunchArgumentsBase):
+    namespace: DeclareLaunchArgument = CommonArgs.namespace
 
 
 def generate_launch_description():
 
+    # Create the launch description and populate
     ld = LaunchDescription()
+    launch_arguments = LaunchArguments()
 
+    launch_arguments.add_to_launch_description(ld)
+
+    declare_actions(ld, launch_arguments)
+
+    return ld
+
+
+def declare_actions(
+    launch_description: LaunchDescription, launch_args: LaunchArguments
+):
     slam_toolbox_node = 'slam_toolbox'
     map_saver_node = 'map_saver'
     lifecycle_manager_node = 'lifecycle_manager_slam'
@@ -28,23 +52,24 @@ def generate_launch_description():
     slam_toolbox_config = get_pal_configuration(
         pkg='slam_toolbox',
         node=slam_toolbox_node,
-        ld=ld,
+        ld=launch_description,
         cmdline_args=['use_sim_time'],
     )
     map_saver_config = get_pal_configuration(
         pkg='nav2_map_server',
         node=map_saver_node,
-        ld=ld,
+        ld=launch_description,
         cmdline_args=['use_sim_time'],
     )
     lifecycle_manager_config = get_pal_configuration(
         pkg='nav2_lifecycle_manager',
         node=lifecycle_manager_node,
-        ld=ld,
+        ld=launch_description,
         cmdline_args=['use_sim_time'],
     )
 
     slam_toolbox = Node(
+        namespace=LaunchConfiguration('namespace'),
         package='slam_toolbox',
         executable='sync_slam_toolbox_node',
         name=slam_toolbox_node,
@@ -54,7 +79,10 @@ def generate_launch_description():
         remappings=slam_toolbox_config['remappings'],
     )
 
+    launch_description.add_action(slam_toolbox)
+
     map_saver = Node(
+        namespace=LaunchConfiguration('namespace'),
         package='nav2_map_server',
         executable='map_saver_server',
         name=map_saver_node,
@@ -64,7 +92,10 @@ def generate_launch_description():
         remappings=map_saver_config['remappings'],
     )
 
+    launch_description.add_action(map_saver)
+
     lifecycle_manager = Node(
+        namespace=LaunchConfiguration('namespace'),
         package='nav2_lifecycle_manager',
         executable='lifecycle_manager',
         name=lifecycle_manager_node,
@@ -74,7 +105,4 @@ def generate_launch_description():
         remappings=lifecycle_manager_config['remappings'],
     )
 
-    ld.add_action(slam_toolbox)
-    ld.add_action(map_saver)
-    ld.add_action(lifecycle_manager)
-    return ld
+    launch_description.add_action(lifecycle_manager)
