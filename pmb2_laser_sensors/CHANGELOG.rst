@@ -2,6 +2,11 @@
 Changelog for package pmb2_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* support namespaces
+* Contributors: antoniobrandi
+
 4.16.0 (2025-05-14)
 -------------------
 
