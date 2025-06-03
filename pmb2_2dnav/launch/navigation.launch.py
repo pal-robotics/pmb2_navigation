@@ -12,15 +12,39 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+from dataclasses import dataclass
+
 from launch import LaunchDescription
+from launch.actions import DeclareLaunchArgument
+from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
 
 from launch_pal import get_pal_configuration
+from launch_pal.arg_utils import LaunchArgumentsBase
+from launch_pal.robot_arguments import CommonArgs
+
+
+@dataclass(frozen=True)
+class LaunchArguments(LaunchArgumentsBase):
+    namespace: DeclareLaunchArgument = CommonArgs.namespace
 
 
 def generate_launch_description():
 
+    # Create the launch description and populate
     ld = LaunchDescription()
+    launch_arguments = LaunchArguments()
+
+    launch_arguments.add_to_launch_description(ld)
+
+    declare_actions(ld, launch_arguments)
+
+    return ld
+
+
+def declare_actions(
+    launch_description: LaunchDescription, launch_args: LaunchArguments
+):
     bt_navigator_node = 'bt_navigator'
     controller_server_node = 'controller_server'
     local_costmap_node = 'local_costmap'
@@ -33,49 +57,49 @@ def generate_launch_description():
     bt_navigator_config = get_pal_configuration(
         pkg='nav2_bt_navigator',
         node=bt_navigator_node,
-        ld=ld,
+        ld=launch_description,
         cmdline_args=['use_sim_time'],
     )
     controller_server_config = get_pal_configuration(
         pkg='nav2_controller',
         node=controller_server_node,
-        ld=ld,
+        ld=launch_description,
         cmdline_args=['use_sim_time'],
     )
     local_costmap_config = get_pal_configuration(
         pkg='nav2_controller',
         node=local_costmap_node,
-        ld=ld,
+        ld=launch_description,
         cmdline_args=['use_sim_time'],
     )
     planner_server_config = get_pal_configuration(
         pkg='nav2_planner',
         node=planner_server_node,
-        ld=ld,
+        ld=launch_description,
         cmdline_args=['use_sim_time'],
     )
     global_costmap_config = get_pal_configuration(
         pkg='nav2_planner',
         node=global_costmap_node,
-        ld=ld,
+        ld=launch_description,
         cmdline_args=['use_sim_time'],
     )
     behavior_server_config = get_pal_configuration(
         pkg='nav2_behaviors',
         node=behavior_server_node,
-        ld=ld,
+        ld=launch_description,
         cmdline_args=['use_sim_time'],
     )
     waypoint_follower_config = get_pal_configuration(
         pkg='nav2_waypoint_follower',
         node=waypoint_follower_node,
-        ld=ld,
+        ld=launch_description,
         cmdline_args=['use_sim_time'],
     )
     lifecycle_manager_config = get_pal_configuration(
         pkg='nav2_lifecycle_manager',
         node=lifecycle_manager_node,
-        ld=ld,
+        ld=launch_description,
         cmdline_args=['use_sim_time'],
     )
 
@@ -83,6 +107,7 @@ def generate_launch_description():
     planner_server_config['parameters'].extend(global_costmap_config['parameters'])
 
     bt_navigator = Node(
+        namespace=LaunchConfiguration('namespace'),
         package='nav2_bt_navigator',
         executable='bt_navigator',
         name=bt_navigator_node,
@@ -92,27 +117,42 @@ def generate_launch_description():
         remappings=bt_navigator_config['remappings'],
     )
 
+    launch_description.add_action(bt_navigator)
+
     controller_server = Node(
+        namespace=LaunchConfiguration('namespace'),
         package='nav2_controller',
         executable='controller_server',
-        name=controller_server_node,
+        # Do not fully qualify the name otherwise local_costmap parameters
+        # will go under the /controller_server node and will not be applied
+        # If not fully qualified, parameters will go under /**
+        # name=controller_server_node,
         output='screen',
         emulate_tty=True,
         parameters=controller_server_config['parameters'],
         remappings=controller_server_config['remappings'],
     )
 
+    launch_description.add_action(controller_server)
+
     planner_server = Node(
+        namespace=LaunchConfiguration('namespace'),
         package='nav2_planner',
         executable='planner_server',
-        name=planner_server_node,
+        # Do not fully qualify the name otherwise global_costmap parameters
+        # will go under the /planner_server node and will not be applied.
+        # If not fully qualified, parameters will go under /**
+        # name=planner_server_node,
         output='screen',
         emulate_tty=True,
         parameters=planner_server_config['parameters'],
         remappings=planner_server_config['remappings'],
     )
 
+    launch_description.add_action(planner_server)
+
     behavior_server = Node(
+        namespace=LaunchConfiguration('namespace'),
         package='nav2_behaviors',
         executable='behavior_server',
         name=behavior_server_node,
@@ -122,7 +162,10 @@ def generate_launch_description():
         remappings=behavior_server_config['remappings'],
     )
 
+    launch_description.add_action(behavior_server)
+
     waypoint_follower = Node(
+        namespace=LaunchConfiguration('namespace'),
         package='nav2_waypoint_follower',
         executable='waypoint_follower',
         name=waypoint_follower_node,
@@ -132,7 +175,10 @@ def generate_launch_description():
         remappings=waypoint_follower_config['remappings'],
     )
 
+    launch_description.add_action(waypoint_follower)
+
     lifecycle_manager = Node(
+        namespace=LaunchConfiguration('namespace'),
         package='nav2_lifecycle_manager',
         executable='lifecycle_manager',
         name=lifecycle_manager_node,
@@ -142,10 +188,4 @@ def generate_launch_description():
         remappings=lifecycle_manager_config['remappings'],
     )
 
-    ld.add_action(bt_navigator)
-    ld.add_action(controller_server)
-    ld.add_action(planner_server)
-    ld.add_action(behavior_server)
-    ld.add_action(waypoint_follower)
-    ld.add_action(lifecycle_manager)
-    return ld
+    launch_description.add_action(lifecycle_manager)
