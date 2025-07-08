@@ -12,6 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+import os
+
+from ament_index_python import get_package_share_directory
+
 from dataclasses import dataclass
 
 from launch import LaunchDescription
@@ -189,3 +193,15 @@ def declare_actions(
     )
 
     launch_description.add_action(lifecycle_manager)
+
+    nav2_analyzer = Node(
+        package='diagnostic_aggregator',
+        executable='add_analyzer',
+        namespace='pmb2_2dnav',
+        output='screen',
+        emulate_tty=True,
+        parameters=[
+            os.path.join(
+                get_package_share_directory('pmb2_2dnav'), 'config', 'nav2_analyzers.yaml')],
+    )
+    launch_description.add_action(nav2_analyzer)
