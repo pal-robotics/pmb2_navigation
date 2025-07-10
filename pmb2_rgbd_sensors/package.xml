@@ -11,7 +11,10 @@
 
   <build_depend condition="$PAL_DISTRO >= alum">pal_module_cmake</build_depend>
   <build_depend condition="$PAL_DISTRO >= alum">pal_configuration_cmake</build_depend>
-  
+
+  <exec_depend>ament_index_python</exec_depend>
+  <exec_depend>diagnostic_updater</exec_depend>
+
   <exec_depend condition="$PAL_DISTRO >= alum">depth_image_proc</exec_depend>
   <exec_depend condition="$PAL_DISTRO >= alum">openni2_camera</exec_depend>
   <exec_depend condition="$PAL_DISTRO >= alum">realsense2_camera</exec_depend>
