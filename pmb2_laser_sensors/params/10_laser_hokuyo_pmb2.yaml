@@ -4,7 +4,7 @@
     base_type: pmb2
     laser_model: hokuyo
   ros__parameters:
-    serial_port: /dev/ttyACM0
+    serial_port: /dev/hokuyo_laser
     laser_frame_id: "base_laser_link"
     angle_min: -1.65806
     angle_max: 1.65806
