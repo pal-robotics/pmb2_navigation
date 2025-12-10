@@ -21,6 +21,7 @@
         "controller_server",
         "planner_server",
         "behavior_server",
+        "smoother_server",
         "waypoint_follower",
       ]
 
