@@ -2,6 +2,11 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Use path drawer
+* Contributors: antoniobrandi
+
 4.18.2 (2025-10-22)
 -------------------
 
