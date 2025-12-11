@@ -12,14 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import os
-
-from ament_index_python import get_package_share_directory
-
 from dataclasses import dataclass
 
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument
+from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import LoadComposableNodes, Node
 from launch_ros.descriptions import ComposableNode
 
@@ -50,24 +47,10 @@ def generate_launch_description():
 def declare_actions(
     launch_description: LaunchDescription, launch_args: LaunchArguments
 ):
-    base_camera_node = 'base_rgbd_camera'
-    roof_camera_node = 'roof_rgbd_camera'
-    base_camera_config = get_pal_configuration(
-        pkg='realsense_camera_cfg',
-        node=base_camera_node,
-        ld=launch_description,
-        cmdline_args=False,
-    )
-    roof_camera_config = get_pal_configuration(
-        pkg='realsense_camera_cfg',
-        node=roof_camera_node,
-        ld=launch_description,
-        cmdline_args=False,
-    )
-
     # If the container node already exists, just load the component
     rgbd_container = Node(
         name='rgbd_container',
+        namespace=LaunchConfiguration('namespace'),
         package='rclcpp_components',
         executable='component_container',
         emulate_tty=True,
@@ -77,41 +60,45 @@ def declare_actions(
 
     launch_description.add_action(rgbd_container)
 
-    camera_components = LoadComposableNodes(
+    base_floor_filter = 'base_floor_filter'
+    roof_floor_filter = 'roof_floor_filter'
+
+    base_floor_filter_config = get_pal_configuration(
+        pkg='pcl_ros',
+        node=base_floor_filter,
+        ld=launch_description,
+        cmdline_args=False,
+    )
+    roof_floor_filter_config = get_pal_configuration(
+        pkg='pcl_ros',
+        node=roof_floor_filter,
+        ld=launch_description,
+        cmdline_args=False,
+    )
+
+    point_cloud_filters = LoadComposableNodes(
         target_container='rgbd_container',
         composable_node_descriptions=[
-            # Roof Camera Driver
+            # Base Floor Filter
             ComposableNode(
-                package='realsense2_camera',
-                plugin='realsense2_camera::RealSenseNodeFactory',
-                name=roof_camera_node,
-                namespace='',
-                parameters=roof_camera_config["parameters"],
-                remappings=roof_camera_config["remappings"],
+                package='pcl_ros',
+                plugin='pcl_ros::PipelineFilter',
+                name=base_floor_filter,
+                namespace=LaunchConfiguration('namespace'),
+                parameters=base_floor_filter_config['parameters'],
+                remappings=base_floor_filter_config['remappings'],
             ),
-            # Base Camera Driver
+
+            # Roof Floor Filter
             ComposableNode(
-                package='realsense2_camera',
-                plugin='realsense2_camera::RealSenseNodeFactory',
-                name=base_camera_node,
-                namespace='',
-                parameters=base_camera_config["parameters"],
-                remappings=base_camera_config["remappings"],
+                package='pcl_ros',
+                plugin='pcl_ros::PipelineFilter',
+                name=roof_floor_filter,
+                namespace=LaunchConfiguration('namespace'),
+                parameters=roof_floor_filter_config['parameters'],
+                remappings=roof_floor_filter_config['remappings'],
             ),
         ],
     )
 
-    launch_description.add_action(camera_components)
-
-    rgbd_analyzer = Node(
-        package='diagnostic_aggregator',
-        executable='add_analyzer',
-        namespace='pmb2_rgbd_sensors',
-        output='screen',
-        emulate_tty=True,
-        parameters=[
-            os.path.join(
-                get_package_share_directory('pmb2_rgbd_sensors'),
-                'config', 'rgbd_analyzers.yaml')],
-    )
-    launch_description.add_action(rgbd_analyzer)
+    launch_description.add_action(point_cloud_filters)

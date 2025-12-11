@@ -6,6 +6,9 @@
     add_on_module: cobra
   ros__parameters:
     device_id: "${serial_number_camera_0}"
+    ir_frame_id: "roof_rgbd_camera_optical_frame"
+    rgb_frame_id: "roof_rgbd_camera_optical_frame"
+    depth_frame_id: "roof_rgbd_camera_depth_optical_frame"
   remappings:
     depth/image: "depth_registered/image_raw"
 
@@ -19,8 +22,11 @@
     image_rect: "depth/image_raw"
     camera_info: "depth/camera_info"
     points: "depth/points"
+    points/draco: "depth/points/draco"
+    points/zlib: "depth/points/zlib"
+    points/zstd: "depth/points/zstd"
 
-/base_rgbd_camera_driver:
+/base_rgbd_camera:
   use_preset: "structure_driver.yaml"
   use_if:
     robot_type: pmb2
@@ -28,6 +34,9 @@
     add_on_module: cobra
   ros__parameters:
     device_id: "${serial_number_camera_1}"
+    ir_frame_id: "base_rgbd_camera_optical_frame"
+    rgb_frame_id: "base_rgbd_camera_optical_frame"
+    depth_frame_id: "base_rgbd_camera_depth_optical_frame"
   remappings:
     depth/image: "depth_registered/image_raw"
 
@@ -41,3 +50,6 @@
     image_rect: "depth/image_raw"
     camera_info: "depth/camera_info"
     points: "depth/points"
+    points/draco: "depth/points/draco"
+    points/zlib: "depth/points/zlib"
+    points/zstd: "depth/points/zstd"
