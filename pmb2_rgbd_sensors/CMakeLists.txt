@@ -23,6 +23,14 @@ if(pal_configuration_cmake_FOUND)
     RESOURCE_NAME
       structure_camera_cfg
   )
+  pal_register_configs(
+    CONFIGS
+      params/00_pal_pcl_cobra_realsense-d435_pmb2.yaml
+      params/00_pal_pcl_cobra_realsense-d435i_pmb2.yaml
+      params/00_pal_pcl_cobra_structure_pmb2.yaml
+    RESOURCE_NAME
+      pcl_ros
+  )
 elseif(DEFINED ENV{PAL_DISTRO})
   message(FATAL_ERROR "The pal_configuration_cmake package was not found. Configurations not registered.")
 endif()

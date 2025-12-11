@@ -1,0 +1,21 @@
+/base_floor_filter:
+  use_if:
+    robot_type: pmb2
+    camera_model: structure
+    add_on_module: cobra
+  use_preset: "floor_filter_near_w_downsample.yaml"
+
+  remappings:
+    input: "${namespace}/base_rgbd_camera/depth/points"
+    output: "${namespace}/base_rgbd_camera/obstacles/points"
+
+/roof_floor_filter:
+  use_if:
+    robot_type: pmb2
+    camera_model: structure
+    add_on_module: cobra
+  use_preset: "floor_filter_far_w_downsample.yaml"
+
+  remappings:
+    input: "${namespace}/roof_rgbd_camera/depth/points"
+    output: "${namespace}/roof_rgbd_camera/obstacles/points"

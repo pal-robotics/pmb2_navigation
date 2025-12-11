@@ -1,2 +1,2 @@
 rgbd:
-  launch: "pmb2_rgbd_sensors rgbd_@add_on_module@_@camera_model@.launch.py"
+  launch: "pmb2_rgbd_sensors rgbd.launch.py camera_model:=@camera_model@"
