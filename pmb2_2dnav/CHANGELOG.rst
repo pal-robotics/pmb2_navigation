@@ -2,6 +2,11 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* added navigation skills
+* Contributors: antoniobrandi
+
 4.20.0 (2025-12-11)
 -------------------
 

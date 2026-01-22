@@ -2,6 +2,9 @@
 Changelog for package pmb2_rgbd_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 4.20.0 (2025-12-11)
 -------------------
 * Point Cloud filter pipeline
