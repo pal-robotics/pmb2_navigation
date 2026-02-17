@@ -2,6 +2,11 @@
 Changelog for package pmb2_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* fix wrong preset
+* Contributors: andreacapodacqua
+
 4.21.0 (2026-01-22)
 -------------------
 
