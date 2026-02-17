@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package format="3">
   <name>pmb2_rgbd_sensors</name>
-  <version>4.21.0</version>
+  <version>4.21.1</version>
   <description>pmb2-specific RGBD sensors module and params files.</description>
   <author email="antonio.brandi@pal-robotics.com">Antonio Brandi</author>
   <maintainer email="antonio.brandi@pal-robotics.com">Antonio Brandi</maintainer>
