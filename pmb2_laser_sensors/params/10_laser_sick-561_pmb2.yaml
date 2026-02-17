@@ -1,5 +1,5 @@
 /laser:
-  use_preset: "sick_driver.yaml"
+  use_preset: "sick_561.yaml"
   use_if:
     base_type: pmb2
     laser_model: sick-561
