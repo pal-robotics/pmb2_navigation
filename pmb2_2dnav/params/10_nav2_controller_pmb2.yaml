@@ -4,3 +4,16 @@
     base_type: pmb2
   ros__parameters:
     robot_radius: 0.275
+
+/controller_server:
+  use_preset: "mppi_diff.yaml"
+  use_if:
+    base_type: "pmb2"
+  ros__parameters:
+    controller_frequency: 30.0
+    FollowPath:
+      model_dt: 0.05
+      time_steps: 40
+      vx_max: 0.5
+      vx_std: 0.1
+      wz_std: 0.6
