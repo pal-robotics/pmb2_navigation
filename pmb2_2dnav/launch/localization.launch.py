@@ -20,6 +20,7 @@ from dataclasses import dataclass
 
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument
+from launch.conditions import UnlessCondition
 from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
 
@@ -31,6 +32,7 @@ from launch_pal.robot_arguments import CommonArgs
 @dataclass(frozen=True)
 class LaunchArguments(LaunchArgumentsBase):
     namespace: DeclareLaunchArgument = CommonArgs.namespace
+    advanced_navigation: DeclareLaunchArgument = CommonArgs.advanced_navigation
 
 
 def generate_launch_description():
@@ -50,19 +52,12 @@ def declare_actions(
     launch_description: LaunchDescription, launch_args: LaunchArguments
 ):
     map_server_node = 'map_server'
-    map_saver_node = 'map_saver'
     amcl_node = 'amcl'
     lifecycle_manager_node = 'lifecycle_manager_localization'
 
     map_server_config = get_pal_configuration(
         pkg='nav2_map_server',
         node=map_server_node,
-        ld=launch_description,
-        cmdline_args=['use_sim_time'],
-    )
-    map_saver_config = get_pal_configuration(
-        pkg='nav2_map_server',
-        node=map_saver_node,
         ld=launch_description,
         cmdline_args=['use_sim_time'],
     )
@@ -88,22 +83,10 @@ def declare_actions(
         emulate_tty=True,
         parameters=map_server_config['parameters'],
         remappings=map_server_config['remappings'],
+        condition=UnlessCondition(LaunchConfiguration('advanced_navigation'))
     )
 
     launch_description.add_action(map_server)
-
-    map_saver = Node(
-        namespace=LaunchConfiguration('namespace'),
-        package='nav2_map_server',
-        executable='map_saver_server',
-        name=map_saver_node,
-        output='screen',
-        emulate_tty=True,
-        parameters=map_saver_config['parameters'],
-        remappings=map_saver_config['remappings'],
-    )
-
-    launch_description.add_action(map_saver)
 
     amcl = Node(
         namespace=LaunchConfiguration('namespace'),
