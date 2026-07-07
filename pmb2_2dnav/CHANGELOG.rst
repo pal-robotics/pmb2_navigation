@@ -2,8 +2,8 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+4.22.0 (2026-07-07)
+-------------------
 * adapt eulero refactor
 * Contributors: antoniobrandi
 
