@@ -2,6 +2,9 @@
 Changelog for package pmb2_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 4.21.1 (2026-02-17)
 -------------------
 * fix wrong preset
