@@ -1,0 +1,13 @@
+/lifecycle_manager_laser:
+  use_preset: "lifecycle_manager.yaml"
+  ros__parameters:
+    node_names:
+      [
+        "ydlidar_ros2_driver_node",
+        "pal_laser_filters",
+        "direct_laser_odometry",
+      ]
+  use_if:
+    robot_type: pmb2
+    laser_model: ydlidar-tg30
+

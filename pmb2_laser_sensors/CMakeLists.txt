@@ -21,6 +21,7 @@ if(pal_configuration_cmake_FOUND)
       params/10_nav2_lifecycle_manager_laser_hokuyo_pmb2.yaml
       params/10_nav2_lifecycle_manager_laser_sick-561_pmb2.yaml
       params/10_nav2_lifecycle_manager_laser_sick-571_pmb2.yaml
+      params/10_nav2_lifecycle_manager_laser_ydlidar-tg30_pmb2.yaml
       params/10_nav2_lifecycle_manager_laser_sim_pmb2.yaml
     RESOURCE_NAME
       nav2_lifecycle_manager
@@ -37,6 +38,12 @@ if(pal_configuration_cmake_FOUND)
       params/10_laser_sick-571_pmb2.yaml
     RESOURCE_NAME
       sick_laser_cfg
+  )
+  pal_register_configs(
+    CONFIGS
+      params/10_laser_ydlidar-tg30_pmb2.yaml
+    RESOURCE_NAME
+      ydlidar_laser_cfg
   )
 elseif(DEFINED ENV{PAL_DISTRO})
   message(FATAL_ERROR "The pal_configuration_cmake package was not found. Configurations not registered.")
