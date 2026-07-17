@@ -2,6 +2,11 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* start apps using localization manager
+* Contributors: antoniobrandi
+
 4.22.1 (2026-07-17)
 -------------------
 
