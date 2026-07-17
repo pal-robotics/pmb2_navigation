@@ -25,6 +25,7 @@ from launch_ros.actions import Node
 
 from launch_pal import get_pal_configuration
 from launch_pal.arg_utils import LaunchArgumentsBase
+from launch_pal.pal_parameters import load_pal_robot_info
 from launch_pal.robot_arguments import CommonArgs
 
 
@@ -53,6 +54,10 @@ def declare_actions(
     map_saver_node = 'map_saver'
     lifecycle_manager_node = 'lifecycle_manager_slam'
 
+    robot_info = load_pal_robot_info()
+    ns = robot_info.get('namespace')
+    namespace = LaunchConfiguration('namespace') if ns is None else ns
+
     slam_toolbox_config = get_pal_configuration(
         pkg='slam_toolbox',
         node=slam_toolbox_node,
@@ -73,9 +78,9 @@ def declare_actions(
     )
 
     slam_toolbox = Node(
-        namespace=LaunchConfiguration('namespace'),
+        namespace=namespace,
         package='slam_toolbox',
-        executable='sync_slam_toolbox_node',
+        executable='async_slam_toolbox_node',
         name=slam_toolbox_node,
         output='screen',
         emulate_tty=True,
@@ -86,7 +91,7 @@ def declare_actions(
     launch_description.add_action(slam_toolbox)
 
     map_saver = Node(
-        namespace=LaunchConfiguration('namespace'),
+        namespace=namespace,
         package='nav2_map_server',
         executable='map_saver_server',
         name=map_saver_node,
@@ -99,7 +104,7 @@ def declare_actions(
     launch_description.add_action(map_saver)
 
     lifecycle_manager = Node(
-        namespace=LaunchConfiguration('namespace'),
+        namespace=namespace,
         package='nav2_lifecycle_manager',
         executable='lifecycle_manager',
         name=lifecycle_manager_node,
