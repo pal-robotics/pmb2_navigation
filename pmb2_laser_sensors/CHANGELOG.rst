@@ -2,6 +2,11 @@
 Changelog for package pmb2_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* integrating ydlidar in pmb2 navigation
+* Contributors: martinaannicelli
+
 4.22.0 (2026-07-07)
 -------------------
 
