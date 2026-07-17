@@ -1,0 +1,13 @@
+/ydlidar_ros2_driver_node:
+  use_preset: "ydlidar-tg30.yaml"
+  ros__parameters:
+    port: /dev/ttyUSB0
+    frame_id: "base_laser_link"
+    angle_min: -95.0
+    angle_max: 95.0
+    frequency: 10.0
+  remappings:
+    scan: "scan_raw"
+  use_if:
+    robot_type: pmb2
+    laser_model: ydlidar-tg30
