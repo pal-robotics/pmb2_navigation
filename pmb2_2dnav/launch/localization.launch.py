@@ -73,20 +73,23 @@ def declare_actions(
         pkg='nav2_map_server',
         node=map_server_node,
         ld=launch_description,
-        cmdline_args=['use_sim_time'],
+        cmdline_args=None,
     )
+    map_server_config['parameters'].append({'use_sim_time': use_sim_time})
     amcl_config = get_pal_configuration(
         pkg='nav2_amcl',
         node=amcl_node,
         ld=launch_description,
-        cmdline_args=['use_sim_time'],
+        cmdline_args=None,
     )
+    amcl_config['parameters'].append({'use_sim_time': use_sim_time})
     lifecycle_manager_config = get_pal_configuration(
         pkg='nav2_lifecycle_manager',
         node=lifecycle_manager_node,
         ld=launch_description,
-        cmdline_args=['use_sim_time'],
+        cmdline_args=None,
     )
+    lifecycle_manager_config['parameters'].append({'use_sim_time': use_sim_time})
 
     map_server = Node(
         namespace=namespace,
