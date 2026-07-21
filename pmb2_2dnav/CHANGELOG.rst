@@ -2,8 +2,8 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+4.24.0 (2026-07-21)
+-------------------
 * fix use sim time
 * Contributors: antoniobrandi
 
