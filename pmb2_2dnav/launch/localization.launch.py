@@ -34,6 +34,7 @@ from launch_pal.robot_arguments import CommonArgs
 class LaunchArguments(LaunchArgumentsBase):
     namespace: DeclareLaunchArgument = CommonArgs.namespace
     advanced_navigation: DeclareLaunchArgument = CommonArgs.advanced_navigation
+    use_sim_time: DeclareLaunchArgument = CommonArgs.use_sim_time
 
 
 def generate_launch_description():
