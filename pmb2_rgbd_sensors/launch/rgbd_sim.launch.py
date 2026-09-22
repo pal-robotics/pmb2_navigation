@@ -52,7 +52,7 @@ def declare_actions(
         name='rgbd_container',
         namespace=LaunchConfiguration('namespace'),
         package='rclcpp_components',
-        executable='component_container',
+        executable='component_container_mt',
         emulate_tty=True,
         output='screen',
         condition=UnlessNodeRunning('rgbd_container')
@@ -87,6 +87,7 @@ def declare_actions(
                 namespace=LaunchConfiguration('namespace'),
                 parameters=base_floor_filter_config['parameters'],
                 remappings=base_floor_filter_config['remappings'],
+                extra_arguments=[{'use_intra_process_comms': True}],
             ),
 
             # Roof Floor Filter
@@ -97,6 +98,7 @@ def declare_actions(
                 namespace=LaunchConfiguration('namespace'),
                 parameters=roof_floor_filter_config['parameters'],
                 remappings=roof_floor_filter_config['remappings'],
+                extra_arguments=[{'use_intra_process_comms': True}],
             ),
         ],
     )
