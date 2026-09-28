@@ -2,6 +2,11 @@
 Changelog for package pmb2_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* tuned differential velocities as stockbot
+* Contributors: martinaannicelli
+
 4.24.1 (2026-07-24)
 -------------------
 * fixing use sim time
