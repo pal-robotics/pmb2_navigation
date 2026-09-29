@@ -2,6 +2,11 @@
 Changelog for package pmb2_rgbd_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Use intra process communication
+* Contributors: antoniobrandi
+
 4.24.2 (2026-09-28)
 -------------------
 
