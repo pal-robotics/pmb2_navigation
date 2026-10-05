@@ -2,6 +2,11 @@
 Changelog for package pmb2_rgbd_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* adding use sim time arg
+* Contributors: martinaannicelli
+
 4.25.0 (2026-09-29)
 -------------------
 * Use intra process communication
