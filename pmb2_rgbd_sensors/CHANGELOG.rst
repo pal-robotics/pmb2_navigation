@@ -2,8 +2,8 @@
 Changelog for package pmb2_rgbd_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+4.25.1 (2026-10-05)
+-------------------
 * adding use sim time arg
 * Contributors: martinaannicelli
 
