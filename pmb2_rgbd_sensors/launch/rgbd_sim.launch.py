@@ -67,13 +67,13 @@ def declare_actions(
         pkg='pcl_ros',
         node=base_floor_filter,
         ld=launch_description,
-        cmdline_args=False,
+        cmdline_args=['use_sim_time'],
     )
     roof_floor_filter_config = get_pal_configuration(
         pkg='pcl_ros',
         node=roof_floor_filter,
         ld=launch_description,
-        cmdline_args=False,
+        cmdline_args=['use_sim_time'],
     )
 
     point_cloud_filters = LoadComposableNodes(
