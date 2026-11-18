@@ -2,6 +2,11 @@
 Changelog for package pmb2_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Bump cmake_minimum_required to 3.10
+* Contributors: Mathias Lüdtke
+
 4.25.1 (2026-10-05)
 -------------------
 
