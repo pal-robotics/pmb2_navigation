@@ -2,8 +2,8 @@
 Changelog for package pmb2_rgbd_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+4.25.2 (2026-11-18)
+-------------------
 * Bump cmake_minimum_required to 3.10
 * Contributors: Mathias Lüdtke
 
